@@ -1,0 +1,29 @@
+<!ELEMENT Body (Movies, Actors)>
+<!ELEMENT Movies (Movie+)>
+<!ELEMENT Movie (Title, Year, Picture, Genres, Keywords, Tagline, Plot, Directors, Writers, Characters)>
+  <!ATTLIST Movie MovieId ID #REQUIRED
+                  Length CDATA "0"
+                  Color (yes|no) #IMPLIED
+                  Actors IDREFS #REQUIRED>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT Picture (#PCDATA)>
+<!ELEMENT Genres (Genre+)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Tagline (#PCDATA)>
+<!ELEMENT Plot (#PCDATA)>
+<!ELEMENT Keywords (Keyword+)>
+  <!ELEMENT Keyword (#PCDATA)>
+<!ELEMENT Directors (Director+)>
+  <!ELEMENT Writers (Writer+)>
+<!ELEMENT Director (Name)>
+<!ELEMENT Writer (Name)>
+<!ELEMENT Characters (Character+)>
+  <!ELEMENT Character (#PCDATA)>
+    <!ATTLIST  Character Actor IDREF #REQUIRED>
+<!ELEMENT Actors (Actor+)>
+  <!ELEMENT Actor (Name, Biography, Awards)>
+    <!ATTLIST Actor ActorId ID #REQUIRED>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Biography (#PCDATA)>
+<!ELEMENT Awards (#PCDATA)>
