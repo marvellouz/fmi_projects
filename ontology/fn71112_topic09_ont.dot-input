@@ -1,0 +1,11 @@
+digraph "fn71112_topic09_ont" {
+
+"String" [shape=box, label="String", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Instrument"->"String" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Wind" [shape=box, label="Wind", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Instrument"->"Wind" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Percussion" [shape=box, label="Percussion", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Instrument"->"Percussion" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Musician" [shape=box, label="Musician", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Instrument" [shape=box, label="Instrument", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+}
