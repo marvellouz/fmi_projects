@@ -1,12 +1,12 @@
 digraph fn71112_topic09_ont {
 	node [label="\N"];
-	graph [bb="0,0,222,126"];
-	String [label=String, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="27,18", width="0.75", height="0.5"];
-	Instrument [label=Instrument, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="99,108", width="1.0278", height="0.5"];
-	Wind [label=Wind, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="99,18", width="0.75", height="0.5"];
-	Percussion [label=Percussion, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="183,18", width="1.0833", height="0.5"];
-	Musician [label=Musician, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="187,108", width="0.91667", height="0.5"];
-	Instrument -> String [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,84.43,89.787 77.892,81.615 66.209,67.011 51.986,49.232 41.549,36.186", lp="77.5,63"];
-	Instrument -> Wind [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,99,89.787 99,79.548 99,65.36 99,48.622 99,36.186", lp="106.5,63"];
-	Instrument -> Percussion [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,116,89.787 122.86,82.431 136.63,67.678 153.62,49.476 166.03,36.186", lp="155.5,63"];
+	graph [bb="0,0,232,126"];
+	Musician [label=Musician, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="33,108", width="0.91667", height="0.5"];
+	Instrument [label=Instrument, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="121,108", width="1.0278", height="0.5"];
+	String [label=String, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="37,18", width="0.75", height="0.5"];
+	Percussion [label=Percussion, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="121,18", width="1.0833", height="0.5"];
+	Wind [label=Wind, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="205,18", width="0.75", height="0.5"];
+	Instrument -> String [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,104,89.787 97.135,82.431 83.366,67.678 66.377,49.476 53.973,36.186", lp="94.5,63"];
+	Instrument -> Percussion [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,121,89.787 121,79.548 121,65.36 121,48.622 121,36.186", lp="128.5,63"];
+	Instrument -> Wind [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,138,89.787 144.86,82.431 158.63,67.678 175.62,49.476 188.03,36.186", lp="177.5,63"];
 }
