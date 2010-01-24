@@ -17,7 +17,7 @@
 
 (deffunction ask-question (?question)
 	(printout t ?question)
-	(read))
+	(readline))
 
 (deffunction ask-multiple-choice-question (?question $?allowed-values)
    (bind ?answer (ask-question ?question))
@@ -59,31 +59,31 @@
 	=>
 	(assert (searched-name unknown))
 	(assert (searched-type unknown))
-	(assert (searched-playedBy unknown))
+;	(assert (searched-playedBy unknown))
 	(assert (searching-state insearch))
 	(assert (end-get-all-instances))
 )
 
 
 
-(defrule spacify-playedBy (declare(salience 10))
-  (searching-state insearch)
-  ?playedBy <- (searched-playedBy unknoun)
-  =>
-  (bind ?search (ask-open-question "Who plays this instrument (specify firts name)?"))
-  (retract ?playedBy)
-  (assert (searched-playedBy ?search)))
-
- (defrule search-playedBy(declare (salience 10))
-  (searched-playedBy ?search&~unknown)
-  ?allfound-fact <- (found-instances $?allfound)
-  ?found <- (object (is-a Musician) (firstName ?fname&~?search))
-  =>
-  (bind ?memberposition (member ?found (create$ $?allfound)))
-  (if ?memberposition
-    then
-   (retract ?allfound-fact)
-   (assert (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
+;(defrule spacify-playedBy (declare(salience 10))
+;  (searching-state insearch)
+;  ?playedBy <- (searched-playedBy unknoun)
+;  =>
+;  (bind ?search (ask-open-question "Who plays this instrument (specify firts name)?"))
+;  (retract ?playedBy)
+;  (assert (searched-playedBy ?search)))
+;
+; (defrule search-playedBy(declare (salience 10))
+;  (searched-playedBy ?search&~unknown)
+;  ?allfound-fact <- (found-instances $?allfound)
+;  ?found <- (object (is-a Musician) (firstName ?fname&~?search))
+;  =>
+;  (bind ?memberposition (member ?found (create$ $?allfound)))
+;  (if ?memberposition
+;    then
+;   (retract ?allfound-fact)
+;   (assert (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
 
 
 
@@ -91,7 +91,7 @@
 	(searching-state insearch)
   ?name-fact <- (searched-name unknown)
 	=>
-	(bind ?search (symbolToString (ask-open-question "Specify instrument name:")))
+	(bind ?search (ask-open-question "Specify instrument name: "))
 	(retract ?name-fact)
 	(assert (searched-name ?search)))
 
@@ -101,6 +101,7 @@
 	?allfound-fact <- (found-instances $?allfound)
 	?found <- (object (is-a Instrument) (name ?fname&~?search))
 	=>
+  (printout t "Removing: " ?fname crlf)
 	(bind ?memberposition (member ?found (create$ $?allfound)))
 	(if ?memberposition
 		then

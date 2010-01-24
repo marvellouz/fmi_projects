@@ -14,7 +14,7 @@
 
 ([fn71112_topic09_ont_Instance_1] of  String
 
-	(name "acoustic guitar")
+	(name_ "acoustic guitar")
 	(playedBy
 		[fn71112_topic09_ont_Instance_0]
 		[fn71112_topic09_ont_Instance_10]
@@ -41,21 +41,21 @@
 
 ([fn71112_topic09_ont_Instance_12] of  String
 
-	(name "double bass")
+	(name_ "double bass")
 	(playedBy [fn71112_topic09_ont_Instance_15])
 	(string_count 4)
 	(type jazz))
 
 ([fn71112_topic09_ont_Instance_13] of  String
 
-	(name "cello")
+	(name_ "cello")
 	(playedBy [fn71112_topic09_ont_Instance_15])
 	(string_count 4)
 	(type jazz classical))
 
 ([fn71112_topic09_ont_Instance_14] of  Wind
 
-	(name "trombone")
+	(name_ "trombone")
 	(playedBy [fn71112_topic09_ont_Instance_15])
 	(type jazz))
 
@@ -70,7 +70,7 @@
 
 ([fn71112_topic09_ont_Instance_3] of  String
 
-	(name "electric guitar")
+	(name_ "electric guitar")
 	(playedBy
 		[fn71112_topic09_ont_Instance_0]
 		[fn71112_topic09_ont_Instance_11])
@@ -79,7 +79,7 @@
 
 ([fn71112_topic09_ont_Instance_4] of  String
 
-	(name "bass guitar")
+	(name_ "bass guitar")
 	(playedBy
 		[fn71112_topic09_ont_Instance_0]
 		[fn71112_topic09_ont_Instance_5]
@@ -95,7 +95,7 @@
 
 ([fn71112_topic09_ont_Instance_6] of  Percussion
 
-	(name "drums")
+	(name_ "drums")
 	(playedBy [fn71112_topic09_ont_Instance_7])
 	(type rock))
 
@@ -109,13 +109,13 @@
 
 ([fn71112_topic09_ont_Instance_8] of  Percussion
 
-	(name "percussions")
+	(name_ "percussions")
 	(playedBy [fn71112_topic09_ont_Instance_7])
 	(type rock))
 
 ([fn71112_topic09_ont_Instance_9] of  Wind
 
-	(name "harmonica")
+	(name_ "harmonica")
 	(playedBy [fn71112_topic09_ont_Instance_10])
 	(type jazz rock))
 )
