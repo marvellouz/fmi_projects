@@ -1,4 +1,4 @@
-; Sun Jan 24 16:09:09 EET 2010
+; Sun Jan 24 16:36:50 EET 2010
 ; 
 ;+ (version "3.3.1")
 ;+ (build "Build 430")
@@ -24,9 +24,9 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[fn71112_topic09_ont_ProjectKB_Instance_10086]
-		[fn71112_topic09_ont_ProjectKB_Instance_10087]
-		[fn71112_topic09_ont_ProjectKB_Instance_10088]))
+		[fn71112_topic09_ont_ProjectKB_Instance_10091]
+		[fn71112_topic09_ont_ProjectKB_Instance_10092]
+		[fn71112_topic09_ont_ProjectKB_Instance_10093]))
 
 ([CLSES_TAB] of  Widget
 
@@ -59,8 +59,8 @@
 ([fn71112_instruments_ProjectKB_Instance_10097] of  Map
 
 	(entries
-		[fn71112_topic09_ont_ProjectKB_Instance_10089]
-		[fn71112_topic09_ont_ProjectKB_Instance_10090]))
+		[fn71112_topic09_ont_ProjectKB_Instance_10094]
+		[fn71112_topic09_ont_ProjectKB_Instance_10095]))
 
 ([fn71112_instruments_ProjectKB_Instance_11] of  Property_List
 )
@@ -362,29 +362,29 @@
 ([fn71112_instruments_ProjectKB_Instance_9] of  Property_List
 )
 
-([fn71112_topic09_ont_ProjectKB_Instance_10086] of  String
+([fn71112_topic09_ont_ProjectKB_Instance_10091] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([fn71112_topic09_ont_ProjectKB_Instance_10087] of  String
+([fn71112_topic09_ont_ProjectKB_Instance_10092] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([fn71112_topic09_ont_ProjectKB_Instance_10088] of  String
+([fn71112_topic09_ont_ProjectKB_Instance_10093] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([fn71112_topic09_ont_ProjectKB_Instance_10089] of  Map_Entry
+([fn71112_topic09_ont_ProjectKB_Instance_10094] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([fn71112_topic09_ont_ProjectKB_Instance_10090] of  Map_Entry
+([fn71112_topic09_ont_ProjectKB_Instance_10095] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")

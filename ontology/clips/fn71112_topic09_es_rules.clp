@@ -1,4 +1,3 @@
-
 ;;****************
 ;;* DEFFUNCTIONS *
 ;;****************
@@ -48,7 +47,7 @@
 
 (defrule getAllInstances (declare (salience 100))
 	?current <- (found-instances $?x)
-	?instance <- (object (is-a Person))
+	?instance <- (object (is-a Instrument))
 	(test (not (member ?instance (create$ $?x))))
 	(not (end-get-all-instances))
 	=>
@@ -58,26 +57,49 @@
 
 (defrule end-init (declare (salience 50))
 	=>
-	(assert (searched-firstName unknown))
-	(assert (searched-lastName unknown))
-	(assert (searched-hasGender unknown))
+	(assert (searched-name unknown))
+	(assert (searched-type unknown))
+	(assert (searched-playedBy unknown))
 	(assert (searching-state insearch))
 	(assert (end-get-all-instances))
 )
 
 
-(defrule specify-firstName (declare (salience 10))
+
+(defrule spacify-playedBy (declare(salience 10))
+  (searching-state insearch)
+  ?playedBy <- (searched-playedBy unknoun)
+  =>
+  (bind ?search (ask-open-question "Who plays this instrument (specify firts name)?"))
+  (retract ?playedBy)
+  (assert (searched-playedBy ?search)))
+
+ (defrule search-playedBy(declare (salience 10))
+  (searched-playedBy ?search&~unknown)
+  ?allfound-fact <- (found-instances $?allfound)
+  ?found <- (object (is-a Musician) (firstName ?fname&~?search))
+  =>
+  (bind ?memberposition (member ?found (create$ $?allfound)))
+  (if ?memberposition
+    then
+   (retract ?allfound-fact)
+   (assert (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
+
+
+
+(defrule specify-name (declare (salience 10))
 	(searching-state insearch)
-	?firstName-fact <- (searched-firstName unknown)
+  ?name-fact <- (searched-name unknown)
 	=>
-	(bind ?search (symbolToString (ask-open-question "Specify a First Name:")))
-	(retract ?firstName-fact)
-	(assert (searched-firstName ?search)))
+	(bind ?search (symbolToString (ask-open-question "Specify instrument name:")))
+	(retract ?name-fact)
+	(assert (searched-name ?search)))
+
 	
-(defrule search-firstName (declare (salience 10))
-	(searched-firstName ?search&~unknown)
+(defrule search-name (declare (salience 10))
+	(searched-name ?search&~unknown)
 	?allfound-fact <- (found-instances $?allfound)
-	?found <- (object (is-a Person) (firstName ?fName&~?search))
+	?found <- (object (is-a Instrument) (name ?fname&~?search))
 	=>
 	(bind ?memberposition (member ?found (create$ $?allfound)))
 	(if ?memberposition
@@ -87,18 +109,18 @@
 		
 
 		
-(defrule specify-hasGender (declare (salience 10))
+(defrule specify-type (declare (salience 10))
 	(searching-state insearch)
-	?hasGender-fact <- (searched-hasGender unknown)
+	?type-fact <- (searched-type unknown)
 	=>
-	(bind ?search (ask-multiple-choice-question "Specify a Gender(Male/Female):" Male Female))
-	(retract ?hasGender-fact)
+	(bind ?search (ask-multiple-choice-question "Specify a type(jazz/classical/rock):" Male Female))
+	(retract ?type-fact)
 	(assert (searched-hasGender ?search)))
 	
-(defrule search-hasGender (declare (salience 10))
-	(searched-hasGender ?search&~unknown)
+(defrule search-type (declare (salience 10))
+	(searched-type ?search&~unknown)
 	?allfound-fact <- (found-instances $?allfound)
-	?found <- (object (is-a Person) (hasGender ?fName&~?search))
+	?found <- (object (is-a Instrument) (type ?fName&~?search))
 	=>
 	(bind ?memberposition (member ?found (create$ $?allfound)))
 	(if ?memberposition

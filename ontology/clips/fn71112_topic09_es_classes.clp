@@ -4,7 +4,7 @@
 ;+ (build "Build 430")
 
 
-(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+(defclass 3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
 	(multislot playedBy
@@ -82,11 +82,13 @@
 
 (defclass Wind
 	(is-a Instrument)
-	(role concrete))
+	(role concrete)
+        (pattern-match reactive))
 
 (defclass String
 	(is-a Instrument)
 	(role concrete)
+        (pattern-match reactive)
 	(multislot type
 		(type SYMBOL)
 		(allowed-values jazz classical rock)
@@ -101,6 +103,7 @@
 (defclass Percussion
 	(is-a Instrument)
 	(role concrete)
+        (pattern-match reactive)
 	(multislot type
 		(type SYMBOL)
 		(allowed-values jazz classical rock)
@@ -111,6 +114,7 @@
 (defclass Musician
 	(is-a USER)
 	(role concrete)
+        (pattern-match reactive)
 	(multislot playsInstrument
 		(type INSTANCE)
 ;+		(allowed-classes Instrument)
