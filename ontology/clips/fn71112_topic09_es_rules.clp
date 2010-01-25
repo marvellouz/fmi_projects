@@ -35,6 +35,23 @@
 	?answer)
 
 
+
+;;**********************
+;;  DEFTEMPLATE
+;;**********************
+
+
+
+(deftemplate status
+    (multislot found-instances)
+    (slot searched-name)
+    (slot searched-type)
+    (slot searched-playedBy)
+    (slot searching-state)
+    (slot end-get-all-instances)
+) 
+
+
 ;;**********************
 ;;  DEFRULES 
 ;;**********************
@@ -42,117 +59,110 @@
 
 (defrule begin-init (declare (salience 150))
 	=>
-	(assert (found-instances))
-)
+	(assert (status)))
+
+
 
 (defrule getAllInstances (declare (salience 100))
-	?current <- (found-instances $?x)
+	?current <- (status (found-instances $?x)(end-get-all-instances nil))
 	?instance <- (object (is-a Instrument))
 	(test (not (member ?instance (create$ $?x))))
 	(not (end-get-all-instances))
 	=>
-	(retract ?current)
-	(assert (found-instances ?instance $?x))
-)
+	(modify ?current (found-instances ?instance $?x)))
+
 
 (defrule end-init (declare (salience 50))
+  ?status <- (status (end-get-all-instances nil))
 	=>
-	(assert (searched-name unknown))
-	(assert (searched-type unknown))
-;	(assert (searched-playedBy unknown))
-	(assert (searching-state insearch))
-	(assert (end-get-all-instances))
-)
-
-
-
-;(defrule spacify-playedBy (declare(salience 10))
-;  (searching-state insearch)
-;  ?playedBy <- (searched-playedBy unknoun)
-;  =>
-;  (bind ?search (ask-open-question "Who plays this instrument (specify firts name)?"))
-;  (retract ?playedBy)
-;  (assert (searched-playedBy ?search)))
-;
-; (defrule search-playedBy(declare (salience 10))
-;  (searched-playedBy ?search&~unknown)
-;  ?allfound-fact <- (found-instances $?allfound)
-;  ?found <- (object (is-a Musician) (firstName ?fname&~?search))
-;  =>
-;  (bind ?memberposition (member ?found (create$ $?allfound)))
-;  (if ?memberposition
-;    then
-;   (retract ?allfound-fact)
-;   (assert (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
+  (modify ?status (end-get-all-instances FALSE) (searching-state insearch)))
 
 
 
 (defrule specify-name (declare (salience 10))
-	(searching-state insearch)
-  ?name-fact <- (searched-name unknown)
+	?status <- (status (searching-state insearch) (searched-name nil))
 	=>
 	(bind ?search (ask-open-question "Specify instrument name: "))
-	(retract ?name-fact)
-	(assert (searched-name ?search)))
+	(modify ?status (searched-name ?search)))
 
 	
 (defrule search-name (declare (salience 10))
-	(searched-name ?search&~unknown)
-	?allfound-fact <- (found-instances $?allfound)
-	?found <- (object (is-a Instrument) (name ?fname&~?search))
+	?status <- (status (searched-name ?search&~nil)(found-instances $?allfound))
+	?found <- (object (is-a Instrument) (name_ ?fname&~?search))
+  (test (neq "" ?search))
 	=>
-  (printout t "Removing: " ?fname crlf)
+;  (printout t "Removing: " ?fname crlf)
 	(bind ?memberposition (member ?found (create$ $?allfound)))
 	(if ?memberposition
 		then
-		(retract ?allfound-fact)
-		(assert (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
+		(modify ?status (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
 		
 
 		
-(defrule specify-type (declare (salience 10))
-	(searching-state insearch)
-	?type-fact <- (searched-type unknown)
+(defrule specify-type (declare (salience 13))
+	?status <- (status (searching-state insearch) (searched-type nil))
 	=>
-	(bind ?search (ask-multiple-choice-question "Specify a type(jazz/classical/rock):" Male Female))
-	(retract ?type-fact)
-	(assert (searched-hasGender ?search)))
+	(bind ?search (ask-multiple-choice-question "Specify a type (jazz/classical/rock): " "jazz" "classical" "rock"))
+	(modify ?status (searched-type ?search)))
 	
-(defrule search-type (declare (salience 10))
-	(searched-type ?search&~unknown)
-	?allfound-fact <- (found-instances $?allfound)
+(defrule search-type (declare (salience 13))
+	?status <- (status (searched-type ?search&~nill) (found-instances $?allfound))
 	?found <- (object (is-a Instrument) (type ?fName&~?search))
 	=>
 	(bind ?memberposition (member ?found (create$ $?allfound)))
 	(if ?memberposition
 		then
-		(retract ?allfound-fact)
-		(assert (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
+		(modify ?status (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
 
-		
+
+ 
+(defrule specify-playedBy (declare (salience 9))
+  ?status <- (status (searching-state insearch) (searched-playedBy nil))
+  =>
+  (bind ?search (ask-open-question "Spacify musicians first name: "))
+  (modify ?status (searched-playedBy ?search)))
+
+ 
+(defrule search-playedBy (declare (salience 9))
+  ?status <- (status (searched-playedBy ?search&~nil) (found-instances $?allfound))
+  ?foundM <- (object (is-a Musician) (firstName ?search))
+  ?found <- (object (is-a Instrument) (playedBy $?playedBy))
+  (test (neq "" ?search))
+  (test (member ?foundM $?playedBy))
+  =>
+  (bind ?memberposition (member ?foundM (create$ $?allfound)))
+  (if ?memberposition
+    then
+    (modify ?status (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
+
+
 
 ;15 because this rule should interrupt the search
 (defrule end-search-fail (declare (salience 15))
-	?state <- (searching-state insearch)
-	(found-instances)
-	=>
-	(retract ?state)
-	(assert (searching-state endsearch))
-	(printout t "No match found!" crlf)
+  ?state <- (status (searching-state insearch) (found-instances)) ; break search when one good instance only
+  =>
+  (modify ?state (searching-state endsearch))
+  (printout t "No match found!" crlf))
+
+
+
+(defrule end-search-found-one (declare (salience 10))
+ ?state <- (status (searching-state insearch) (found-instances ?x))
+ =>
+ (modify ?state (searching-state endsearch))
+ (printout t "Only one match found!"  crlf)
+ (send (instance-name ?x) print)
 )
 
+ 
 ;5 because this rule should be fired after the search
 (defrule end-search-found (declare (salience 5))
-	?state <- (searching-state insearch)
-	(found-instances $?x)
-	=>
-	(retract ?state)
-	(assert (searching-state endsearch))
-	(printout t "Found result:" crlf)
-	(bind ?allfound $?x)
-	(while (> (length$ ?allfound) 0)
-		do
-		(send (instance-name (nth$ 1 ?allfound)) print)
-		(bind ?allfound (rest$ ?allfound))
-	)
-)
+  ?state <- (status (searching-state insearch) (found-instances $?x))
+  =>
+  (modify ?state (searching-state endsearch))
+  (printout t "Found result:" crlf)
+  (bind ?allfound $?x)
+  (while (> (length$ ?allfound) 0)
+    do
+    (send (instance-name (nth$ 1 ?allfound)) print)
+    (bind ?allfound (rest$ ?allfound))))
