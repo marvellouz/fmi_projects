@@ -125,10 +125,11 @@
  
 (defrule search-playedBy (declare (salience 9))
   ?status <- (status (searched-playedBy ?search&~nil) (found-instances $?allfound))
-  ?foundM <- (object (is-a Musician) (firstName ?search))
-  ?found <- (object (is-a Instrument) (playedBy $?playedBy))
+  ?foundM <- (object (is-a Instrument))
   (test (neq "" ?search))
-  (test (member ?foundM $?playedBy))
+  (or
+    (not (object (is-a Musician) (firstName ?search) ) )
+    (not (object (is-a Musician) (firstName ?search) (playsInstrument $? ?instancename $?)))) 
   =>
   (bind ?memberposition (member ?foundM (create$ $?allfound)))
   (if ?memberposition
@@ -139,14 +140,14 @@
 
 ;15 because this rule should interrupt the search
 (defrule end-search-fail (declare (salience 15))
-  ?state <- (status (searching-state insearch) (found-instances)) ; break search when one good instance only
+  ?state <- (status (searching-state insearch) (found-instances))
   =>
   (modify ?state (searching-state endsearch))
   (printout t "No match found!" crlf))
 
 
 
-(defrule end-search-found-one (declare (salience 10))
+(defrule end-search-one (declare (salience 8))
  ?state <- (status (searching-state insearch) (found-instances ?x))
  =>
  (modify ?state (searching-state endsearch))
