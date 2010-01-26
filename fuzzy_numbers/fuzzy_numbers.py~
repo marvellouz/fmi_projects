@@ -66,5 +66,4 @@ if(__name__=='__main__'):
   ax = fig.add_subplot(111)
   for n in [a,b, a+b]: #, a-b, a*b, a/b]:
     add_number(n,fig,ax)
-  print (a + b)
   pylab.show()
