@@ -85,7 +85,7 @@
 	(bind ?search (ask-open-question "Specify instrument name: "))
 	(modify ?status (searched-name ?search)))
 
-	
+
 (defrule search-name (declare (salience 10))
 	?status <- (status (searched-name ?search&~nil)(found-instances $?allfound))
 	?found <- (object (is-a Instrument) (name_ ?fname&~?search))
@@ -96,9 +96,8 @@
 	(if ?memberposition
 		then
 		(modify ?status (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
-		
 
-		
+
 (defrule specify-type (declare (salience 13))
 	?status <- (status (searching-state insearch) (searched-type nil))
 	=>
@@ -115,18 +114,19 @@
 		(modify ?status (found-instances (delete$ (create$ $?allfound) ?memberposition ?memberposition)))))
 
 
- 
+
 (defrule specify-playedBy (declare (salience 9))
   ?status <- (status (searching-state insearch) (searched-playedBy nil))
   =>
   (bind ?search (ask-open-question "Spacify musicians first name: "))
   (modify ?status (searched-playedBy ?search)))
 
- 
+
 (defrule search-playedBy (declare (salience 9))
   ?status <- (status (searched-playedBy ?search&~nil) (found-instances $?allfound))
   ?foundM <- (object (is-a Instrument))
   (test (neq "" ?search))
+  ;the following will not match  if there is no such musician or if the wanted instrument is not played by this musician
   (or
     (not (object (is-a Musician) (firstName ?search) ) )
     (not (object (is-a Musician) (firstName ?search) (playsInstrument $? ?instancename $?)))) 
@@ -146,7 +146,7 @@
   (printout t "No match found!" crlf))
 
 
-
+;8 because this rule shaould be fired after every search. it's salisnce is less than all search-* rules
 (defrule end-search-one (declare (salience 8))
  ?state <- (status (searching-state insearch) (found-instances ?x))
  =>
