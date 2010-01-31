@@ -1,49 +1,21 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <xsl:stylesheet xmlns:xsl = "http://www.w3.org/1999/XSL/Transform" version = "1.0">
-  <xsl:output method = "html" encoding = 'utf-8' indent = 'yes' />
+  <xsl:output method = "xml" encoding = 'utf-8' indent = 'yes' />
 
-  <xsl:template match = "/">
-    <html>
-      <head>
-        <Title>Филми</Title>
-      </head>
-
-      <body>
-
-        <h1>Филми</h1>
-        <table>
-          <tr>
-            <td><strong>Филм   </strong> </td>
-            <td><strong>Снимка </strong> </td>
-            <td><strong>Актьори</strong> </td>
-          </tr>
-
-          <xsl:apply-templates select="Body/Movies/Movie"/>
-        </table>
-
-      </body>
-
-    </html>
+  <xsl:template match="/">
+      <xsl:apply-templates select="Body/Movies/Movie"/>
   </xsl:template>
 
-  <xsl:template match = "Movie">
-    <tr>
-      <td>
-        <xsl:value-of select = "Title"/> <br/> <xsl:value-of select = "Year"/>
-      </td>
-      <td>
-        <img src = "{Picture}" alt = "Picture-{Title}"/><br/>
-      </td>
-      <td>
-        <ul> 
-          <xsl:for-each select = "id(@Actors)">
-            <li><strong>Име: <xsl:value-of select = "Name"/></strong></li>
-            <li><strong>Биография: </strong> <xsl:value-of select = "Biography"/></li>
-            <li><strong>Отличия:</strong> <xsl:value-of select = "Awards"/></li>
-          </xsl:for-each>
-        </ul>
-      </td>
-    </tr>  
+  <xsl:template match="Movie">
+    <movie>
+    <title><xsl:value-of select = "Title"/></title>
+    <year> <xsl:value-of select = "Year"/> </year>
+    <length><xsl:value-of select = "@Length"/></length>
 
-  </xsl:template>
-</xsl:stylesheet>
+        <xsl:for-each select = "id(@Actors)">
+          <actor> <xsl:value-of select = "Name"/></actor>
+        </xsl:for-each>
+      </movie>
+
+      </xsl:template>
+    </xsl:stylesheet>

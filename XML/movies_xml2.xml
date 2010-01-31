@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<movie>
+  <title>Taxi Driver</title>
+  <year>1976</year>
+  <length>185</length>
+  <directors>
+    <director>Martin Scorsese</director>
+  </directors>
+  <writers>
+    <writer>Paul Schrader</writer>
+  </writers>
+  <actor>Robert De Niro</actor>
+  <actor>Jodie Foster</actor>
+  <actor>Albert Brooks</actor>
+</movie><movie>
+  <title>Pulp Fiction</title>
+  <year>1994</year>
+  <length>184</length>
+  <directors>
+    <director>Quentin Tarantino</director>
+  </directors>
+  <writers>
+    <writer>Quentin Tarantino</writer>
+  </writers>
+  <actor>John Travolta</actor>
+  <actor>Samuel L. Jackson  </actor>
+  <actor>Uma Thurman</actor>
+</movie><movie>
+  <title>Be Cool</title>
+  <year>2005</year>
+  <length>199</length>
+  <directors>
+    <director>F. Gary Gray</director>
+  </directors>
+  <writers>
+    <writer>Elmore Leonard</writer>
+    <writer>Peter Steinfeld</writer>
+  </writers>
+  <actor>John Travolta</actor>
+  <actor>Uma Thurman</actor>
+  <actor>Vince Vaughn</actor>
+</movie>
