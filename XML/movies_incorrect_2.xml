@@ -1,0 +1,193 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<!DOCTYPE Body SYSTEM "movies.dtd">
+
+<Body>
+  <Movies>
+    <Movie MovieId = "sr" Length = "185" Color = "yes" Actors = "rdn jf ab">
+      <Title>Taxi Driver</Title>
+      <Year>1976</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTAzNzY1NzYzMzFeQTJeQWpwZ15BbWU3MDc3MjA0NTE@._V1._SX99_SY140_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Drama</Genre>
+        <Genre>Thriller</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>New York City</Keyword>
+        <Keyword>Taxi Driver</Keyword>
+        <Keyword>Date</Keyword>
+      </Keywords>
+      <Tagline>On every street in every city, there's a nobody who dreams of being a somebody. </Tagline>
+
+      <Plot>
+        A mentally unstable Vietnam war veteran works as nighttime taxi driver in a city whose perceived decadence and sleaze feeds his urge to violently lash out, attempting to save a teenage prostitute in the process.
+      </Plot>
+
+      <Directors>
+        <!--В <Director> има два пъти <Name>, а трябва да се среща само веднъж. Ако има повече от един режисьора, трябра да са в отделен таг <Director>. Освен това няма дефиниран атрибут Married в DTD файла. -->
+        <Director>
+          <Name Married = "Yes">Martin Scorsese</Name>
+          <Name>Paul Vega</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Paul Schrader</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "rdn">Travis Bickle</Character>
+        <Character Actor = "jf">Iris</Character>
+        <Character Actor = "ab">Tom</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "pf" Length = "184" Color = "yes" Actors = "jt sj ut">
+      <Title>Pulp Fiction</Title>
+      <Year>1994</Year>
+
+      <Picture>
+        http://www.imdb.com/rg/action-box-title/primary-photo/media/rm3216480512/tt0110912
+      </Picture>
+
+      <Genres>
+        <Genre>Crime</Genre>
+        <Genre>Thriller</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Boxer</Keyword>
+        <Keyword>Restaurant</Keyword>
+        <Keyword>Diner</Keyword>
+      </Keywords>
+      <Tagline>Girls like me don't make invitations like this to just anyone! </Tagline>
+
+      <Plot>
+        The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Quentin Tarantino</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Quentin Tarantino</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "jt">Vincent Vega</Character>
+        <Character Actor = "sj">Jules Winnfield</Character>
+        <Character Actor = "ut">Mia Wallace</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "bc" Length = "199" Color = "yes" Actors = "jt ut vv">
+      <Title>Be Cool</Title>
+      <Year>2005</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTQ4NTI2NTg1MF5BMl5BanBnXkFtZTcwMzkxOTgyMQ@@._V1._SX100_SY136_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Comedy</Genre>
+        <Genre>Crime</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Sequel</Keyword>
+        <Keyword>Music Business</Keyword>
+        <Keyword>Russian Mafia</Keyword>
+      </Keywords>
+      <Tagline> Everyone is looking for the next big hit </Tagline>
+
+      <Plot>
+        Disenchanted with the movie industry, Chili Palmer (John Travolta) tries the music industry, meeting and romancing a widow of a music exec (Uma Thurman) on the way.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>F. Gary Gray</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Elmore Leonard</Name>
+        </Writer>
+
+        <Writer>
+          <Name>Peter Steinfeld</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "jt">Chili Palmer</Character>
+        <Character Actor = "ut">Edie Athens</Character>
+        <Character Actor = "vv">Raji</Character>
+      </Characters>
+    </Movie>
+  </Movies>
+
+  <Actors>
+    <Actor ActorId = "rdn">
+      <Name>Robert De Niro</Name>
+      <Biography>Robert De Niro, who is thought of as one of the greatest actors of his time, was born in New York City in 1943 to two artists. He was trained at the Stella Adler Conservatory and the American Workshop. He first gained fame for his role in Bang the Drum Slowly (1973), but he gained his reputation as a volatile actor in Mean Streets (1973), which was his first film with director Martin Scorsese. In 1974 De Niro received an Academy Award for best supporting actor for his role in The Godfather: Part II (1974) and received Academy Award nomations for best actor in Taxi Driver (1976), The Deer Hunter (1978), and Cape Fear (1991). </Biography>
+      <Awards>Won 2 Oscars. Another 28 wins and 34 nominations </Awards>
+    </Actor>
+
+    <Actor ActorId = "jf">
+      <Name>Jodie Foster</Name>
+      <Biography>Alicia Christian Foster was born on November 19, 1962, in Los Angeles.</Biography>
+      <Awards>Won 2 Oscars. Another 36 wins and 20 nominations </Awards>
+    </Actor>
+
+    <Actor ActorId = "ab">
+      <Name>Albert Brooks</Name>
+      <Biography>Born in 22 July 1947, Beverly Hills, California, USA</Biography>
+      <Awards>Nominated for Oscar. Another 6 wins and 1 nomination </Awards>
+
+    </Actor>
+    <Actor ActorId = "jt">
+      <Name>John Travolta</Name>
+      <Biography>John Travolta first gained fame as the swaggering Vinnie Barbarino on the television series "Welcome Back, Kotter" (1975). In 1977, he parlayed his teeny-bopper fame into a big-screen career with the disco blockbuster Saturday Night Fever (1977). He languished in light dramas and television movies in the 1980s, but started a comeback in 1989 with Look Who's Talking (1989). </Biography>
+      <Awards>Nominated for 2 Oscars. Another 30 wins and 28 nominations</Awards>
+    </Actor>
+
+    <Actor ActorId = "sj">
+      <Name>Samuel L. Jackson  </Name>
+      <Biography>Samuel L. Jackson usually played bad guys and drug addicts before becoming an action hero, as the character Mitch Henessey, in The Long Kiss Goodnight (1996) and in Die Hard: With a Vengeance (1995). From character player to leading man. His performance in Pulp Fiction (1994) gave him an Oscar nomination for his character Jules Winnfield. </Biography>
+      <Awards>Nominated for Oscar. Another 17 wins and 34 nominations</Awards>
+    </Actor>
+    <Actor ActorId = "ut">
+      <Name>Uma Thurman</Name>
+      <Biography>Uma Karuna Thurman, daughter of Robert Thurman and Nena Thurman, was born in Boston, Massachusetts, on April 29, 1970. Uma grew up in Amherst, Massachusetts, where her father worked at Amherst College. She left boarding school at just 15, already determined to become an actress. She moved to New York to follow her dream.</Biography>
+      <Awards>Nominated for Oscar. Another 11 wins and 29 nominations</Awards>
+    </Actor>
+
+  <Actor ActorId = "vv">
+    <Name>Vince Vaughn</Name>
+    <Biography>Vincent Anthony Vaughn was born on March 28, 1970, in Minneapolis, Minnesota, USA and raised in Lake Forest, Illinois, USA.</Biography>
+    <Awards>5 wins and 8 nominations </Awards>
+  </Actor>
+
+</Actors>
+</Body>

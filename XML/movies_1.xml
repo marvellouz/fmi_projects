@@ -1,0 +1,208 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<!DOCTYPE Body SYSTEM "movies.dtd">
+
+<Body>
+  <Movies>
+    <Movie MovieId = "sr" Length = "195" Color = "yes" Actors = "tr mf ws">
+      <Title>Shawshank Redemption</Title>
+      <Year>1994</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTYzMzA2Nzc2Nl5BMl5BanBnXkFtZTcwMzQwMTgxMQ@@._V1._SX78_SY140_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Crime</Genre>
+        <Genre>Drama</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Prison</Keyword>
+        <Keyword>Murder</Keyword>
+        <Keyword>Shawshank</Keyword>
+        <Keyword>Friend</Keyword>
+        <Keyword>Banker</Keyword>
+      </Keywords>
+      <Tagline>Fear can hold you prisoner. Hope can set you free.</Tagline>
+
+      <Plot>
+        Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Frank Darabont</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Stephen King</Name>
+        </Writer>
+
+        <Writer>
+          <Name>Frank Darabont</Name>
+        </Writer>
+      </Writers>
+
+      <Characters>
+        <Character Actor = "tr">Andy Dufresne</Character>
+        <Character Actor = "mf">Ellis Boyd </Character>
+        <Character Actor = "ws">Warden Norton</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "ahx" Length = "184" Color = "yes" Actors = "en ef bd">
+      <Title>American History X</Title>
+      <Year>1998</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTkwNjE3OTU5MV5BMl5BanBnXkFtZTcwMTM1Nzg0MQ@@._V1._SX99_SY140_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Crime</Genre>
+        <Genre>Drama</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Prison</Keyword>
+        <Keyword>Murder</Keyword>
+        <Keyword>Skinhead</Keyword>
+      </Keywords>
+      <Tagline>His father taught him to hate. His friends taught him rage. His enemies gave him hope.</Tagline>
+
+      <Plot>
+        A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did. 
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Tony Kaye</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>David McKenna </Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "en">Derek Vinyard</Character>
+        <Character Actor = "ef">Danny Vinyard</Character>
+        <Character Actor = "bd">Doris Vinyard</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "dshlswlb" Length = "199" Color = "no" Actors = "ps gs sh">
+      <Title>Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb</Title>
+      <Year>1964</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTU2ODM2NTkxNF5BMl5BanBnXkFtZTcwOTMwMzU3Mg@@._V1._SX94_SY140_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Comedy</Genre>
+        <Genre>Thriller</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Doomsday</Keyword>
+        <Keyword>Bomber</Keyword>
+        <Keyword>General</Keyword>
+      </Keywords>
+      <Tagline>the hot-line suspense comedy</Tagline>
+
+      <Plot>
+        An insane general starts a process to nuclear holocaust that a war room of politicians and generals frantically try to stop.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Stanley Kubrick</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Stanley Kubrick</Name>
+        </Writer>
+
+        <Writer>
+          <Name>Terry Southern</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "ps">Group Captain Lionel Mandrake / President Merkin Muffley / Dr. Strangelove</Character>
+        <Character Actor = "gs">General 'Buck' Turgidson</Character>
+        <Character Actor = "sh">Brigadier General Jack Ripper</Character>
+      </Characters>
+    </Movie>
+  </Movies>
+
+  <Actors>
+    <Actor ActorId = "tr">
+      <Name>Tim Robbins</Name>
+      <Biography>Born in West Covina, California, but raised in New York City, Tim Robbins is the son of former The Highwaymen singer Gil Robbins and actress Mary Robbins. Robbins studied drama at UCLA, where he graduated with honors in 1981. That same year, he formed the Actors' Gang theater group, an experimental ensemble that expressed radical political observations through the European avant-garde form of theater. He started film work in TV movies in 1983, but hit the big time in 1988 with his portrayal of dim-witted fastball pitcher "Nuke" Laloosh in Bull Durham (1988). Tall with baby-faced looks, he has the ability to play naive and obtuse (Cadillac Man (1990) and The Hudsucker Proxy (1994)) or slick and shrewd (The Player (1992) and Bob Roberts (1992)).</Biography>
+      <Awards>Won Oscar. Another 29 wins and 16 nominations</Awards>
+    </Actor>
+
+    <Actor ActorId = "mf">
+      <Name>Morgan Freeman</Name>
+      <Biography>With an authoritative voice and calm demeanour, this ever popular African American actor has grown into one of the most respected figures in modern US cinema. Born in June 1937 in Memphis, Tennessee, the young Freeman attended Los Angeles Community College before serving several years in the US Air Force as a mechanic between 1955 and 1959. His first dramatic arts exposure was on the stage and he appeared in an off-Broadway production of "The Nigger Lovers" and also in an all-African American production of the exuberant musical Hello, Dolly! (1969).</Biography>
+      <Awards>Won Oscar. Another 29 wins</Awards>
+    </Actor>
+
+    <Actor ActorId = "ws">
+      <Name>William Sadler</Name>
+      <Biography>William Sadler began his acting career in New York theatres, appearing in more than 75 productions in just 12 years. His final role was as Sgt. Toomey in the Tony winning show "Biloxi Blues". He is best remembered for his roles in Die Hard 2 (1990) and The Shawshank Redemption (1994). He is also a television star, appearing in such sitcoms as "Roseanne" (1988) and "Murphy Brown" (1988) and such movies-of-the weeks as Charlie and the Great Balloon Chase (1981) (TV). Sadler is currently starring on the WB's weekly dramatic series "Roswell" (1999), in the role of Sheriff Jim Valenti.</Biography>
+      <Awards> 1 win</Awards>
+
+    </Actor>
+    <Actor ActorId = "en">
+      <Name>Edward Norton</Name>
+      <Biography>Edward Norton was born on August 18, 1969 to parents Edward, an attorney who works for the National Trust for Historic Preservation and Robin Norton, a former foundation executive and teacher who passed away of brain cancer on March 6, 1997. Edward also has two younger siblings named James and Molly. From the age of 5 onward, the Yale graduate (majoring in history) has always been interested in acting. At the age of 8, he would ask his drama teacher what his motivation in a scene was. He attended theater schools throughout his life, and eventually managed to find work on stage in New York as a member of the Signature players, who produced the works of playwright and director Edward Albee. Around the time when he was appearing in Albee's Fragments, in Hollywood, they were looking for a young actor to star opposite Richard Gere in a new courtroom thriller, Primal Fear (1996). The role was offered to Leonardo DiCaprio but he turned it down. Gere was on the verge of walking away from the project, fed up with the wait for a young star to be found, when Edward auditioned and won the role over 2000 other hopefuls. Before the film was even released, his test screenings for the part were causing a Hollywood sensation, and he was soon offered roles in Woody Allen's Everyone Says I Love You (1996) and The People vs. Larry Flynt (1996). Edward won the Golden Globe for Best Actor in a Supporting Role and received an Oscar nomination for Best Supporting Actor for his performance in Primal Fear (1996). In 1998, Norton gained 30 pounds of muscle and transformed his look into that of a monstrous skinhead for his role as a violent white supremacist in American History X (1998). This performance would earn him his second Oscar nomination, this time for Best Actor. In 1999 came the critically acclaimed Fight Club (1999) and in 2000 came his directorial debut in Keeping the Faith (2000).</Biography>
+      <Awards>Nominated for 2 Oscars. Another 15 wins and 15 nominations</Awards>
+    </Actor>
+
+    <Actor ActorId = "ef">
+      <Name>Edward Furlong</Name>
+      <Biography>Born in Glendale, California, Edward Furlong had no acting ambitions until he was approached by casting agent Mali Finn, who was looking for a young actor to play the role of John Conner in what turned out to be one of the the biggest box-office hits of the 1990s, Terminator 2: Judgment Day (1991). Finn instantly recognized his ability, and suggested him for the part, feeling that he could hold his own playing opposite Arnold Schwarzenegger and Linda Hamilton.
+      </Biography>
+      <Awards>3 wins and 4 nominations</Awards>
+    </Actor>
+    <Actor ActorId = "bd">
+      <Name>Beverly D'Angelo</Name>
+      <Biography>Intriguing, inspiring, and never less than interesting -- key adjectives in describing the career of Beverly D'Angelo, which has well passed the three-decade mark. Perhaps deserving better movies than she generally found herself in, she nevertheless was always an object of fascination and the one to watch...whatever the role. Hardly the shrinking violet type, Hollywood counted on her for her colorful personality, down-to-earth demeanor and scene-stealing capabilities.</Biography>
+      <Awards>Nominated for Golden Globe. Another 3 nominations</Awards>
+    </Actor>
+
+  <Actor ActorId = "ps">
+    <Name>Peter Sellers</Name>
+    <Biography>Often credited as the greatest comedian of all time, Peter Sellers was born to a well-off English acting family in 1925. His mother and father worked in an acting company run by his grandmother. As a child, Sellers was spoiled, as his parents' first child had died at birth. He enlisted in the Royal Air Force and served during World War II. After the war he met Spike Milligan, Harry Secombe and Michael Bentine, who would become his future workmates. After the war he set up a review in London, which was a combination of music (he played the drums) and impressions. Then, all of a sudden, he burst into prominence as the voices of numerous favorites on "The Goon Show" (1951-1960), making his debut in films in Penny Points to Paradise (1951) and Down Among the Z Men (1952), before making it big as one of the criminals in The Ladykillers (1955). These small but showy roles continued throughout the 1950s, but he got his first big break playing the dogmatic union man, Fred Kite, in I'm All Right Jack (1959). The film's success led to starring vehicles into the 1960s that showed off his extreme comic ability to its fullest, but after the relative failure of What's New Pussycat (1965), which was Woody Allen's first film, Sellers embarked on a rapid downfall to "Grade Z" movies in the 1970s, all of which he claimed to have made only because he needed the money. In 1972 he read the book "Being There" and decided to make it into a film. It took him seven years to finally bring it to the screen, but it earned him a Best Actor Oscar nomination (he lost to Dustin Hoffman's portrayal of "Superdad" in Kramer vs. Kramer (1979)). Being There (1979) proved to be somewhat of a last hurray for Sellers, as he died the following year. His last movie, The Fiendish Plot of Dr. Fu Manchu (1980), completed just before his death, proved to be another flop. Director Blake Edwards' attempt at reviving the Pink Panther series after Sellers' death resulted in two panned 1980s comedies, the first of which, Trail of the Pink Panther (1982), deals with Inspector Clouseau's disappearance and was made from material cut from previous Pink Panther films and includes interviews with the original casts playing their original characters.</Biography>
+    <Awards>Nominated for 3 Oscars. Another 9 wins and 13 nominations</Awards>
+  </Actor>
+
+  <Actor ActorId = "gs">
+    <Name>George C. Scott</Name>
+    <Biography>George C. Scott was an immensely talented actor, a star of screen, stage and television who was born in Virginia in 1927. At the age of eight his mother died and his father, an executive at Buick, raised him. In 1945 he joined the Marines and spent four years with them, no doubt an inspiration for portraying Gen. 'George S. Patton' years later. When Scott left the Marines he enrolled in journalism classes at the University of Missouri, but it was while performing in a play there that the acting bug bit him. He has said it "clicked, just like tumblers in a safe."</Biography>
+    <Awards>Won Oscar. Another 12 wins and 19 nominations</Awards>
+  </Actor>
+  <Actor ActorId = "sh">
+    <Name>Sterling Hayden</Name>
+    <Biography>Born to George and Frances Simonson Walter, and named Sterling Relyea Walter. Father died in 1925. Adopted by stepfather 'James Hayden' renamed Sterling Walter Hayden. Grew up in New Hampshire, Massachusetts, Pennsylvania, Washington D.C., and Maine. Though very poor, attended prep school at Wassookeag School in Dexter, Maine. Ran away to sea at 17, first as ship's boy, then as doryman on the Grand Banks, as a seaman and fireman on numerous vessels before getting his first command at 19. He sailed around the world a number of times, becoming a well-known and highly respected ship's captain.</Biography>
+    <Awards>Nominated for BAFTA Film Award.</Awards>
+  </Actor>
+</Actors>
+</Body>

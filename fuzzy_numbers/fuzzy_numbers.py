@@ -20,7 +20,7 @@ class FuzzyNumber:
   def __sub__(self, other):
     a = self.left - other.left
     b = self.peak - other.peak
-    c = self.peak - other.peak
+    c = self.right - other.right
     return FuzzyNumber(a, b, c)
 
   def __mul__(self, other):
@@ -44,8 +44,10 @@ class FuzzyNumber:
 
   __repr__ = __str__
 
-a = FuzzyNumber(1,3,9)
+a = FuzzyNumber(1,3,5)
 b = FuzzyNumber(4,6,8)
+c = FuzzyNumber(2,5,7)
+d = FuzzyNumber(12,15,17)
 
 #plotting
 
@@ -64,7 +66,7 @@ def add_number(r, fig, ax):
 if(__name__=='__main__'):
   fig = pylab.figure()
   ax = fig.add_subplot(111)
-  for n in [a,b, a+b]: #, a-b, a*b, a/b]:
+  for n in [a,b,c,d,a*b-c-a+d]: #, a-b, a*b, a/b]:
     add_number(n,fig,ax)
-  print (a + b)
+  print (a * b - c - a + d)
   pylab.show()

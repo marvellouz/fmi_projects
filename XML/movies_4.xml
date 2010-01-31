@@ -1,0 +1,187 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<!DOCTYPE Body SYSTEM "movies.dtd">
+
+<Body>
+  <Movies>
+    <Movie MovieId = "l" Length = "90" Color = "no" Actors = "cc vc fl">
+      <Title>Limelight</Title>
+      <Year>1952</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTU2MTk0MzE3MV5BMl5BanBnXkFtZTcwMDc1MTAwMQ@@._V1._SX100_SY133_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Comedy</Genre>
+        <Genre>Drama</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Ballet</Keyword>
+        <Keyword>Ballet Dancer</Keyword>
+        <Keyword>Hope</Keyword>
+      </Keywords>
+      <Tagline>A story of a ballerina and a clown</Tagline>
+
+      <Plot>
+        A fading comedian and a suicidally despondent ballet dancer must look to each other to find meaning and hope in their lives.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Charles Chaplin</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Charles Chaplin</Name>
+        </Writer>
+      </Writers>
+
+      <Characters>
+        <Character Actor = "cc">Calvero</Character>
+        <Character Actor = "vc">Terry, a Dancer</Character>
+        <Character Actor = "fl">Neville</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "tk" Length = "84" Color = "no" Actors = "cc pg hb">
+      <Title>The Kid</Title>
+      <Year>1921</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTI3OTgxMDI3Nl5BMl5BanBnXkFtZTcwMzUwMjUyMQ@@._V1._SX100_SY115_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Comedy</Genre>
+        <Genre>Drama</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Orphan</Keyword>
+        <Keyword>Broken Window</Keyword>
+        <Keyword>Angel</Keyword>
+      </Keywords>
+      <Tagline>This is the great film he has been working on for a whole year </Tagline>
+
+      <Plot>
+        The Tramp cares for an abandoned child, but events put that relationship in jeopardy.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Charles Chaplin</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Charles Chaplin</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "cc">A Tramp</Character>
+        <Character Actor = "pg">The Woman</Character>
+        <Character Actor = "hb">The Kid</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "mv" Length = "89" Color = "no" Actors = "cc jo rg">
+      <Title>Monsieur Verdoux</Title>
+      <Year>1947</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMjE5ODU3MDk4N15BMl5BanBnXkFtZTcwNTAxMjUyMQ@@._V1._SX100_SY117_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Comedy</Genre>
+        <Genre>Drama</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Marriage</Keyword>
+        <Keyword>Socialite</Keyword>
+        <Keyword>Music Score Composed By Director</Keyword>
+      </Keywords>
+      <Tagline> Chaplin's Bluebeard comedy is a killer! </Tagline>
+
+      <Plot>
+        A suave but cynical man supports his family by marrying and murdering rich women for their money, but the job has some occupational hazards.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Charles Chaplin</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Charles Chaplin</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "cc">Henri Verdoux</Character>
+        <Character Actor = "jo">Peter Verdoux</Character>
+        <Character Actor = "rg">Maurice Bottello</Character>
+      </Characters>
+    </Movie>
+  </Movies>
+
+  <Actors>
+    <Actor ActorId = "cc">
+      <Name>Charles Chaplin</Name>
+      <Biography>His first movie was Making a Living (1914); however, his next film, Kid Auto Races at Venice (1914), was destined to change his entire career. This picture saw him wearing baggy pants borrowed from 'Roscoe 'Fatty' Arbuckle', size 14 shoes belonging to Ford Sterling (and worn upside down to keep them from falling off), a tiny jacket from Keystone Kop Charles Avery, a bowler hat belonging to Arbuckle's father-in-law and Mack Swain's mustache trimmed down to toothbrush size.</Biography>
+      <Awards>Won Oscar. Another 17 wins and 3 nominations</Awards>
+    </Actor>
+
+    <Actor ActorId = "vc">
+      <Name>Virginia Cherrill</Name>
+      <Biography>Actress in US and UK films of the early 1930s. Born on a farm, Cherrill.</Biography>
+      <Awards>1 win</Awards>
+    </Actor>
+
+    <Actor ActorId = "fl">
+      <Name>Florence Lee</Name>
+      <Biography>Borb on 1 September 1962, Hollywood, California, USA.</Biography>
+      <Awards>No awards</Awards>
+
+    </Actor>
+    <Actor ActorId = "pg">
+      <Name>Paulette Goddard</Name>
+      <Biography>Pauline Marion Goddard Levy was born in Whitestone Landing, New York</Biography>
+      <Awards>Nominated for Oscar. Another 1 win</Awards>
+    </Actor>
+
+    <Actor ActorId = "hb">
+      <Name>Henry Bergman</Name>
+      <Biography>Comic actor from silents who later assisted Chaplin in directing.</Biography>
+      <Awards>No awards</Awards>
+    </Actor>
+    <Actor ActorId = "jo">
+      <Name>Jack Oakie</Name>
+      <Biography>Born in 23 January 1978, Los Angeles, California, USA</Biography>
+      <Awards>Nominated for Oscar. Another 1 win</Awards>
+    </Actor>
+
+  <Actor ActorId = "rg">
+    <Name>Reginald Gardiner</Name>
+    <Biography>Born in 7 July 1980, Westwood, California, USA</Biography>
+    <Awards>No awards</Awards>
+  </Actor>
+
+</Actors>
+</Body>

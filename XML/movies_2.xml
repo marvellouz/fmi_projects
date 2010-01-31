@@ -1,0 +1,188 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<!DOCTYPE Body SYSTEM "movies.dtd">
+
+<Body>
+  <Movies>
+    <Movie MovieId = "cl" Length = "195" Color = "no" Actors = "cc vc fl">
+      <Title>City Lights</Title>
+      <Year>1931</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTk3Nzg1MTcxN15BMl5BanBnXkFtZTcwNjg5MDU5Mg@@._V1._SX100_SY134_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Comedy</Genre>
+        <Genre>Drama</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Tramp</Keyword>
+        <Keyword>Operation</Keyword>
+        <Keyword>Little Tramp</Keyword>
+      </Keywords>
+      <Tagline>The Tramp struggles to help a blind flower girl he has fallen in love with.</Tagline>
+
+      <Plot>
+        A tramp falls in love with a beautiful blind girl. Her family is in financial trouble. The tramp's on-and-off friendship with a wealthy man allows him to be the girl's benefactor and suitor.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Charles Chaplin</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Charles Chaplin</Name>
+        </Writer>
+      </Writers>
+
+      <Characters>
+        <Character Actor = "cc">A Tramp</Character>
+        <Character Actor = "vc">A Blind Girl</Character>
+        <Character Actor = "fl">The Blind Girl's Grandmother</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "mt" Length = "184" Color = "no" Actors = "cc pg hb">
+      <Title>Modern Times</Title>
+      <Year>1936</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMjE0NDM4NDcyOF5BMl5BanBnXkFtZTcwNjc1MTAwMQ@@._V1._SX100_SY134_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Comedy</Genre>
+        <Genre>Drama</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Machine</Keyword>
+        <Keyword>Invention</Keyword>
+        <Keyword>Tramp</Keyword>
+      </Keywords>
+      <Tagline>He stands alone as the greatest entertainer of modern times! No one on earth can make you laugh as heartily or touch your heart as deeply...the whole world laughs, cries and thrills to his priceless genius!</Tagline>
+
+      <Plot>
+        Chaplins last 'silent' film, filled with sound effects, was made when everyone else was making talkies. Charlie turns against modern society, the machine age, (The use of sound in films ?) and progress. Firstly we see him frantically trying to keep up with a production line, tightening bolts. He is selected for an experiment with an automatic feeding machine, but various mishaps leads his boss to believe he has gone mad, and Charlie is sent to a mental hospital... When he gets out, he is mistaken for a communist while waving a red flag, sent to jail, foils a jailbreak, and is let out again. We follow Charlie through many more escapades before the film is out.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Charles Chaplin</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Charles Chaplin</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "cc">A Factory Worker</Character>
+        <Character Actor = "pg">A Gamin</Character>
+        <Character Actor = "hb">Cafe Proprietor</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "tgd" Length = "199" Color = "no" Actors = "cc jo rg">
+      <Title>The Great Dictator</Title>
+      <Year>1940</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMjE1OTI0MDU0N15BMl5BanBnXkFtZTcwMTc1MTAwMQ@@._V1._SX100_SY133_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Comedy</Genre>
+        <Genre>Drama</Genre>
+        <Genre>War</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Barber</Keyword>
+        <Keyword>Dictator</Keyword>
+        <Keyword>Soldier</Keyword>
+      </Keywords>
+      <Tagline>The Comedy Masterpiece!</Tagline>
+
+      <Plot>
+        In Chaplin's satire on Nazi Germany, dictator Adenoid Hynkel has a double... a poor Jewish barber... who one day is mistaken for Hynkel.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Charles Chaplin</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Charles Chaplin</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "cc">Hynkel - Dictator of Tomania / A Jewish Barber</Character>
+        <Character Actor = "jo">Napaloni - Dictator of Bacteria</Character>
+        <Character Actor = "rg">Schultz</Character>
+      </Characters>
+    </Movie>
+  </Movies>
+
+  <Actors>
+    <Actor ActorId = "cc">
+      <Name>Charles Chaplin</Name>
+      <Biography>His first movie was Making a Living (1914); however, his next film, Kid Auto Races at Venice (1914), was destined to change his entire career. This picture saw him wearing baggy pants borrowed from 'Roscoe 'Fatty' Arbuckle', size 14 shoes belonging to Ford Sterling (and worn upside down to keep them from falling off), a tiny jacket from Keystone Kop Charles Avery, a bowler hat belonging to Arbuckle's father-in-law and Mack Swain's mustache trimmed down to toothbrush size.</Biography>
+      <Awards>Won Oscar. Another 17 wins and 3 nominations</Awards>
+    </Actor>
+
+    <Actor ActorId = "vc">
+      <Name>Virginia Cherrill</Name>
+      <Biography>Actress in US and UK films of the early 1930s. Born on a farm, Cherrill.</Biography>
+      <Awards>1 win</Awards>
+    </Actor>
+
+    <Actor ActorId = "fl">
+      <Name>Florence Lee</Name>
+      <Biography>Borb on 1 September 1962, Hollywood, California, USA.</Biography>
+      <Awards>No awards</Awards>
+
+    </Actor>
+    <Actor ActorId = "pg">
+      <Name>Paulette Goddard</Name>
+      <Biography>Pauline Marion Goddard Levy was born in Whitestone Landing, New York</Biography>
+      <Awards>Nominated for Oscar. Another 1 win</Awards>
+    </Actor>
+
+    <Actor ActorId = "hb">
+      <Name>Henry Bergman</Name>
+      <Biography>Comic actor from silents who later assisted Chaplin in directing.</Biography>
+      <Awards>No awards</Awards>
+    </Actor>
+    <Actor ActorId = "jo">
+      <Name>Jack Oakie</Name>
+      <Biography>Born in 23 January 1978, Los Angeles, California, USA</Biography>
+      <Awards>Nominated for Oscar. Another 1 win</Awards>
+    </Actor>
+
+  <Actor ActorId = "rg">
+    <Name>Reginald Gardiner</Name>
+    <Biography>Born in 7 July 1980, Westwood, California, USA</Biography>
+    <Awards>No awards</Awards>
+  </Actor>
+
+</Actors>
+</Body>

@@ -1,0 +1,211 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<!DOCTYPE Body SYSTEM "movies.dtd">
+
+<Body>
+  <Movies>
+    <Movie MovieId = "sl" Length = "195" Color = "yes" Actors = "ln bk rf">
+      <Title>Schindler's List</Title>
+      <Year>1993</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTIxOTAxNTc4NF5BMl5BanBnXkFtZTcwOTg1NzQyMQ@@._V1._SX97_SY140_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Biography</Genre>
+        <Genre>Drama</Genre>
+        <Genre>History</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Factory</Keyword>
+        <Keyword>Businessman</Keyword>
+        <Keyword>Death</Keyword>
+        <Keyword>Jewish</Keyword>
+        <Keyword>Holocaust </Keyword>
+      </Keywords>
+      <Tagline>Whoever saves one life, saves the world entire.</Tagline>
+
+      <Plot>
+        Oskar Schindler uses Jews to start a factory in Poland during the war. He witnesses the horrors endured by the Jews, and starts to save them.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Steven Spielberg</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Thomas Keneally</Name>
+        </Writer>
+
+        <Writer>
+          <Name>Steven Zaillian</Name>
+        </Writer>
+      </Writers>
+
+      <Characters>
+        <Character Actor = "ln">Oskar Schindler</Character>
+        <Character Actor = "bk">Itzhak Stern</Character>
+        <Character Actor = "rf">Amon Goeth</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "segisdo" Length = "184" Color = "yes" Actors = "mm cl ap">
+      <Title>Svetat e golyam i spasenie debne otvsyakade</Title>
+      <Year>2008</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTk5ODQwNzE2OF5BMl5BanBnXkFtZTcwMzE0NjUxMw@@._V1._SX99_SY140_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Drama</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Dice</Keyword>
+        <Keyword>Amnesia</Keyword>
+        <Keyword>Car Accident</Keyword>
+      </Keywords>
+      <Tagline>Journey in search of his real self</Tagline>
+
+      <Plot>
+        The story of Alex, who, with the help of his charismatic grandfather, Bai Dan, embarks on a journey in search of his real self.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Stephan Komandarev</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Yurii Dachev</Name>
+        </Writer>
+
+        <Writer>
+          <Name>Stephan Komandarev</Name>
+        </Writer>
+      </Writers>
+
+      <Characters>
+        <Character Actor = "mm">Bai Dan</Character>
+        <Character Actor = "cl">Aleksander 'Sashko' Georgiev</Character>
+        <Character Actor = "ap">Yana Georgieva</Character>
+      </Characters>
+    </Movie>
+
+    <Movie MovieId = "up" Length = "199" Color = "yes" Actors = "ea cp bp">
+      <Title>Up</Title>
+      <Year>2009</Year>
+
+      <Picture>
+        http://ia.media-imdb.com/images/M/MV5BMTMwODg0NDY1Nl5BMl5BanBnXkFtZTcwMjkwNTgyMg@@._V1._SX94_SY140_.jpg
+      </Picture>
+
+      <Genres>
+        <Genre>Animation</Genre>
+        <Genre>Adventure</Genre>
+        <Genre>Comedy</Genre>
+      </Genres>
+
+      <Keywords>
+        <Keyword>Balloon</Keyword>
+        <Keyword>Stowaway</Keyword>
+        <Keyword>Dog</Keyword>
+      </Keywords>
+      <Tagline>Pixar's second most commercially successful film, after Finding Nemo.</Tagline>
+
+      <Plot>
+        By tying thousands of balloon to his home, 78-year-old Carl Fredricksen sets out to fulfill his lifelong dream to see the wilds of South America. Right after lifting off, however, he learns he isn't alone on his journey, since Russell, a wilderness explorer 70 years his junior, has inadvertently become a stowaway on the trip.
+      </Plot>
+
+      <Directors>
+
+        <Director>
+          <Name>Pete Docter</Name>
+        </Director>
+      </Directors>
+
+      <Writers>
+
+        <Writer>
+          <Name>Pete Docter</Name>
+        </Writer>
+
+        <Writer>
+          <Name>Bob Peterson</Name>
+        </Writer>
+
+      </Writers>
+
+      <Characters>
+        <Character Actor = "ea">Carl Fredricksen</Character>
+        <Character Actor = "cp">Charles Muntz</Character>
+        <Character Actor = "bp">Dug / Alpha</Character>
+      </Characters>
+    </Movie>
+  </Movies>
+
+  <Actors>
+    <Actor ActorId = "ln">
+      <Name>Liam Neeson</Name>
+      <Biography>Born in Northern Ireland, UK, Neeson worked as a forklift operator for Guinness... </Biography>
+      <Awards>Nominated for Oscar. Another 8 wins and 15 nominations</Awards>
+    </Actor>
+
+    <Actor ActorId = "bk">
+      <Name>Ben Kingsley</Name>
+      <Biography>31 December 1943, Scarborough, Yorkshire, England, UK</Biography>
+      <Awards>Won Oscar. Another 29 wins and 36 nominations</Awards>
+    </Actor>
+
+    <Actor ActorId = "rf">
+      <Name>Ralph Fiennes</Name>
+      <Biography>Eldest of 6 children born to photographer Mark Fiennes and his wife, Jini - aka Jennifer Lash - a novelist.</Biography>
+      <Awards>Nominated for 2 Oscars. Another 13 wins and 30 nominations</Awards>
+
+    </Actor>
+    <Actor ActorId = "mm">
+      <Name>Miki Manojlovic</Name>
+      <Biography>5 April 1950, Belgrade, Yugoslavia</Biography>
+      <Awards>1 nomination</Awards>
+    </Actor>
+
+    <Actor ActorId = "cl">
+      <Name>Carlo Ljubek</Name>
+      <Biography>21 May 1976, Bocholt, Germany</Biography>
+      <Awards>No awards</Awards>
+    </Actor>
+    <Actor ActorId = "ap">
+      <Name>Ana Papadopulu</Name>
+      <Biography>Born in 31 december 1978 Sofia.</Biography>
+      <Awards>No awards</Awards>
+    </Actor>
+
+  <Actor ActorId = "ea">
+    <Name>Edward Asner</Name>
+    <Biography>Born in 15 November 1929, Kansas City, Kansas, USA</Biography>
+    <Awards>Won 5 Golden Globes. Another 13 wins and 20 nominations</Awards>
+  </Actor>
+
+  <Actor ActorId = "cp">
+    <Name>Christopher Plummer</Name>
+    <Biography>Christopher Plummer is arguably the finest actor of the post-World War II period never to be nominated for an Academy Award, following in the footsteps of John Barrymore, for whose portrayal on Broadway he won a Tony Award. Aside from Barrymore, Plummer is the premier Shakespearean actor to come out of North America in the 20th century. He has also given many fine portrayals on film, particularly as he got older and settled down into a comfortable marriage with his third wife. Though he likely always be remembered as "Baron Von Trapp" in the atomic bomb-strength blockbuster The Sound of Music (1965) (a film he continues to despise), his later film work includes such outstanding performances as the best cinema Sherlock Holmes--other than Basil Rathbone -- in Murder by Decree (1979), the chilling villain in The Silent Partner (1978), his iconoclastic Mike Wallace in The Insider (1999) and the empathetic psychiatrist in A Beautiful Mind (2001). </Biography>
+    <Awards>Nominated for 2 Golden Globes. Another 11 wins and 21 nominations </Awards>
+  </Actor>
+  <Actor ActorId = "bp">
+    <Name>Bob Peterson</Name>
+    <Biography>Bob Peterson was born in Wooster, Ohio, USA, in 1961. He studied mechanical engineering at Ohio Northern University, where he took computer graphics courses and graduated in 1983. He continued his studies in mechanical engineering at Purdue University where he earned a master's degree in 1986. While a student, he wrote and drew a cartoon strip called "Loco Motive." Before joining Pixar in 1994, he worked at Wavefront Technologies, Inc. and Rez-n-8 Productions.</Biography>
+    <Awards>Nominated for Oscar. Another 2 wins and 13 nominations</Awards>
+  </Actor>
+</Actors>
+</Body>

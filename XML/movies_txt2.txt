@@ -1,0 +1,22 @@
+
+      филм:  Taxi Driver
+      година: 1976 
+      продължителност: 185 минути
+      актьори: Robert De Niro,Jodie Foster,Albert Brooks;  
+
+
+    
+      филм:  Pulp Fiction
+      година: 1994 
+      продължителност: 184 минути
+      актьори: John Travolta,Samuel L. Jackson  ,Uma Thurman;  
+
+
+    
+      филм:  Be Cool
+      година: 2005 
+      продължителност: 199 минути
+      актьори: John Travolta,Uma Thurman,Vince Vaughn;  
+
+
+    
