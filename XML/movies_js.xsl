@@ -3,17 +3,18 @@
   <xsl:output method = "text" encoding = "utf-8" indent = "yes" />
   <xsl:strip-space elements="*"/>
   <xsl:template match = "/">
+    function append(root, t, content) {
+      x=doc.createElement(t);
+      x.appendChild(doc.createTextNode(content));
+      root.appendChild(x);
+      return x;
+    }
+
     var doc=new ActiveXObject("MSXML.DOMDocument");
     var rootElem=doc.createElement("Body");
-    doc.appendChild(rootElem);
-    function append(root, t, content) {
-      e=doc.createElement(t);
-      e.appendChild(doc.createTextNode(content);
-      movie.appendChild(e);
-      return e;
-    }
     <xsl:apply-templates select="Body/Movies"/> 
     <xsl:apply-templates select="Body/Actors"/> 
+    doc.appendChild(rootElem);
     doc.save("movies_dom_5.xml");
 
   </xsl:template>
@@ -22,14 +23,15 @@
       var actors=doc.createElement("Actors");
       var actor;
       <xsl:apply-templates select = "Actor"/>
-      rootElem.appendChild(actor);
+      rootElem.appendChild(actors);
   </xsl:template>
 
   <xsl:template match = "Actor">
     actor=doc.createElement("Actor");
-    append(movie, "Name", "<xsl:value-of select="Name"/>");
-    append(movie, "Biography", "<xsl:value-of select="Title"/>");
-    append(movie, "Awards", "<xsl:value-of select="Title"/>");
+    actor.setAttribute("ActorId", "<xsl:value-of select="@ActorId"/>");
+    append(actor, "Name", "<xsl:value-of select="Name"/>");
+    append(actor, "Biography", "<xsl:value-of select="normalize-space(translate(Biography,'&#34;',&quot;'&quot;))"/>");
+    append(actor, "Awards", "<xsl:value-of select="Awards"/>");
     actors.appendChild(actor);
   </xsl:template>
 
@@ -44,10 +46,14 @@
 
   <xsl:template match = "Movie">
     movie=doc.createElement("Movie");
+    movie.setAttribute("MovieId", "<xsl:value-of select="@MovieId"/>");
+    movie.setAttribute("Length", "<xsl:value-of select="@Length"/>");
+    movie.setAttribute("Color", "<xsl:value-of select="@Color"/>");
+    movie.setAttribute("Actors", "<xsl:value-of select="@Actors"/>");
 
     append(movie, "Title", "<xsl:value-of select="Title"/>");
     append(movie, "Year", "<xsl:value-of select="Year"/>");
-    append(movie, "Picture", "<xsl:value-of select="Picture"/>");
+    append(movie, "Picture", "<xsl:value-of select="normalize-space(Picture)"/>");
 
     e=doc.createElement("Genres");
     <xsl:for-each select="Genres/Genre">append(e, "Genre", "<xsl:value-of select="."/>");</xsl:for-each>
@@ -58,7 +64,7 @@
     movie.appendChild(e);
 
     append(movie, "Tagline", "<xsl:value-of select="Tagline"/>");
-    append(movie, "Plot", "<xsl:value-of select="Plot"/>");
+    append(movie, "Plot", "<xsl:value-of select="normalize-space(Plot)"/>");
 
     e=doc.createElement("Directors");
     <xsl:for-each select="Directors/Director">
@@ -83,6 +89,8 @@
       e.appendChild(nested);
     </xsl:for-each>
     movie.appendChild(e);
+
+    movies.appendChild(movie);
   </xsl:template>
 
 </xsl:stylesheet>
