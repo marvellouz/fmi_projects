@@ -44,19 +44,19 @@ namespace vss {
     fringe.push_back(std::make_pair(heuristicsFn(g, from), Path(1, from)));
     while(!fringe.empty()){
       std::sort(fringe.begin(), fringe.end(), comparePaths);
-      
+      std::set<std::string> visited; 
       if (fringe.size() > beamSize) fringe.resize(beamSize);
 
       PathWithCost& curr_front = fringe.front();
       Path& path = curr_front.second;
       if (curr_front.second.back() == to) return curr_front;
-      
+      visited.insert(curr_front.second.back());
 
       typename Graph<Data>::SuccessorList successors = g.getSuccessors(curr_front.second.back());
       for (typename Graph<Data>::SuccessorList::const_iterator successor = successors.begin();
           successor != successors.end();
           ++successor){
-        if (std::find(path.begin(), path.end(), successor->second) == path.end()){
+        if (std::find(path.begin(), path.end(), successor->second) == path.end() && visited.find(successor->second) == visited.end()){
           PathWithCost newPath(curr_front);
           newPath.second.push_back(successor->second);
           newPath.first = heuristicsFn(g, successor->second);

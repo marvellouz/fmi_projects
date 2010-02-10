@@ -35,14 +35,15 @@ namespace vss {
       while(!fringe.empty()){
 
         Path& curr_front = fringe.front();
+        std::set<std::string> visited;
         if (curr_front.back() == to) return curr_front;
-
+        visited.insert(curr_front.back());
 
         typename Graph<Data>::SuccessorList successors = g.getSuccessors(curr_front.back());
         for (typename Graph<Data>::SuccessorList::const_iterator successor = successors.begin();
             successor != successors.end();
             ++successor){
-          if (std::find(curr_front.begin(), curr_front.end(), successor->second) == curr_front.end()){
+          if (std::find(curr_front.begin(), curr_front.end(), successor->second) == curr_front.end() && visited.find(successor->second) == visited.end()){
             Path newPath(curr_front);
             newPath.push_back(successor->second);
             fringe.push_back(newPath);
