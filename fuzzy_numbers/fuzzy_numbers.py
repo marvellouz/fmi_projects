@@ -111,7 +111,6 @@ if(__name__=='__main__'):
 
   fig = pylab.figure()
   ax = fig.add_subplot(111)
-  ax.plot(x, y)
-  for n in [a,b,a/b]: #, a-b, a*b, a/b]:
+  for n in [a,b,a*b]: #, a-b, a*b, a/b]:
     add_number(n,fig,ax)
   pylab.show()
