@@ -1,0 +1,9 @@
+\begin {verbatim}
+mysql> create table map_test
+    -> (
+    ->   name varchar(100) not null primary key,
+    ->   loc  tinyblob,
+    ->   spatial index(loc)
+    -> );
+Query OK, 0 rows affected (0.00 sec)
+\end{verbatim}

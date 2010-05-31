@@ -5,7 +5,10 @@
 \usepackage{alltt}
 
 \useoutertheme{shadow}
+
 \setbeamercolor{title}{fg=red!80!black}
+\setbeamercolor{frametitle}{fg=red!80!black}
+
 \usetheme[secheader]{Madrid}
 \usecolortheme{crane}
 
@@ -39,7 +42,7 @@
 \textbf{GIS} означава Географска Информационна Система и е един от най-очевидните примери за пространствени данни.
 \newline
 \newline
-\textbf{OGC} е организация, която работи по стандартизирането на различни области на GIS.
+\textbf{OGC} (Open Grospatial Consorcium) е организация, която работи по стандартизирането на различни области на GIS.
 Един такъв стандарт е и спецификацията за SQL, която определя разширение на SQL базирани релационни бази данни, което да използва GIS обекти и операции.
 \end{frame}
 
@@ -63,12 +66,35 @@
 \frametitle{Стандартът, използван от почти всички SQL бази данни с пространствено разширение, включително и MySQL}
 \begin{center}
 \includegraphics[width=60mm]{gis-datatypes.png}\end{center}
-Типовете, отбелязани в сиво са абстракти и обекти от този тип не могат да се създават.
+Типовете, отбелязани в сиво са абстракти и обекти от тези типове не могат да се създават.
 \end{frame}
 
 \begin{frame}
  \frametitle{Пространствени индекси}
+  r-tree splitting
+Quadratic method: Examine all the children of the overflowing node and find the pair of bounding boxes that would waste
+ the most area were they to be inserted in the same node. This is determined by subtracting the sum of the areas of the
+ two bounding boxes from the area of the covering bounding box. These two bounding boxes are placed in separate nodes,
+ say j and k . The set of remaining bounding boxes are examined and the bounding box i whose addition maximizes the
+ difference in coverage between the bounding boxes associated with j and k is added to the node whose coverage is
+ minimized by the addition. This process is reapplied to the remaining bounding boxes [Gutt84]. This method takes
+ quadratic time.
+
 \end{frame}
+
+\begin{frame}[fragile]
+\begin{verbatim}
+mysql> create table map_test
+    -> (
+    ->   name varchar(100) not null primary key,
+    ->   loc  tinyblob,
+    ->   spatial index(loc)
+    -> );
+Query OK, 0 rows affected (0.00 sec)
+\end{verbatim}
+\end{frame}
+
+
 
 
 \end{document}
