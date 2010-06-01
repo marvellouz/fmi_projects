@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2010.1.23)  1 JUN 2010 01:30
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2010.1.23)  1 JUN 2010 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1549,8 +1549,18 @@ Overfull \hbox (49.14519pt too wide) has occurred while \output is active
 \openout3 = `presentation.vrb'.
 
  (./presentation.vrb
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 1.
- (/usr/share/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 2.
+
+(/usr/share/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 Overfull \hbox (3.2154pt too wide) has occurred while \output is active
@@ -1565,6 +1575,66 @@ Overfull \hbox (49.14519pt too wide) has occurred while \output is active
 [6
 
 ]
+\openout3 = `presentation.vrb'.
+
+ (./presentation.vrb)
+Overfull \hbox (3.2154pt too wide) has occurred while \output is active
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (49.14519pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[7
+
+]
+\openout3 = `presentation.vrb'.
+
+ (./presentation.vrb)
+Overfull \hbox (3.2154pt too wide) has occurred while \output is active
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (49.14519pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[8
+
+]
+\openout3 = `presentation.vrb'.
+
+ (./presentation.vrb)
+Overfull \hbox (3.2154pt too wide) has occurred while \output is active
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (49.14519pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[9
+
+]
+\openout3 = `presentation.vrb'.
+
+ (./presentation.vrb)
+Overfull \hbox (3.2154pt too wide) has occurred while \output is active
+ [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \hbox (49.14519pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[10
+
+]
 \tf@nav=\write5
 \openout5 = `presentation.nav'.
 
@@ -1574,10 +1644,10 @@ Overfull \hbox (49.14519pt too wide) has occurred while \output is active
 \tf@snm=\write7
 \openout7 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1587,22 +1657,23 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 14117 strings out of 493847
- 244444 string characters out of 3153979
- 330812 words of memory out of 3000000
- 16974 multiletter control sequences out of 15000+200000
- 10265 words of font info for 24 fonts, out of 3000000 for 9000
+ 14216 strings out of 493847
+ 246165 string characters out of 3153979
+ 334813 words of memory out of 3000000
+ 17035 multiletter control sequences out of 15000+200000
+ 18612 words of font info for 46 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  41i,16n,57p,347b,547s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/latt1095.600pk
-> </home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lasx1095.600pk>
- </home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass0600.600pk> 
-</home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass0800.600pk> <
-/home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1095.600pk> </
-home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1440.600pk>
-Output written on presentation.pdf (6 pages, 118208 bytes).
+> </home/valentina/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600p
+k> </home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lasx1095.600pk
+> </home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass0600.600pk>
+ </home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass0800.600pk> 
+</home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1095.600pk> <
+/home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass1440.600pk>
+Output written on presentation.pdf (10 pages, 151117 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 80 words of extra memory for PDF output out of 10000 (max. 10000000)
 

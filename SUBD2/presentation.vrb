@@ -1,9 +1,14 @@
-\begin {verbatim}
-mysql> create table map_test
-    -> (
-    ->   name varchar(100) not null primary key,
-    ->   loc  tinyblob,
-    ->   spatial index(loc)
-    -> );
-Query OK, 0 rows affected (0.00 sec)
-\end{verbatim}
+\begin {beamerboxesrounded}{И отново правим същата заявка}
+\begin{alltt}
+mysql>  SELECT name, AsText(loc) FROM map_test WHERE
+    ->  Contains(
+    ->  GeomFromText('POLYGON((0 0, 0 1, 1 1, 2 0, 0 0))'),
+    ->  loc) = 1;
++---------+-------------+
+| name    | AsText(loc) |
++---------+-------------+
+| Two One | POINT(2 1)  |
++---------+-------------+
+\alert{1 row in set (0.00 sec)}
+\end{alltt}
+\end{beamerboxesrounded}
