@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2010.1.23)  3 JUN 2010 03:54
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2010.1.23)  3 JUN 2010 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -217,9 +217,9 @@ texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/valentina/.texlive/t
 exmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/valentina/.texlive/te
 xmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/valentina/.texlive/tex
 mf-var/fonts/pk/ljfour/lh/lh-t2a/larm1728.600pk>
-Output written on documentation.pdf (6 pages, 191041 bytes).
+Output written on documentation.pdf (6 pages, 191378 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
+ 423 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
