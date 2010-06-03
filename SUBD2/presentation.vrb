@@ -1,14 +1,3 @@
 \begin {beamerboxesrounded}{И отново правим същата заявка}
-\begin{alltt}
-mysql>  SELECT name, AsText(loc) FROM map_test WHERE
-    ->  Contains(
-    ->  GeomFromText('POLYGON((0 0, 0 1, 1 1, 2 0, 0 0))'),
-    ->  loc) = 1;
-+---------+-------------+
-| name    | AsText(loc) |
-+---------+-------------+
-| Two One | POINT(2 1)  |
-+---------+-------------+
-\alert{1 row in set (0.00 sec)}
-\end{alltt}
+\input{index.tex}
 \end{beamerboxesrounded}

@@ -62,7 +62,7 @@
 \frametitle{Стандартът, използван от почти всички SQL бази данни с пространствено разширение, включително и MySQL}
 \begin{center}
 \includegraphics[width=60mm]{gis-datatypes.png}\end{center}
-Типовете, отбелязани в сиво са абстракти и обекти от тези типове не могат да се създават.
+Типовете, отбелязани в сиво са абстрактни и обекти от тези типове не могат да се създават.
 \end{frame}
 
 \begin{frame}
@@ -120,79 +120,33 @@ mysql> create table map_test
 Query OK, 0 rows affected (0.00 sec)
 \end{alltt}
 \end{beamerboxesrounded}
-
-\begin{beamerboxesrounded}{Добавяме данни}
-\begin{alltt}
-mysql> insert into map_test values ('One Two', point(1,2));
-Query OK, 1 row affected (0.00 sec)
-
-mysql> insert into map_test values ('Two Two', point(2,2));
-Query OK, 1 row affected (0.00 sec)
-
-mysql> insert into map_test values ('Two One', point(2,1));
-Query OK, 1 row affected (0.00 sec)
-\end{alltt}
-\end{beamerboxesrounded}
 \end{frame}
-
-
 \begin{frame}[fragile]
-\begin{beamerboxesrounded}{Ето как изглежда $map\_test$ сега:}
-\begin{alltt}
-mysql> select name, AsText(loc) from map_test;
-+---------+-------------+
-| name    | AsText(loc) |
-+---------+-------------+
-| One Two | POINT(1 2)  |
-| Two Two | POINT(2 2)  |
-| Two One | POINT(2 1)  |
-+---------+-------------+
-3 rows in set (0.00 sec)
-\end{alltt}
+\begin{beamerboxesrounded}{Чрез следната процедурата добавяме 30 000 реда}
+\tiny{\input{proc.tex}}
 \end{beamerboxesrounded}
 \end{frame}
 
 \begin{frame}[fragile]
-\begin{beamerboxesrounded}{Заявка за проверка коя точка се съдържа в полигона}
-\begin{alltt}
-mysql> SELECT name, AsText(loc) FROM map_test WHERE
-    -> Contains(
-    -> GeomFromText('POLYGON((0 0, 0 1, 1 1, 2 0, 0 0))'),
-    -> loc) = 1;
-+---------+-------------+
-| name    | AsText(loc) |
-+---------+-------------+
-| Two One | POINT(2 1)  |
-+---------+-------------+
-\alert{1 row in set (0.04 sec)}
-\end{alltt}
+\begin{beamerboxesrounded}{Заявка за проверка кои точки се съдържат в полигона}
+\input{no_index.tex}
 \end{beamerboxesrounded}
 \end{frame}
 
 \begin{frame}[fragile]
 \begin{beamerboxesrounded}{Сега създаваме пространствен индекс по атрибута $loc$}
 \begin{alltt}
+
 mysql> create spatial index ps_index on map_test(loc);
-Query OK, 3 rows affected (0.01 sec)
-Records: 3  Duplicates: 0  Warnings: 0
+Query OK, 30000 rows affected (2.44 sec)
+Records: 30000  Duplicates: 0  Warnings: 0
 \end{alltt}
 \end{beamerboxesrounded}
 \end{frame}
 
 \begin{frame}[fragile]
 \begin{beamerboxesrounded}{И отново правим същата заявка}
-\begin{alltt}
-mysql>  SELECT name, AsText(loc) FROM map_test WHERE
-    ->  Contains(
-    ->  GeomFromText('POLYGON((0 0, 0 1, 1 1, 2 0, 0 0))'),
-    ->  loc) = 1;
-+---------+-------------+
-| name    | AsText(loc) |
-+---------+-------------+
-| Two One | POINT(2 1)  |
-+---------+-------------+
-\alert{1 row in set (0.00 sec)}
-\end{alltt}
+\input{index.tex}
 \end{beamerboxesrounded}
 \end{frame}
 

@@ -1,0 +1,14 @@
+\begin{alltt}
+ mysql> SELECT name, AsText(loc) FROM map_test WHERE
+    -> Contains( 
+    -> GeomFromText('POLYGON((0 0, 0 1, 1 1, 2 0, 0 0))'), 
+    -> loc) = 1;
++--------------+----------------------+
+| name         | AsText(loc)          |
++--------------+----------------------+
+| name_12768.0 | POINT(0.6646 0.7551) |
+| name_14707.0 | POINT(1.8941 0.1449) |
+| name_29530.0 | POINT(0.1938 0.0931) |
++--------------+----------------------+
+3 rows in set (0.12 sec)
+\end{alltt}

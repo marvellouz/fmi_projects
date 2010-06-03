@@ -1,0 +1,28 @@
+\begin{alltt}
+ mysql> CREATE PROCEDURE fill_points(IN size INT(10))
+    -> BEGIN
+    ->   DECLARE i DOUBLE(10,1) DEFAULT size;
+    -> 
+    ->   DECLARE lon FLOAT(7,4);
+    ->   DECLARE lat FLOAT(6,4);
+    ->   DECLARE position VARCHAR(100);
+    -> 
+    ->   DELETE FROM map_test;
+    -> 
+    ->   WHILE i > 0 DO
+    ->     SET lon = RAND() * 360 - 180;
+    ->     SET lat = RAND() * 180 - 90;
+    -> 
+    ->     SET position = CONCAT( 'POINT(', lon, ' ', lat, ')' );
+    -> 
+    ->     INSERT INTO map_test(name, loc) VALUES ( CONCAT('name_', i), GeomFromText(position) );
+    -> 
+    ->     SET i = i - 1;
+    -> END WHILE;
+    -> END @
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> delimiter ;
+mysql> CALL fill_points(30000);
+Query OK, 1 row affected (26.00 sec)
+\end{alltt}

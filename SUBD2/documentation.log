@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2010.1.23)  3 JUN 2010 10:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Arch Linux) (format=pdflatex 2010.1.20)  3 JUN 2010 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -35,13 +35,13 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texmf/tex/latex/ucs/utf8x.def
+(/usr/share/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
-(/usr/share/texmf/tex/latex/ucs/ucs.sty
+(/usr/share/texmf-dist/tex/latex/ucs/ucs.sty
 Package: ucs 2004/10/17 UCS: Unicode input support
 
-(/usr/share/texmf/tex/latex/ucs/data/uni-global.def
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2004/10/17 UCS: Unicode global data
 )
 \uc@secondtry=\count87
@@ -122,7 +122,7 @@ LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 
-(/usr/share/texmf/tex/latex/ucs/ucsencs.def
+(/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 )
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -137,7 +137,7 @@ File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 \MPscratchDim=\dimen107
 \MPnumerator=\count94
 \everyMPtoPDFconversion=\toks21
-) (/usr/share/texmf/tex/latex/ucs/data/uni-4.def
+) (/usr/share/texmf-dist/tex/latex/ucs/data/uni-4.def
 File: uni-4.def 2004/10/17 UCS: Unicode data U+0400..U+04FF
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -148,7 +148,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 13.
  [1
 
-{/home/valentina/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (13.45303pt too wide) in paragraph at lines 17--26
 \T2A/cmr/bx/n/10 GIS \T2A/cmr/m/n/10 оз-на-ча-ва Ге-ог-раф-с-ка Ин-фор-ма-ци-он
 -на Сис-те-ма и е един от най-очевидните
@@ -195,31 +195,37 @@ LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 111
  (/usr/share/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-[5] [6] (./documentation.aux) ) 
+(./proc.tex
+Overfull \hbox (164.12567pt too wide) in paragraph at lines 18--18
+[]    \T2A/cmtt/m/n/10 ->     INSERT INTO map_test(name, loc) VALUES ( CONCAT('
+name_', i), GeomFromText(position) );[] 
+ []
+
+) [5] (./no_index.tex) (./index.tex) [6] (./documentation.aux) ) 
 Here is how much of TeX's memory you used:
- 2831 strings out of 493847
- 34942 string characters out of 3153979
+ 2839 strings out of 493847
+ 35078 string characters out of 3153979
  88914 words of memory out of 3000000
  6089 multiletter control sequences out of 15000+200000
  13987 words of font info for 33 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  25i,6n,24p,1157b,677s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/valentina/.texlive/texmf-var/fonts/pk/lj
-four/lh/lh-t2a/latt1000.600pk> </home/valentina/.texlive/texmf-var/fonts/pk/ljf
-our/public/cm/cmmi12.600pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dp
-i600/cmr7.pk> </home/valentina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lat
-i1000.600pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> 
-</usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmmi10.pk> </home/valen
-tina/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> </usr/share/t
-exmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy10.pk> </home/valentina/.texlive
-/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1000.600pk> </home/valentina/.texlive/
-texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> </home/valentina/.texlive/t
-exmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk> </home/valentina/.texlive/te
-xmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/valentina/.texlive/tex
-mf-var/fonts/pk/ljfour/lh/lh-t2a/larm1728.600pk>
-Output written on documentation.pdf (6 pages, 191378 bytes).
+{/usr/share/tex
+mf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/emil/.texlive/texmf-v
+ar/fonts/pk/ljfour/public/cm/cmmi12.600pk> </usr/share/texmf-dist/fonts/pk/ljfo
+ur/public/cm/dpi600/cmr7.pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/d
+pi600/cmr10.pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmmi10.
+pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy10.pk></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfr
+m1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sftt1000.pfb>
+Output written on documentation.pdf (6 pages, 256711 bytes).
 PDF statistics:
- 423 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
