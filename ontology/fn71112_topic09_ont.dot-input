@@ -1,0 +1,13 @@
+digraph "fn71112_topic09_ont" {
+
+"Wind" [shape=box, label="Wind", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Instrument"->"Wind" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"String" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{String|{type|Symbol*|{jazz|classical|rock}}|{string_count|Integer}}"]
+"Instrument"->"String" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Instrument" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{Instrument|{playedBy|Instance*|{Musician}}|{type|Symbol*|{jazz|classical|rock}}|{name|String}}"]
+"Instrument"->"Musician" [style=filled, label="playedBy*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0"]
+"Percussion" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{Percussion|{type|Symbol*|{jazz|classical|rock}}}"]
+"Instrument"->"Percussion" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Musician" [shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", label="{Musician|{playsInstrument|Instance*|{Instrument}}|{firstName|String}|{lastName|String}}"]
+"Musician"->"Instrument" [style=filled, label="playsInstrument*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0"]
+}

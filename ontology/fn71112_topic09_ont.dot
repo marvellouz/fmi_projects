@@ -1,0 +1,17 @@
+digraph fn71112_topic09_ont {
+	node [label="\N"];
+	graph [bb="0,0,692,332"];
+	Wind [label=Wind, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="27,63", width="0.75", height="0.5"];
+	Instrument [label="{Instrument|{playedBy|Instance*|{Musician}}|{type|Symbol*|{jazz|classical|rock}}|{name|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="300,256", rects="198,306,402,331 198,281,267,306 267,281,336,306 336,281,402,306 198,206,249,281 249,206,327,281 327,256,401,281 327,231,401,256 \
+327,206,401,231 198,181,298,206 298,181,402,206", width="2.8333", height="2.0972"];
+	String [label="{String|{type|Symbol*|{jazz|classical|rock}}|{string_count|Integer}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="156,63", rects="71.5,100.5,240.5,125.5 71.5,25.5,111.5,100.5 111.5,25.5,177.5,100.5 177.5,75.5,240.5,100.5 177.5,50.5,240.5,75.5 177.5,25.5,240.5\
+,50.5 71.5,0.5,171.5,25.5 171.5,0.5,240.5,25.5", width="2.3333", height="1.75"];
+	Musician [label="{Musician|{playsInstrument|Instance*|{Instrument}}|{firstName|String}|{lastName|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="382,63", rects="257.5,88,506.5,113 257.5,63,362.5,88 362.5,63,431.5,88 431.5,63,506.5,88 257.5,38,392.5,63 392.5,38,506.5,63 257.5,13,390.5,38 390.5\
+,13,506.5,38", width="3.4444", height="1.4028"];
+	Percussion [label="{Percussion|{type|Symbol*|{jazz|classical|rock}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="608,63", rects="523.5,88,692.5,113 523.5,13,563.5,88 563.5,13,629.5,88 629.5,63,692.5,88 629.5,38,692.5,63 629.5,13,692.5,38", width="2.3333", height="1.4028"];
+	Instrument -> Wind [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,197.95,215.27 188.87,210.85 146,189.63 98.78,161.16 63,126 49.972,113.2 40.153,94.686 34.087,81.041", lp="110.5,153"];
+	Instrument -> String [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,243.91,180.83 237.82,172.66 226.09,156.94 214.01,140.75 202.85,125.79", lp="235.5,153"];
+	Instrument -> Musician [label="playedBy*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,320.38,113.39 292.72,180.87 293.72,168.21 296.19,155.48 301,144 304.32,136.09 308.82,128.55 314,121.47", lp="330.5,153"];
+	Instrument -> Percussion [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,402.25,199.11 410.99,194.03 428.86,183.58 447.05,172.66 464,162 488.4,146.66 514.52,129.07 537.72,113.01", lp="495.5,153"];
+	Musician -> Instrument [label="playsInstrument*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,351.13,180.78 374.4,113.14 371.04,129.12 366.38,146.63 360,162 358.66,165.23 357.21,168.47 355.68,171.7", lp="412.5,153"];
+}
