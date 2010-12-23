@@ -1,0 +1,1 @@
+mstest.exe /testcontainer:Task1Test.dll
