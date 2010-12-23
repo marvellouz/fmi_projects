@@ -1,5 +1,0 @@
-E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Inheritance\bin\Debug\Inheritance.exe
-E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Inheritance\bin\Debug\Inheritance.pdb
-E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Inheritance\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Inheritance\obj\x86\Debug\Inheritance.exe
-E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Inheritance\obj\x86\Debug\Inheritance.pdb

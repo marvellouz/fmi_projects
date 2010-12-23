@@ -1,7 +1,0 @@
-C:\Users\idimitrova\Desktop\xml\Demo\XMLDemo\XMLDemo\bin\Debug\XMLDemo.exe
-C:\Users\idimitrova\Desktop\xml\Demo\XMLDemo\XMLDemo\bin\Debug\XMLDemo.pdb
-C:\Users\idimitrova\Desktop\xml\Demo\XMLDemo\XMLDemo\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\idimitrova\Desktop\xml\Demo\XMLDemo\XMLDemo\obj\x86\Debug\XMLDemo.exe
-C:\Users\idimitrova\Desktop\xml\Demo\XMLDemo\XMLDemo\obj\x86\Debug\XMLDemo.pdb
-D:\FMI\dotNOTandWTF\WPF.12.XML_\XMLDemo\XMLDemo\obj\x86\Debug\XMLDemo.exe
-D:\FMI\dotNOTandWTF\WPF.12.XML_\XMLDemo\XMLDemo\obj\x86\Debug\XMLDemo.pdb
