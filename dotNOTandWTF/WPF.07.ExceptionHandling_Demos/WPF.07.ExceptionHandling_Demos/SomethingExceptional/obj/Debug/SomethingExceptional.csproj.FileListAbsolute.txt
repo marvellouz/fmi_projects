@@ -1,0 +1,7 @@
+E:\.NET Course 2010\Lectures 2010\WPF.07.ExceptionHandling_Demos\SomethingExceptional\bin\Debug\SomethingExceptional.exe
+E:\.NET Course 2010\Lectures 2010\WPF.07.ExceptionHandling_Demos\SomethingExceptional\bin\Debug\SomethingExceptional.pdb
+E:\.NET Course 2010\Lectures 2010\WPF.07.ExceptionHandling_Demos\SomethingExceptional\obj\Debug\ResolveAssemblyReference.cache
+E:\.NET Course 2010\Lectures 2010\WPF.07.ExceptionHandling_Demos\SomethingExceptional\obj\Debug\SomethingExceptional.exe
+E:\.NET Course 2010\Lectures 2010\WPF.07.ExceptionHandling_Demos\SomethingExceptional\obj\Debug\SomethingExceptional.pdb
+D:\FMI\dotNOTandWTF\WPF.07.ExceptionHandling_Demos\WPF.07.ExceptionHandling_Demos\SomethingExceptional\obj\Debug\SomethingExceptional.exe
+D:\FMI\dotNOTandWTF\WPF.07.ExceptionHandling_Demos\WPF.07.ExceptionHandling_Demos\SomethingExceptional\obj\Debug\SomethingExceptional.pdb

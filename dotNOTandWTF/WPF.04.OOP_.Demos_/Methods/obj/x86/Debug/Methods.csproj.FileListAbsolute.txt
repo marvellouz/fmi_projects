@@ -1,0 +1,20 @@
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Methods\bin\Debug\Methods.exe
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Methods\bin\Debug\Methods.pdb
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Methods\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Methods\obj\x86\Debug\Methods.exe
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\04.OOP - Demos\Methods\obj\x86\Debug\Methods.pdb
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\Methods\bin\Debug\Methods.exe
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\Methods\bin\Debug\Methods.pdb
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\Methods\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\Methods\obj\x86\Debug\Methods.exe
+E:\.NET Course 2010\Lectures 2010\04.OOP - Demos\Methods\obj\x86\Debug\Methods.pdb
+\\tsclient\D\Documents\Files\Course\04.OOP.Demos\Methods\bin\Debug\Methods.exe
+\\tsclient\D\Documents\Files\Course\04.OOP.Demos\Methods\bin\Debug\Methods.pdb
+\\tsclient\D\Documents\Files\Course\04.OOP.Demos\Methods\obj\x86\Debug\ResolveAssemblyReference.cache
+\\tsclient\D\Documents\Files\Course\04.OOP.Demos\Methods\obj\x86\Debug\Methods.exe
+\\tsclient\D\Documents\Files\Course\04.OOP.Demos\Methods\obj\x86\Debug\Methods.pdb
+D:\FMI\dotNOTandWTF\WPF.04.OOP_.Demos_\Methods\bin\Debug\Methods.exe
+D:\FMI\dotNOTandWTF\WPF.04.OOP_.Demos_\Methods\bin\Debug\Methods.pdb
+D:\FMI\dotNOTandWTF\WPF.04.OOP_.Demos_\Methods\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\FMI\dotNOTandWTF\WPF.04.OOP_.Demos_\Methods\obj\x86\Debug\Methods.exe
+D:\FMI\dotNOTandWTF\WPF.04.OOP_.Demos_\Methods\obj\x86\Debug\Methods.pdb
