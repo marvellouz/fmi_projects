@@ -1,0 +1,5 @@
+D:\FMI\fmi_projects\FMIdotNOTandWTF\Task3\Task3\bin\Debug\Task3.exe
+D:\FMI\fmi_projects\FMIdotNOTandWTF\Task3\Task3\bin\Debug\Task3.pdb
+D:\FMI\fmi_projects\FMIdotNOTandWTF\Task3\Task3\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\FMI\fmi_projects\FMIdotNOTandWTF\Task3\Task3\obj\x86\Debug\Task3.exe
+D:\FMI\fmi_projects\FMIdotNOTandWTF\Task3\Task3\obj\x86\Debug\Task3.pdb
