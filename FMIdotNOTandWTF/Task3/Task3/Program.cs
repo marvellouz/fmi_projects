@@ -72,15 +72,58 @@ namespace Task3
             return true;
         }
 
-        public static XmlDocument SortedXml(XmlDocument xdoc)
-        {
-            return xdoc;
-        }
 
         public static XmlDocument UniqueXml(XmlDocument xdoc)
         {
             return xdoc;
         }
+
+
+         public static XmlDocument SortedXml(XmlDocument xdoc) {
+            SortXml(xdoc.DocumentElement);
+            return xdoc;
+        }
+
+        public static void SortXml(XmlNode rootNode) {
+            SortAttributes(rootNode.Attributes);
+            SortElements(rootNode);
+            foreach (XmlNode childNode in rootNode.ChildNodes) {
+                SortXml(childNode);
+            }   
+        }   
+
+        public static void SortAttributes(XmlAttributeCollection attribCol) {
+            if (attribCol == null) 
+                return;                
+
+            bool hasChanged = true;
+            while (hasChanged) {
+                hasChanged = false;
+                for (int i = 1; i < attribCol.Count; i++) {
+                    if (String.Compare(attribCol[i].Name, attribCol[i-1].Name, true) < 0) {
+                        //Replace
+                        attribCol.InsertBefore(attribCol[i], attribCol[i - 1]);
+                        hasChanged = true;
+                    }
+                }
+            }
+
+        }
+
+        public static void SortElements(XmlNode node) {
+            bool changed = true;
+            while (changed) {
+                changed = false;
+                for (int i = 1; i < node.ChildNodes.Count; i++) {
+                    if (String.Compare(node.ChildNodes[i].Name, node.ChildNodes[i-1].Name, true) < 0) {
+                        //Replace:
+                        node.InsertBefore(node.ChildNodes[i], node.ChildNodes[i-1]);
+                        changed = true;
+                    }
+                }
+            }
+        }
+
 
 
         public static bool Compare(string xml1, string xml2, CompareOptions options)
