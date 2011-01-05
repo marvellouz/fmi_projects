@@ -23,29 +23,31 @@ namespace Task3
     {
         public static bool compareNodes(XmlNode node1, XmlNode node2)
         {
-            if (node1.InnerText == node2.InnerText)
+            if (node1.InnerText != node2.InnerText || node1.Name != node2.Name)
             {
-                if ((node1.Name == node2.Name) &&
-                    (node1.Attributes.Count == node2.Attributes.Count))
+                return false;
+            }
+
+            if ((node1.Attributes == null || node2.Attributes == null))
+            {
+
+                return node1.Attributes == node2.Attributes;
+            }
+
+            if ((node1.Attributes.Count != node2.Attributes.Count))
+            {
+                return false;
+            }
+
+            for (int i = 0; i < node1.Attributes.Count; i++)
+            {
+                if (node1.Attributes[i].Name != node2.Attributes[i].Name)
                 {
-                    if (node1.Attributes.Count != 0)
-                    {
-                        for (int i = 1; i < node1.Attributes.Count; i++)
-                        {
-                            if (node1.Attributes[i].Name != node2.Attributes[i].Name)
-                            {
-                                return false;
-                            }
-                        }
-                        return true;
-                    }
-                    else
-                    {
-                        return true;
-                    }
+                    return false;
                 }
             }
-            return false;
+
+            return true;
         }
 
         public static bool compareNormal(XmlNode rootNode1, XmlNode rootNode2)
@@ -70,42 +72,49 @@ namespace Task3
             return true;
         }
 
+        public static XmlDocument SortedXml(XmlDocument xdoc)
+        {
+            return xdoc;
+        }
+
+        public static XmlDocument UniqueXml(XmlDocument xdoc)
+        {
+            return xdoc;
+        }
+
 
         public static bool Compare(string xml1, string xml2, CompareOptions options)
         {
-            XmlDocument xdoc1 = new XmlDocument();
-            xdoc1.LoadXml(xml1);
-            XmlNode rootNode1 = xdoc1.DocumentElement;
-
-            XmlDocument xdoc2 = new XmlDocument();
-            xdoc2.LoadXml(xml2);
-            XmlNode rootNode2 = xdoc2.DocumentElement;
-
             if (options == 0)
             {
                 return Regex.Replace(xml1, @"\s", "") == Regex.Replace(xml2, @"\s", "");
             }
 
-            if ((options & CompareOptions.IgnoreCase) != 0)
-            {
-                string xml1Lower = xml1.ToLower();
-                XmlDocument xdoc1Lower = new XmlDocument();
-                xdoc1Lower.LoadXml(xml1Lower);
-                XmlNode rootNode1Lower = xdoc1Lower.DocumentElement;
-
-                string xml2Lower = xml2.ToLower();
-                XmlDocument xdoc2Lower = new XmlDocument();
-                xdoc2Lower.LoadXml(xml2Lower);
-                XmlNode rootNode2Lower = xdoc2Lower.DocumentElement;
+            if ((options & CompareOptions.IgnoreCase) != 0) {
+                xml1 = xml1.ToLower();
+                xml2 = xml2.ToLower();
             }
 
-            return false;
+            XmlDocument xdoc1 = new XmlDocument();
+            xdoc1.LoadXml(xml1);
+
+            XmlDocument xdoc2 = new XmlDocument();
+            xdoc2.LoadXml(xml2);
+
+            if ((options &CompareOptions.IgnoreRepeat)!=0) {
+                xdoc1 = UniqueXml(xdoc1);
+                xdoc2 = UniqueXml(xdoc2);
+            }
+
+            if ((options &CompareOptions.IgnoreOrder)!=0) {
+                xdoc1 = SortedXml(xdoc1);
+                xdoc2 = SortedXml(xdoc2);
+            }
+
+            return compareNormal(xdoc1.DocumentElement, xdoc2.DocumentElement);
+
         }
     }
- 
-
-
-
 
 
     class Program
