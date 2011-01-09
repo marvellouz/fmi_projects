@@ -1,0 +1,68 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[bulgarian]{babel}
+\usepackage{amsmath}
+\usepackage [full]{textcomp}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+
+
+\title{
+\hline
+\vspace{0.5cm}
+Курсов проект по
+\\ \vspace{0.5cm} Системи за електронен бизнес
+\vspace{0.5cm}
+\hline
+\\ \vspace{2cm}\Large{Тема: Галерия}}
+\author{Валентина Динкова, ф.н. 71112, 2 група}
+
+\begin{document}
+\maketitle
+
+\newpage
+
+\section{Използвани среди и технологии}
+За изготвянето на проекта са използвани ASP.NET и C\#. Методите, използвани за изготвянето на проекта са по образец от примера,
+ показан в книгата книгата \textit{“Beginning ASP.NET E-Commerce in C\# 2005: From Novice to Professional”} на издателство \textit{Apress}.
+ 
+ За целта съм използвала следния софтуер:
+ \begin{itemize}
+\item
+Microsoft Visual Studio 2010
+\item
+SQL Server 2008
+\item
+SQL Server Management Studio Express
+\end{itemize}
+
+Използване е трислойна архитектура:
+\begin{enumerate}
+\item
+\textbf{Презентационен слой (presentation tier)} – предоставя потребителския интерфейс; реализиран е на ASP.NET
+\item
+\textbf{Бизнес слой (business tier)} – слой посредник между другите два, реализира логиката на приложението. Той се програмира на езика C\#
+\item
+\textbf{Слой за съхранение и обработка на базата данни (data tier)} -  С помощтта на Stored Procedures бизнес слоя си комуникира с базата от данни.
+\end{enumerate}
+
+\section{Етапи на разработка}
+Проектът за електронна галерия е изграден на няколко етапа:
+\begin{enumerate}
+\item
+\textbf{Първи етап} - реализирани са категориите и подкатегориите на стоките, описанията на стоките, търсенето в каталога, отделите.
+\item
+\textbf{Втори етап} - реализирани са потребителската кошница, която съхранява данните за продуктите, добавени в нея в базата данни за всеки клиент, като има възможност за редактиране на съдържанието и и обработка на поръчките. Освен това се реализира и система за препоръки на стоки от магазина.
+
+\item
+\textbf{Трети етап} - реализира се частта за потребителските сметки, обработване на потребителските поръчки, проверка за наличност в склад.
+
+
+\end{enumerate}
+
+
+
+\end{document}
