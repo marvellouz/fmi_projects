@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  9 JAN 2011 10:26
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  10 JAN 2011 12:13
 entering extended mode
 **untitled-1.tex
 (D:\FMI\fmi_projects\e-business\documentation\untitled-1.tex
@@ -700,6 +700,10 @@ File: pdftex.def 2010/11/26 v0.05c Graphics/color for pdfTeX
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\preprint\fullpage.sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip46
+)
 (D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
 
@@ -773,45 +777,45 @@ or  <return>  to continue without it.
 [1
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
-Overfull \hbox (61.17998pt too wide) in paragraph at lines 45--47
+Overfull \hbox (38.21208pt too wide) in paragraph at lines 45--47
 []\T2A/cmr/bx/n/14.4 Презентационен слой (pre-sen-ta-tion tier) \T2A/cmr/m/n/14
 .4  предоставя потребителския
  []
 
 
-Overfull \hbox (8.42418pt too wide) in paragraph at lines 49--50
-\T2A/cmr/bx/n/14.4 tier) \T2A/cmr/m/n/14.4 - С помощтта на Stored Pro-ce-dures 
-бизнес слоя си комуникира
+Overfull \hbox (30.75658pt too wide) in paragraph at lines 58--59
+[]\T2A/cmr/bx/n/14.4 Втори етап \T2A/cmr/m/n/14.4 - реализирани са потребителск
+ата кошница, която съхранява
  []
 
 
-Overfull \hbox (39.32272pt too wide) in paragraph at lines 58--59
-\T2A/cmr/m/n/14.4 за всеки клиент, като има възможност за редактиране на съдърж
-анието
+Overfull \hbox (36.25313pt too wide) in paragraph at lines 61--62
+[]\T2A/cmr/bx/n/14.4 Трети етап \T2A/cmr/m/n/14.4 - реализира се частта за потр
+ебителските сметки, обработване
  []
 
-[2] [3] (D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux) ) 
+[2] (D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux) ) 
 Here is how much of TeX's memory you used:
- 3318 strings out of 495285
- 41772 string characters out of 3179816
- 89926 words of memory out of 3000000
- 6485 multiletter control sequences out of 15000+200000
+ 3338 strings out of 495285
+ 42141 string characters out of 3179816
+ 89812 words of memory out of 3000000
+ 6501 multiletter control sequences out of 15000+200000
  13062 words of font info for 32 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,6n,24p,566b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Prog
-ram Files (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{C:/Progra
-m Files (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program 
-Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program Files 
-(x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files (x8
-6)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Program Files (x86)/
-MiKTeX 2.8/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files (x86)/MiK
-TeX 2.8/fonts/type1/public/cm-super/sfrm2488.pfb><C:/Program Files (x86)/MiKTeX
- 2.8/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on untitled-1.pdf (3 pages, 113952 bytes).
+ 27i,6n,24p,566b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program 
+Files (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{C:/Program Fi
+les (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program File
+s (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files (
+x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program Files (x86
+)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files (x86)/M
+iKTeX 2.8/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Program Files (x86)/MiKT
+eX 2.8/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files (x86)/MiKTeX 
+2.8/fonts/type1/public/cm-super/sfrm2488.pfb><C:/Program Files (x86)/MiKTeX 2.8
+/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on untitled-1.pdf (2 pages, 113214 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
