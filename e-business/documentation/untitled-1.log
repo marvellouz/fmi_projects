@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  10 JAN 2011 12:13
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  11 JAN 2011 16:15
 entering extended mode
 **untitled-1.tex
 (D:\FMI\fmi_projects\e-business\documentation\untitled-1.tex
@@ -700,66 +700,286 @@ File: pdftex.def 2010/11/26 v0.05c Graphics/color for pdfTeX
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\preprint\fullpage.sty"
-Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip46
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
 )
-(D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count101
+\Gm@cntv=\count102
+\c@Gm@tempcnt=\count103
+\Gm@bindingoffset=\dimen115
+\Gm@wd@mp=\dimen116
+\Gm@odd@mp=\dimen117
+\Gm@even@mp=\dimen118
+\Gm@layoutwidth=\dimen119
+\Gm@layoutheight=\dimen120
+\Gm@layouthoffset=\dimen121
+\Gm@layoutvoffset=\dimen122
+\Gm@dimlist=\toks22
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2010/12/16 v6.81z Hypertext links for LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\pdfescape.sty"
+Package: pdfescape 2010/03/01 v1.9 Provides hex, PDF name and string conversion
+s (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\hycolor.sty"
+Package: hycolor 2009/12/12 v1.6 Color options of hyperref/bookmark (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\xcolor-patch.sty"
+Package: xcolor-patch 2009/12/12 xcolor patch
+))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\letltxmacro.sty"
+Package: letltxmacro 2008/06/24 v1.3 Let assignment for LaTeX macros (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+)
+\@linkdim=\dimen123
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2010/12/16 v6.81z Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\intcalc.sty"
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+\Hy@SavedSpaceFactor=\count106
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 3993.
+Package hyperref Info: Link nesting OFF on input line 3998.
+Package hyperref Info: Hyper index ON on input line 4001.
+Package hyperref Info: Plain pages OFF on input line 4008.
+Package hyperref Info: Backreferencing OFF on input line 4013.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4231.
+\c@Hy@tempcnt=\count107
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4584.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\bitset.sty"
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\bigintcalc.sty"
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+))
+\Fld@menulength=\count108
+\Field@Width=\dimen124
+\Fld@charsize=\dimen125
+Package hyperref Info: Hyper figures OFF on input line 5668.
+Package hyperref Info: Link nesting OFF on input line 5673.
+Package hyperref Info: Hyper index ON on input line 5676.
+Package hyperref Info: backreferencing OFF on input line 5683.
+Package hyperref Info: Link coloring OFF on input line 5688.
+Package hyperref Info: Link coloring with OCG OFF on input line 5693.
+Package hyperref Info: PDF/A mode OFF on input line 5698.
+LaTeX Info: Redefining \ref on input line 5738.
+LaTeX Info: Redefining \pageref on input line 5742.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2010/03/25 v1.12 At begin shipout hook (HO)
+)
+\Hy@abspage=\count109
+\c@Item=\count110
+\c@Hfootnote=\count111
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2010/12/16 v6.81z Hyperref driver for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\atveryend.sty"
+Package: atveryend 2010/03/24 v1.5 Hooks at very end of document (HO)
+Package atveryend Info: \enddocument detected (standard).
+)
+\Fld@listcount=\count112
+\c@bookmark@seq@number=\count113
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2010/03/16 v1.6 Rerun checks for auxiliary files (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\uniquecounter.sty"
+Package: uniquecounter 2009/12/18 v1.1 Provides unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+71.
+)
+\Hy@SectionHShift=\skip46
+)
+(D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 31.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\cyrillic\t2acmr.fd"
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
+)
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen115
+\scratchcounter=\count114
+\scratchdimen=\dimen126
 \scratchbox=\box28
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen116
-\MPnumerator=\count105
-\everyMPtoPDFconversion=\toks23
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen127
+\MPnumerator=\count118
+\everyMPtoPDFconversion=\toks24
 )
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.24 \maketitle
-               
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-54.36449pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=15.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.24 \maketitle
-               
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 31.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\refcount.sty"
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
+)
+\c@section@level=\count119
+)
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
+
+(D:\FMI\fmi_projects\e-business\documentation\untitled-1.out)
+(D:\FMI\fmi_projects\e-business\documentation\untitled-1.out)
+\@outlinefile=\write3
+
+! I can't write on file `untitled-1.pdf'.
+Please type another file name for output
+! Emergency stop.
+<to be read again> 
+                   \edef 
+l.31 \begin{document}
+                     
+*** (job aborted, file error in nonstop mode)
+
+ 
+Here is how much of TeX's memory you used:
+ 7326 strings out of 495285
+ 104731 string characters out of 3179816
+ 179593 words of memory out of 3000000
+ 10406 multiletter control sequences out of 15000+200000
+ 5512 words of font info for 17 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 31i,1n,31p,254b,57s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
+                      
+l.33 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -768,54 +988,465 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 \maketitle
-               
+l.33 
+     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+LaTeX Warning: No \author given.
+
 [1
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
-Overfull \hbox (38.21208pt too wide) in paragraph at lines 45--47
+(D:\FMI\fmi_projects\e-business\documentation\untitled-1.toc)
+\tf@toc=\write4
+ [2]
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\CYRU' on input line 39.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 39.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 39.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrd' on input line 39.
+
+
+Overfull \hbox (3.62949pt too wide) in paragraph at lines 40--44
+\T2A/cmr/m/n/14.4 Проектът създава онлайн магазин за електронна търговия с карт
+ини.
+ []
+
+
+Overfull \hbox (61.71329pt too wide) in paragraph at lines 40--44
+\T2A/cmr/m/n/14.4 Обслужва два типа потребители - администратор и клиент. Админ
+истраторите
+ []
+
+
+Overfull \hbox (31.63815pt too wide) in paragraph at lines 40--44
+\T2A/cmr/m/n/14.4 закупуване на картини и извършват продажбата им. Клиентът раз
+глежда
+ []
+
+
+Overfull \hbox (24.00853pt too wide) in paragraph at lines 40--44
+\T2A/cmr/m/n/14.4 каталог със картини. Има възможност за търсене по различни кр
+итерии.
+ []
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\CYRA' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrh' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrk' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyru' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\CYRI' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrz' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrp' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrl' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrz' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrd' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrh' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrl' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrg' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 49.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 49.
+
+
+Overfull \hbox (64.38863pt too wide) in paragraph at lines 66--68
 []\T2A/cmr/bx/n/14.4 Презентационен слой (pre-sen-ta-tion tier) \T2A/cmr/m/n/14
 .4  предоставя потребителския
  []
 
 
-Overfull \hbox (30.75658pt too wide) in paragraph at lines 58--59
-[]\T2A/cmr/bx/n/14.4 Втори етап \T2A/cmr/m/n/14.4 - реализирани са потребителск
-ата кошница, която съхранява
+Overfull \hbox (11.63283pt too wide) in paragraph at lines 70--71
+\T2A/cmr/bx/n/14.4 tier) \T2A/cmr/m/n/14.4 - С помощтта на Stored Pro-ce-dures 
+бизнес слоя си комуникира
+ []
+
+<21.jpg, id=45, 197.23688pt x 295.85532pt>
+File: 21.jpg Graphic file (type jpg)
+ <use 21.jpg> [3]
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\CYRE' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrp' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrz' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrb' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrk' on input line 76.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 76.
+
+
+Overfull \hbox (42.53137pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 за всеки клиент, като има възможност за редактиране на съдърж
+анието
  []
 
 
-Overfull \hbox (36.25313pt too wide) in paragraph at lines 61--62
-[]\T2A/cmr/bx/n/14.4 Трети етап \T2A/cmr/m/n/14.4 - реализира се частта за потр
-ебителските сметки, обработване
+Overfull \hbox (1.7915pt too wide) in paragraph at lines 86--87
+\T2A/cmr/m/n/14.4 обработване на потребителските поръчки, проверка за наличност
+
  []
 
-[2] (D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux) ) 
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\CYRB' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrz' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrd' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 89.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 89.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--97
+
+ []
+
+[4 <D:/FMI/fmi_projects/e-business/documentation/21.jpg>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \textbf
+             {Orders} РЎСЉРґСЉСЂР¶Р° РёРЅС„РѕСЂРјР°С†РёСЏ Р·Р° РїРѕСЂСЉС‡РєР...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \textbf
+             {OrderDetails} Р”Р°РЅРЅРё РѕС‚РЅРѕСЃРЅРѕ РїРѕСЂСЉС‡РєР°. РџР°Р·...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \textbf
+             {Tax} РЎСЉРґСЉСЂР¶Р° РёРЅС„РѕСЂРјР°С†РёСЏ Р·Р° РґР°РЅСЉС†РёС‚Рµ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[5]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \textbf
+             {Audit} РўР°Р±Р»РёС†Р°, СЃСЉРґСЉСЂР¶Р°С‰Р° РёРЅС„РѕСЂРјР°С†РёСЏ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (15.56335pt too wide) in paragraph at lines 137--143
+\T2A/cmr/bx/n/14.4 ProductAttributeValue \T2A/cmr/m/n/14.4 Съдържа информация з
+а различни атрибути
+ []
+
+
+Overfull \hbox (8.80927pt too wide) in paragraph at lines 137--143
+\T2A/cmr/m/n/14.4 на картините, извън по- летата на \T2A/cmr/bx/n/14.4 Prod-uct
+\T2A/cmr/m/n/14.4 . Тази таблица е свързваща
+ []
+
+
+Overfull \hbox (4.80687pt too wide) in paragraph at lines 137--143
+\T2A/cmr/bx/n/14.4 ShoppingCart \T2A/cmr/m/n/14.4 Представлява артикул в количк
+ата на клиента. Всеки
+ []
+
+
+Overfull \hbox (16.20699pt too wide) in paragraph at lines 137--143
+\T2A/cmr/m/n/14.4 клиент има уникална количка, отличаваща се с \T2A/cmr/m/it/14
+.4 Car-tID \T2A/cmr/m/n/14.4 идентификатор. 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+ (D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package rerunfilecheck Info: File `untitled-1.out' has not changed.
+(rerunfilecheck)             Checksum: DB7FDEA1E48BF69153FFD93A91A39CB7;238.
+ ) 
 Here is how much of TeX's memory you used:
- 3338 strings out of 495285
- 42141 string characters out of 3179816
- 89812 words of memory out of 3000000
- 6501 multiletter control sequences out of 15000+200000
- 13062 words of font info for 32 fonts, out of 3000000 for 9000
+ 7464 strings out of 495285
+ 106836 string characters out of 3179816
+ 186697 words of memory out of 3000000
+ 10502 multiletter control sequences out of 15000+200000
+ 16649 words of font info for 39 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,6n,24p,566b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program 
-Files (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{C:/Program Fi
-les (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program File
-s (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files (
-x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program Files (x86
-)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files (x86)/M
-iKTeX 2.8/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Program Files (x86)/MiKT
-eX 2.8/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files (x86)/MiKTeX 
-2.8/fonts/type1/public/cm-super/sfrm2488.pfb><C:/Program Files (x86)/MiKTeX 2.8
-/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on untitled-1.pdf (2 pages, 113214 bytes).
+ 31i,6n,31p,563b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
+{C:/Program Files (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<C
+:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx1440.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program
+ Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files
+ (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Program Files (x
+86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files (x86)
+/MiKTeX 2.8/fonts/type1/public/cm-super/sfti1440.pfb><C:/Program Files (x86)/Mi
+KTeX 2.8/fonts/type1/public/cm-super/sfti2074.pfb>
+Output written on untitled-1.pdf (6 pages, 188019 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
