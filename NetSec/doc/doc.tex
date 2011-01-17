@@ -54,6 +54,8 @@ mount -t debugfs nodev /sys/kernel/debug
 \end{verbatim}
 като root.
 Проблемът е оправен на 2010-11-13\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=ed3aada1bf34c5a9e98af167f125f8a740fc726a}}.
+Съществува от 2010-07-15.
+
 \subsection{Exploit}
 \paragraph{}
 Публикация за exploit излиза на 2010-12-18. Автор е Jon Oberheide\footnote{\url{http://www.exploit-db.com/exploits/15774/}}.
@@ -127,6 +129,7 @@ $ cat /proc/14303/maps
 \end{verbatim}
 \paragraph{}
 Проблемът е оправен на 2010-12-15. \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=462e635e5b73ba9a4c03913b77138cd57ce4b050}}
+Съществува от 2007-07-19.
 
 
 \section{CVE-2010-3881 CVSS Score 1.9}
@@ -135,7 +138,6 @@ $ cat /proc/14303/maps
 arch/x86/kvm/x86.c в Linux ядрата преди 2.3.36.2 не инициализира някои членове на структурите \textit{kvm\_vcpu\_events}, \textit{kvm\_debugregs}, \textit{kvm\_pit\_state2} и \textit{kvm\_clock\_data}, което позволява обикновен потребител евентуално да получи важна информация от стека на паметта на ядрото чрез операции за четене върху /dev/kvm устройството\footnote{KVM - Kernel-based Virtual Machine - пълно решение за виртуализация на Linux за x86 хардуер. Съдържа разширение - Intel VT или AMD-V. Състои се от модул към ядрото \textit{kvm.ko} и специфични за процесора разширения \textit{kv-intel.ko} и \textit{kvm-amd.ko}}.
 \paragraph{}
 Проблемът е оправен на 2010-11-01\footnote{\url{http://git.kernel.org/?p=virt/kvm/kvm.git;a=commit;h=831d9d02f9522e739825a51a11e3bc5aa531a905}}.
-
 
 
 %==============================================%==============================================
@@ -184,6 +186,7 @@ arch/x86/kvm/x86.c в Linux ядрата преди 2.3.36.2 не инициал
 Функцията \textit{rds\_page\_copy\_user} от  \textit{net/rds/page.c} в имплементацията на протокола Reliable Datagram Sockets (RDS) в Linux ядрата преди 2.6.36 не валидира правилно адресите, получени от user space, което позволява на обикновен потребител да получи по-високи привилегии, използвайки системните извиквания \textit{sendmsg} и \textit{recvmsg}.\\
 \paragraph{}
 Проблемът е оправен на 2010-10-15\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=799c10559d60f159ab2232203f222f18fa3c4a5f}}.
+Съществува от преди 2005г.
 
 \section{CVE-2010-3066 CVSS Score 4.9}
 \subsection{Описание}
@@ -191,6 +194,7 @@ arch/x86/kvm/x86.c в Linux ядрата преди 2.3.36.2 не инициал
 Функцията \textit{io\_submit\_one} от fs/aio.c в Linux ядрата преди 2.6.23 позволява на обикновен потребител да причини DoS (дереференциране на нулев указател) чрез системното извикване \textit{io\_submit} с IOCB\_FLAG\_RESFD флаг.
 \paragraph{}
 Проблемът е оправен на 2007-10-08\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=799c10559d60f159ab2232203f222f18fa3c4a5f}}.
+Съществува от 2009-02-24.
 
 \section{CVE-2010-2962 CVSS Score 7.2}
 \subsection{Описание}
@@ -199,7 +203,7 @@ arch/x86/kvm/x86.c в Linux ядрата преди 2.3.36.2 не инициал
 
 \begin{itemize}
     \item Тип: \textit{privileges escalation}
-    \item Съществува от:
+    \item Съществува от: 2008-07-30
   	\item Добива публичност: 2010-10-03
     \item Оправен: 2010-09-26 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=ce9d419dbecc292cc3e06e8b1d6d123d3fa813a4}}
 \end{itemize}
@@ -212,7 +216,7 @@ arch/x86/kvm/x86.c в Linux ядрата преди 2.3.36.2 не инициал
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2007-10-09
   	\item Добива публичност: 2010-10-01\footnote{\url{http://marc.info/?l=linux-kernel&m=128596992418814&w=2	}}
     \item Оправен: 2010-10-01 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/davem/net-2.6.git;a=commit;h=51e97a12bef19b7e43199fc153cf9bd5f2140362}}
 \end{itemize}
@@ -225,7 +229,7 @@ arch/x86/kvm/x86.c в Linux ядрата преди 2.3.36.2 не инициал
 
 \begin{itemize}
     \item Тип: \textit{privileges escalation}
-    \item Съществува от:
+    \item Съществува от: 2008-12-21
   	\item Добива публичност: 2010-10-15
     \item Оправен: 2010-10-15 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=3e645d6b485446c54c6745c5e2cf5c528fe4deec}}
 \end{itemize}
@@ -239,7 +243,7 @@ KVM имплементацията в Linux ядрата преди 2.6.36 не 
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2008-07-10
   	\item Добива публичност: 2010-10-19
     \item Оправен: 2010-10-19 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=9581d442b9058d3699b4be568b6e5eae38a41493}}
 \end{itemize}
@@ -252,7 +256,7 @@ KVM имплементацията в Linux ядрата преди 2.6.36 не 
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2008-11-26
   	\item Добива публичност: 2010-09-23\footnote{\url{https://lkml.org/lkml/2010/11/23/395}}
     \item Оправен: 2010-09-24 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/davem/net-2.6.git;a=commit;h=9915672d41273f5b77f1b3c29b391ffb7732b84b}}
 \end{itemize}
@@ -268,7 +272,7 @@ Exploit излиза на 2010-09-25\footnote{\url{http://www.exploit-db.com/exp
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2006-03-28
   	\item Добива публичност: 2010-09-08
     \item Оправен: 2010-09-10 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=1b528181b2ffa14721fb28ad1bd539fe1732c583}}
 \end{itemize}
@@ -285,7 +289,7 @@ Exploit излиза на 2010-11-26\footnote{\url{http://www.exploit-db.com/exp
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2010-05-26
   	\item Добива публичност: 2010-11-05
     \item Оправен: 2010-11-05 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=e0a70217107e6f9844628120412cb27bb4cea194}}
 \end{itemize}
@@ -368,7 +372,7 @@ Exploit излиза на 2010-11-26\footnote{\url{http://www.exploit-db.com/exp
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2010-08-02
     \item Оправен: 2010-09-29
 \end{itemize}
@@ -380,7 +384,7 @@ Exploit излиза на 2010-11-26\footnote{\url{http://www.exploit-db.com/exp
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2010-09-27
     \item Оправен: 2010-09-27\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=252a52aa4fa22a668f019e55b3aac3ff71ec1c29}}
 \end{itemize}
@@ -397,7 +401,7 @@ Exploit излиза на 2010-09-29\footnote{\url{http://www.exploit-db.com/exp
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2010-09-29
     \item Оправен: 2010-09-29\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/tiwai/sound-2.6.git;a=commit;h=5591bf07225523600450edd9e6ad258bb877b779}}
 \end{itemize}
@@ -409,7 +413,7 @@ Exploit излиза на 2010-09-29\footnote{\url{http://www.exploit-db.com/exp
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2010-03-12
   	\item Добива публичност: 2010-02-26
     \item Оправен: 2010-04-08\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=320718ee074acce5ffced6506cb51af1388942aa}}
 \end{itemize}
@@ -450,7 +454,7 @@ if (!access_ok(VERIFY_READ, gf32, __COMPAT_GF0_SIZE) ||
 
 \begin{itemize}
     \item Тип: \textit{privileges escalation}
-    \item Съществува от:
+    \item Съществува от: 2008-08-29
   	\item Добива публичност: 2010-09-07
     \item Оправен: 2010-09-14\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=c41d68a513c71e35a14f66d71782d27a79a81ea6}}
 \end{itemize}
@@ -466,7 +470,7 @@ if (!access_ok(VERIFY_READ, gf32, __COMPAT_GF0_SIZE) ||
 
 \begin{itemize}
     \item Тип: \textit{privileges escalation}
-    \item Съществува от:
+    \item Съществува от: 2008-07-09
   	\item Добива публичност: 2010-09-14
     \item Оправен: 2010-09-14\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=eefdca043e8391dcd719711716492063030b55ac}}
 \end{itemize}
@@ -478,7 +482,7 @@ if (!access_ok(VERIFY_READ, gf32, __COMPAT_GF0_SIZE) ||
 
 \begin{itemize}
     \item Тип: \textit{privileges escalation}
-    \item Съществува от:
+    \item Съществува от: 2007-10-16
   	\item Добива публичност: 2010-08-13
     \item Оправен: 2010-08-13\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=320b2b8de12698082609ebbc1a17165727f4c893}}
 \end{itemize}
@@ -491,7 +495,7 @@ fs/cifs/cifssmb.c в CIFS имплементацията в Linux ядрата �
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2010-03-31
     \item Оправен: 2010-04-03\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=6513a81e9325d712f1bfb9a1d7b750134e49ff18}}
 \end{itemize}
@@ -543,7 +547,7 @@ fs/cifs/cifssmb.c в CIFS имплементацията в Linux ядрата �
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2010-04-20
     \item Оправен: 2010-04-26\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=6513a81e9325d712f1bfb9a1d7b750134e49ff18}}
 \end{itemize}
@@ -573,7 +577,7 @@ fs/cifs/cifssmb.c в CIFS имплементацията в Linux ядрата �
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2009-11-06
   	\item Добива публичност: 2010-08-30\footnote{\url{https://bugzilla.redhat.com/show_bug.cgi?id=628770}}
     \item Оправен: 2010-08-31\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/davem/net-2.6.git;a=commitdiff;h=628e300cccaa628d8fb92aa28cb7530a3d5f2257}}
 \end{itemize}
@@ -589,7 +593,7 @@ Linux ядрото 2.6.35.4 и по-ранните от нея. Локални �
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2009-09-02
   	\item Добива публичност: 2010-08-25
     \item Оправен: 2010-09-10\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=3d96406c7da1ed5811ea52a3b0905f4f0e295376}}
 \end{itemize}
@@ -608,7 +612,7 @@ Linux ядрото 2.6.35.4 и по-ранните от нея. Локални �
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2007-11-16
   	\item Добива публичност: 2010-08-20
     \item Оправен: 2010-08-11\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=5b75c4973ce779520b9d1e392483207d6f842cde}}
 \end{itemize}
@@ -624,7 +628,7 @@ Linux ядрото 2.6.35.4 и по-ранните от нея. Локални �
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2006-03-20
   	\item Добива публичност: 2010-08-01
     \item Оправен: 2010-07-14\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=728a756b8fcd22d80e2dbba8117a8a3aafd3f203}}
 \end{itemize}
@@ -641,7 +645,7 @@ Linux ядрото 2.6.35.4 и по-ранните от нея. Локални �
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2006-10-11
   	\item Добива публичност: 2010-08-15
     \item Оправен: 2010-03-04\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=731eb1a03a8445cde2cb23ecfb3580c6fa7bb690}}
 \end{itemize}
@@ -657,7 +661,7 @@ Linux ядрото 2.6.35.4 и по-ранните от нея. Локални �
 
 \begin{itemize}
     \item Тип: \textit{privileges escalation}
-    \item Съществува от:
+    \item Съществува от: 2008-01-14
   	\item Добива публичност: 2010-05-18
     \item Оправен: 2010-06-11\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=2f26afba}}
 \end{itemize}
@@ -702,7 +706,7 @@ git10 не проверява кой е собственикът на даден
 
 \begin{itemize}
     \item Тип: \textit{privileges escalation}
-    \item Съществува от:
+    \item Съществува от: 2006-06-14
   	\item Добива публичност: 2010-03-25
     \item Оправен: 2010-03-25\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=7df0e0397b9a18358573274db9fdab991941062f}}
 \end{itemize}
@@ -717,7 +721,7 @@ rc4 пропуска някои задължителни извиквания н
 
 \begin{itemize}
     \item Тип: -
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2010-04-13
     \item Оправен: 2010-04-02\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=6da8d866d0d39e9509ff826660f6a86a6757c966}}
 \end{itemize}
@@ -768,7 +772,7 @@ rm /mnt/test/.reiserfs_priv/xattrs/2.0/user.test
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2009-02-23
   	\item Добива публичност: 2010-04-02
     \item Оправен: 2010-04-22\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=fa588e0c57048b3d4bfcd772d80dc0615f83fd35}}
 \end{itemize}
@@ -835,7 +839,7 @@ Encapsulation)
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2010-02-28
     \item Оправен: 2010-03-01\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=29e1fa3565a7951cc415c634eb2b78dbdbee151d}}
 \end{itemize}
@@ -868,7 +872,7 @@ oriented) и RFCOMM (Radio frequency communication) е възможно да с�
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2010-13-15
     \item Оправен: 2010-13-21\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=101545f6fef4a0a3ea8daf0b5b880df2c6a92a69}}
 \end{itemize}
@@ -938,7 +942,7 @@ GFS2 файлова система и после променят правата
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2005-09-11
   	\item Добива публичност: 2010-01-27
     \item Оправен: 2010-02-02\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=f98bfbd78c37c5946cc53089da32a5f741efdeb7}}
 \end{itemize}
@@ -954,7 +958,7 @@ GFS2 файлова система и после променят правата
 
 \begin{itemize}
     \item Тип: \textit{DoS}
-    \item Съществува от:
+    \item Съществува от: 2006-06-27
   	\item Добива публичност: 2009-09-29
     \item Оправен: 2010-02-02\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=51246bfd189064079c54421507236fd2723b18f3}}
 \end{itemize}
@@ -1099,7 +1103,7 @@ http://lxr.linux.no/#linux+v2.6.30.4/fs/fcntl.c#L566
 
 \begin{itemize}
     \item Тип: \textit{privileges escalation}
-    \item Съществува от:
+    \item Съществува от: преди 2005г.
   	\item Добива публичност: 2009-12-01
     \item Оправен: 2009-12-16\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=53281b6d3}}
 \end{itemize}
