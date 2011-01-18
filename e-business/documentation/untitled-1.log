@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  11 JAN 2011 23:33
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  18 JAN 2011 11:42
 entering extended mode
 **untitled-1.tex
 (D:\FMI\fmi_projects\e-business\documentation\untitled-1.tex
@@ -857,7 +857,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-(D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux)
+(D:\FMI\fmi_projects\e-business\documentation\untitled-1.aux
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 18.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\cyrillic\t2acmr.fd"
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
@@ -871,11 +876,6 @@ LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 31.
-
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\cyrillic\t2acmr.fd"
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
@@ -1447,7 +1447,7 @@ les (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files
 86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files (x86)
 /MiKTeX 2.8/fonts/type1/public/cm-super/sfti1440.pfb><C:/Program Files (x86)/Mi
 KTeX 2.8/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on untitled-1.pdf (6 pages, 188008 bytes).
+Output written on untitled-1.pdf (6 pages, 188287 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
