@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  18 JAN 2011 12:51
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  18 JAN 2011 14:23
 entering extended mode
 **doc1.tex
 (D:\FMI\fmi_projects\NetSec\doc\doc1.tex
@@ -1007,18 +1007,18 @@ LaTeX Warning: No \author given.
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
 (D:\FMI\fmi_projects\NetSec\doc\doc1.toc
-Overfull \hbox (6.53679pt too wide) in paragraph at lines 5--5
+Overfull \hbox (6.53679pt too wide) in paragraph at lines 6--6
 []\T2A/cmr/bx/n/14.4 I Описание на проблемите в сигурността на Lin-ux ядрото 
  []
 
 [2] [3] [4]
-Overfull \hbox (7.77327pt too wide) in paragraph at lines 195--195
+Overfull \hbox (7.77327pt too wide) in paragraph at lines 196--196
  [] [][]\T2A/cmr/bx/n/12 Приоритизиране на всички проблеми които водят до потен
 циален 
  []
 
 
-Overfull \hbox (35.71776pt too wide) in paragraph at lines 196--196
+Overfull \hbox (35.71776pt too wide) in paragraph at lines 197--197
  [] [][]\T2A/cmr/bx/n/12 Статистически анализ на времето за излизане на ex-ploi
 t за намерените 
  []
@@ -1026,43 +1026,37 @@ t за намерените
 )
 \tf@toc=\write4
  [5]
-Overfull \hbox (1.32559pt too wide) in paragraph at lines 42--57
+Overfull \hbox (1.32559pt too wide) in paragraph at lines 42--50
 \T2A/cmr/m/n/12 за няколко, които засягат само някоя конкрентна Lin-ux дистрибу
 ция или такива,
  []
 
 
-Overfull \hbox (9.32092pt too wide) in paragraph at lines 42--57
-\T2A/cmr/m/n/12 системата осигурява метод за идентификация на публично известни
-те уязвимости
+Overfull \hbox (6.88138pt too wide) in paragraph at lines 51--58
+\T2A/cmr/m/n/12 уязвимости и пробиви в областта на информационната сигурност. Т
+я се поддържа
  []
 
 
-Overfull \hbox (0.17957pt too wide) in paragraph at lines 42--57
-\T2A/cmr/m/n/12 и пробиви в областта на информационната сигурност. Тя се поддър
-жа от MITRE
+Overfull \hbox (3.59045pt too wide) in paragraph at lines 51--58
+\T2A/cmr/m/n/12 киберсигурността (NCSD) на Министерството на вътрешната сигурно
+ст на САЩ
  []
 
 
-Overfull \hbox (23.84163pt too wide) in paragraph at lines 42--57
-\T2A/cmr/m/n/12 Cor-po-ra-tion (http://www.mitre.org/) и е финансирана от Отдел
-а за киберсигурността
+Overfull \hbox (22.8608pt too wide) in paragraph at lines 51--58
+\T2A/cmr/m/n/12 че кандидатурата на идентификатора предстои да бъде разгледана 
+от Редакционния
  []
 
 
-Overfull \hbox (27.75385pt too wide) in paragraph at lines 42--57
-\T2A/cmr/m/n/12 означава, че идентификаторът е одобрен за CVE списъка, а втория
-, че кандидатурата
- []
-
-
-Overfull \hbox (3.12375pt too wide) in paragraph at lines 58--64
+Overfull \hbox (3.12375pt too wide) in paragraph at lines 59--65
 \T2A/cmr/m/n/12 използва за отдалечена атака, колко сложна трябва да е една ата
 ка, възползваща
  []
 
 
-Overfull \hbox (20.09068pt too wide) in paragraph at lines 65--68
+Overfull \hbox (20.09068pt too wide) in paragraph at lines 66--69
 \T2A/cmr/m/n/12 на ex-ploit, времето за решаване на проблемите и времето за опр
 авяне на проблемите.
  []
@@ -1070,282 +1064,282 @@ Overfull \hbox (20.09068pt too wide) in paragraph at lines 65--68
 [6]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 70.
+(hyperref)                removing `\CYRO' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 70.
+(hyperref)                removing `\cyrp' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 70.
+(hyperref)                removing `\cyri' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 70.
+(hyperref)                removing `\cyrs' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 70.
+(hyperref)                removing `\cyra' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 70.
+(hyperref)                removing `\cyrn' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 70.
+(hyperref)                removing `\cyri' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 70.
+(hyperref)                removing `\cyre' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 70.
+(hyperref)                removing `\cyrn' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 70.
+(hyperref)                removing `\cyra' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 70.
+(hyperref)                removing `\cyrp' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 70.
+(hyperref)                removing `\cyrr' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 70.
+(hyperref)                removing `\cyro' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrb' on input line 70.
+(hyperref)                removing `\cyrb' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 70.
+(hyperref)                removing `\cyrl' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 70.
+(hyperref)                removing `\cyre' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 70.
+(hyperref)                removing `\cyrm' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 70.
+(hyperref)                removing `\cyri' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 70.
+(hyperref)                removing `\cyrt' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 70.
+(hyperref)                removing `\cyre' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 70.
+(hyperref)                removing `\cyrv' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 70.
+(hyperref)                removing `\cyrs' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 70.
+(hyperref)                removing `\cyri' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrg' on input line 70.
+(hyperref)                removing `\cyrg' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyru' on input line 70.
+(hyperref)                removing `\cyru' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 70.
+(hyperref)                removing `\cyrr' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 70.
+(hyperref)                removing `\cyrn' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 70.
+(hyperref)                removing `\cyro' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 70.
+(hyperref)                removing `\cyrs' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 70.
+(hyperref)                removing `\cyrt' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 70.
+(hyperref)                removing `\cyrt' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 70.
+(hyperref)                removing `\cyra' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 70.
+(hyperref)                removing `\cyrn' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 70.
+(hyperref)                removing `\cyra' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrya' on input line 70.
+(hyperref)                removing `\cyrya' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 70.
+(hyperref)                removing `\cyrd' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 70.
+(hyperref)                removing `\cyrr' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 70.
+(hyperref)                removing `\cyro' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 70.
+(hyperref)                removing `\cyrt' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 70.
+(hyperref)                removing `\cyro' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 70.
+(hyperref)                removing `\cyrv' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 70.
+(hyperref)                removing `\cyrp' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 70.
+(hyperref)                removing `\cyro' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 70.
+(hyperref)                removing `\cyrs' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 70.
+(hyperref)                removing `\cyrl' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 70.
+(hyperref)                removing `\cyre' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 70.
+(hyperref)                removing `\cyrd' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 70.
+(hyperref)                removing `\cyrn' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 70.
+(hyperref)                removing `\cyri' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 70.
+(hyperref)                removing `\cyrt' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 70.
+(hyperref)                removing `\cyre' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 70.
+(hyperref)                removing `\cyrm' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 70.
+(hyperref)                removing `\cyre' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 70.
+(hyperref)                removing `\cyrs' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 70.
+(hyperref)                removing `\cyre' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrc' on input line 70.
+(hyperref)                removing `\cyrc' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 70.
+(hyperref)                removing `\cyra' on input line 71.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 72.
+(hyperref)                removing `\CYRO' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 72.
+(hyperref)                removing `\cyrp' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 72.
+(hyperref)                removing `\cyri' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 72.
+(hyperref)                removing `\cyrs' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 72.
+(hyperref)                removing `\cyra' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 72.
+(hyperref)                removing `\cyrn' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 72.
+(hyperref)                removing `\cyri' on input line 73.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 72.
+(hyperref)                removing `\cyre' on input line 73.
 
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 75.
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 76.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\cyrillic\t2acmtt.fd"
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Overfull \hbox (60.91455pt too wide) in paragraph at lines 77--77
+Overfull \hbox (60.91455pt too wide) in paragraph at lines 78--78
 []\T2A/cmtt/m/n/12 --w--w--w-. 1 root root 0 2010-11-11 14:56 /sys/kernel/debug
 /acpi/custom_method[] 
  []
 
 
-Overfull \hbox (36.39433pt too wide) in paragraph at lines 78--79
+Overfull \hbox (36.39433pt too wide) in paragraph at lines 79--80
 \T2A/cmr/m/n/12 придобие по-високи права, като сложи свой ACPI метод в таблицит
 е за интерпретиране
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
@@ -1353,102 +1347,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
 [7]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 133.
+(hyperref)                removing `\CYRO' on input line 134.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 133.
+(hyperref)                removing `\cyrp' on input line 134.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 133.
+(hyperref)                removing `\cyri' on input line 134.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 133.
+(hyperref)                removing `\cyrs' on input line 134.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 133.
+(hyperref)                removing `\cyra' on input line 134.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 133.
+(hyperref)                removing `\cyrn' on input line 134.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 133.
+(hyperref)                removing `\cyri' on input line 134.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 133.
+(hyperref)                removing `\cyre' on input line 134.
 
 
-Overfull \hbox (2.15118pt too wide) in paragraph at lines 135--136
+Overfull \hbox (2.4775pt too wide) in paragraph at lines 136--137
  [][] \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 in-stall_special_mapping \T2A/
-cmr/m/n/12 в \T2A/cmr/m/it/12 mm/mmap.c \T2A/cmr/m/n/12 в Lin-ux ядрата преди 2
+cmr/m/n/12 в \T2A/cmr/m/it/12 mm/mmap.c \T2A/cmr/m/n/12 в Lin-ux ядрото преди 2
 .6.37-
  []
 
 [8]
-Overfull \hbox (79.43503pt too wide) in paragraph at lines 161--161
+Overfull \hbox (79.43503pt too wide) in paragraph at lines 162--162
 []\T2A/cmtt/m/n/12 00010000-00011000 r-xp 00001000 00:19 2453665 /home/taviso/i
 nstall_special_mapping[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 171.
+(hyperref)                removing `\CYRO' on input line 172.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 171.
+(hyperref)                removing `\cyrp' on input line 172.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 171.
+(hyperref)                removing `\cyri' on input line 172.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 171.
+(hyperref)                removing `\cyrs' on input line 172.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 171.
+(hyperref)                removing `\cyra' on input line 172.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 171.
+(hyperref)                removing `\cyrn' on input line 172.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 171.
+(hyperref)                removing `\cyri' on input line 172.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 171.
+(hyperref)                removing `\cyre' on input line 172.
 
 
-Overfull \hbox (67.13516pt too wide) in paragraph at lines 173--174
+Overfull \hbox (67.13516pt too wide) in paragraph at lines 174--175
 \T2A/cmr/m/n/12 членове на структурите \T2A/cmr/m/it/12 kvm_vcpu_events\T2A/cmr
 /m/n/12 , \T2A/cmr/m/it/12 kvm_debugregs\T2A/cmr/m/n/12 , \T2A/cmr/m/it/12 kvm_
 pit_state2 \T2A/cmr/m/n/12 и \T2A/cmr/m/it/12 kvm_clock_data\T2A/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (3.61066pt too wide) in paragraph at lines 173--174
+Overfull \hbox (3.61066pt too wide) in paragraph at lines 174--175
 \T2A/cmr/m/n/12 което позволява обикновен потребител евентуално да получи важна
  информация
  []
 
 
-Overfull \hbox (30.05913pt too wide) in paragraph at lines 173--174
+Overfull \hbox (30.05913pt too wide) in paragraph at lines 174--175
 \T2A/cmr/m/n/12 от стека на паметта на ядрото чрез операции за четене върху /de
 v/kvm устройството[][][]. 
  []
@@ -1460,7 +1454,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175 \end{verbatim}
+l.176 \end{verbatim}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1469,341 +1463,347 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.175 \end{verbatim}
+l.176 \end{verbatim}
                     
 Things are pretty mixed up, but I think the worst is over.
 
 
-Overfull \hbox (79.33507pt too wide) in paragraph at lines 180--180
+Overfull \hbox (79.33507pt too wide) in paragraph at lines 181--181
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = virt / kvm / kvm
  . git ; a = commit ; h = 831d9d02f9522e739825a51a11e3bc5aa531a905$[]| 
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 187.
+(hyperref)                removing `\CYRO' on input line 188.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 187.
+(hyperref)                removing `\cyrp' on input line 188.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 187.
+(hyperref)                removing `\cyri' on input line 188.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 187.
+(hyperref)                removing `\cyrs' on input line 188.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 187.
+(hyperref)                removing `\cyra' on input line 188.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 187.
+(hyperref)                removing `\cyrn' on input line 188.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 187.
+(hyperref)                removing `\cyri' on input line 188.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 187.
+(hyperref)                removing `\cyre' on input line 188.
 
 
-Overfull \hbox (23.24396pt too wide) in paragraph at lines 189--192
+Overfull \hbox (23.24396pt too wide) in paragraph at lines 190--193
  [][] \T2A/cmr/m/n/12 Във файла \T2A/cmr/m/it/12 net/ipv4/inet_diag.c \T2A/cmr/
 m/n/12 във версиите на ядрото преди 2.6.37-rc2 байткодът
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 200.
+(hyperref)                removing `\CYRO' on input line 201.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 200.
+(hyperref)                removing `\cyrp' on input line 201.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 200.
+(hyperref)                removing `\cyri' on input line 201.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 200.
+(hyperref)                removing `\cyrs' on input line 201.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 200.
+(hyperref)                removing `\cyra' on input line 201.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 200.
+(hyperref)                removing `\cyrn' on input line 201.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 200.
+(hyperref)                removing `\cyri' on input line 201.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 200.
+(hyperref)                removing `\cyre' on input line 201.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 224.
+(hyperref)                removing `\CYRO' on input line 225.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 224.
+(hyperref)                removing `\cyrp' on input line 225.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 224.
+(hyperref)                removing `\cyri' on input line 225.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 224.
+(hyperref)                removing `\cyrs' on input line 225.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 224.
+(hyperref)                removing `\cyra' on input line 225.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 224.
+(hyperref)                removing `\cyrn' on input line 225.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 224.
+(hyperref)                removing `\cyri' on input line 225.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 224.
+(hyperref)                removing `\cyre' on input line 225.
 
 
-Overfull \hbox (27.22847pt too wide) in paragraph at lines 226--227
+Overfull \hbox (27.22847pt too wide) in paragraph at lines 227--228
  [][] \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 rds_page_copy_user \T2A/cmr/m/
 n/12 от \T2A/cmr/m/it/12 net/rds/page.c \T2A/cmr/m/n/12 в имплементацията на пр
 отокола
  []
 
 
-Overfull \hbox (11.49551pt too wide) in paragraph at lines 226--227
-\T2A/cmr/m/n/12 Re-li-able Data-gram Sock-ets (RDS) в Lin-ux ядрата преди 2.6.3
+Overfull \hbox (11.82182pt too wide) in paragraph at lines 227--228
+\T2A/cmr/m/n/12 Re-li-able Data-gram Sock-ets (RDS) в Lin-ux ядрото преди 2.6.3
 6 не валидира правилно
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 235.
+(hyperref)                removing `\CYRO' on input line 236.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 235.
+(hyperref)                removing `\cyrp' on input line 236.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 235.
+(hyperref)                removing `\cyri' on input line 236.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 235.
+(hyperref)                removing `\cyrs' on input line 236.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 235.
+(hyperref)                removing `\cyra' on input line 236.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 235.
+(hyperref)                removing `\cyrn' on input line 236.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 235.
+(hyperref)                removing `\cyri' on input line 236.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 235.
+(hyperref)                removing `\cyre' on input line 236.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 247.
+(hyperref)                removing `\CYRO' on input line 248.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 247.
+(hyperref)                removing `\cyrp' on input line 248.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 247.
+(hyperref)                removing `\cyri' on input line 248.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 247.
+(hyperref)                removing `\cyrs' on input line 248.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 247.
+(hyperref)                removing `\cyra' on input line 248.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 247.
+(hyperref)                removing `\cyrn' on input line 248.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 247.
+(hyperref)                removing `\cyri' on input line 248.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 247.
+(hyperref)                removing `\cyre' on input line 248.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
+Overfull \hbox (10.62761pt too wide) in paragraph at lines 250--251
+\T2A/cmr/m/n/12 своя страна може да доведе до придобиване на по-високи права, ч
+рез използването
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 260.
+(hyperref)                removing `\CYRO' on input line 261.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 260.
+(hyperref)                removing `\cyrp' on input line 261.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 260.
+(hyperref)                removing `\cyri' on input line 261.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 260.
+(hyperref)                removing `\cyrs' on input line 261.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 260.
+(hyperref)                removing `\cyra' on input line 261.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 260.
+(hyperref)                removing `\cyrn' on input line 261.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 260.
+(hyperref)                removing `\cyri' on input line 261.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 260.
+(hyperref)                removing `\cyre' on input line 261.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / davem / net-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 273.
+(hyperref)                removing `\CYRO' on input line 274.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 273.
+(hyperref)                removing `\cyrp' on input line 274.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 273.
+(hyperref)                removing `\cyri' on input line 274.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 273.
+(hyperref)                removing `\cyrs' on input line 274.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 273.
+(hyperref)                removing `\cyra' on input line 274.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 273.
+(hyperref)                removing `\cyrn' on input line 274.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 273.
+(hyperref)                removing `\cyri' on input line 274.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 273.
+(hyperref)                removing `\cyre' on input line 274.
 
 
-Overfull \hbox (8.32408pt too wide) in paragraph at lines 275--276
+Overfull \hbox (8.32408pt too wide) in paragraph at lines 276--277
  [][] \T2A/cmr/m/it/12 drivers/media/video/v4l2-compat-ioctl32.c \T2A/cmr/m/n/1
 2 в Video4Linux (V4L) имплементацията
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 287.
+(hyperref)                removing `\CYRO' on input line 288.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 287.
+(hyperref)                removing `\cyrp' on input line 288.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 287.
+(hyperref)                removing `\cyri' on input line 288.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 287.
+(hyperref)                removing `\cyrs' on input line 288.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 287.
+(hyperref)                removing `\cyra' on input line 288.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 287.
+(hyperref)                removing `\cyrn' on input line 288.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 287.
+(hyperref)                removing `\cyri' on input line 288.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 287.
+(hyperref)                removing `\cyre' on input line 288.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
@@ -1811,96 +1811,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--295
 [12]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 300.
+(hyperref)                removing `\CYRO' on input line 301.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 300.
+(hyperref)                removing `\cyrp' on input line 301.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 300.
+(hyperref)                removing `\cyri' on input line 301.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 300.
+(hyperref)                removing `\cyrs' on input line 301.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 300.
+(hyperref)                removing `\cyra' on input line 301.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 300.
+(hyperref)                removing `\cyrn' on input line 301.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 300.
+(hyperref)                removing `\cyri' on input line 301.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 300.
+(hyperref)                removing `\cyre' on input line 301.
 
 
-Overfull \hbox (2.60109pt too wide) in paragraph at lines 302--303
+Overfull \hbox (2.9274pt too wide) in paragraph at lines 303--304
  [][] \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 wait_for_unix_gc \T2A/cmr/m/n/
-12 в \T2A/cmr/m/it/12 net/unix/garbage.c \T2A/cmr/m/n/12 в Lin-ux ядрата преди 
+12 в \T2A/cmr/m/it/12 net/unix/garbage.c \T2A/cmr/m/n/12 в Lin-ux ядрото преди 
 2.6.37-
  []
 
 
-Overfull \hbox (24.72414pt too wide) in paragraph at lines 302--303
+Overfull \hbox (24.72414pt too wide) in paragraph at lines 303--304
 \T2A/cmr/m/n/12 сокети, което позволява обикновен потребител да причини de-nial
  of ser-vice (зависване
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
+Underfull \hbox (badness 10000) in paragraph at lines 309--309
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / davem / net-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 316.
+(hyperref)                removing `\CYRO' on input line 317.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 316.
+(hyperref)                removing `\cyrp' on input line 317.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 316.
+(hyperref)                removing `\cyri' on input line 317.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 316.
+(hyperref)                removing `\cyrs' on input line 317.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 316.
+(hyperref)                removing `\cyra' on input line 317.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 316.
+(hyperref)                removing `\cyrn' on input line 317.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 316.
+(hyperref)                removing `\cyri' on input line 317.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 316.
+(hyperref)                removing `\cyre' on input line 317.
 
 
-Overfull \hbox (25.70232pt too wide) in paragraph at lines 318--319
+Overfull \hbox (26.02863pt too wide) in paragraph at lines 319--320
  [][] \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 set-up_arg_pages \T2A/cmr/m/n/
-12 в \T2A/cmr/m/it/12 fs/exec.c \T2A/cmr/m/n/12 в Lin-ux ядрата преди 2.6.36, п
+12 в \T2A/cmr/m/it/12 fs/exec.c \T2A/cmr/m/n/12 в Lin-ux ядрото преди 2.6.36, п
 ри използване
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
@@ -1908,76 +1908,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--324
 [13]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 333.
+(hyperref)                removing `\CYRO' on input line 334.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 333.
+(hyperref)                removing `\cyrp' on input line 334.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 333.
+(hyperref)                removing `\cyri' on input line 334.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 333.
+(hyperref)                removing `\cyrs' on input line 334.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 333.
+(hyperref)                removing `\cyra' on input line 334.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 333.
+(hyperref)                removing `\cyrn' on input line 334.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 333.
+(hyperref)                removing `\cyri' on input line 334.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 333.
+(hyperref)                removing `\cyre' on input line 334.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 347.
+(hyperref)                removing `\CYRO' on input line 348.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 347.
+(hyperref)                removing `\cyrp' on input line 348.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 347.
+(hyperref)                removing `\cyri' on input line 348.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 347.
+(hyperref)                removing `\cyrs' on input line 348.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 347.
+(hyperref)                removing `\cyra' on input line 348.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 347.
+(hyperref)                removing `\cyrn' on input line 348.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 347.
+(hyperref)                removing `\cyri' on input line 348.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 347.
+(hyperref)                removing `\cyre' on input line 348.
 
 ! Undefined control sequence.
-l.348 ...° \textit{sctp\_packet\_config} РІ \texit
+l.349 ...° \textit{sctp\_packet\_config} РІ \texit
                                                   {net/sctp/output.c} РІ СЏР...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1986,7 +1986,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.349 ...ѕСЃР»РµРґРѕРІР°С‚РµР»РЅРѕСЃС‚ РѕС‚ \texit
+l.350 ...ѕСЃР»РµРґРѕРІР°С‚РµР»РЅРѕСЃС‚ РѕС‚ \texit
                                                   {SCTP} С‚СЂР°С„РёРє.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1995,55 +1995,43 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (40.72646pt too wide) in paragraph at lines 348--350
+Overfull \hbox (41.05276pt too wide) in paragraph at lines 349--351
 \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 sctp_packet_config \T2A/cmr/m/n/12 в
- net/sctp/output.c в ядрата преди 2.6.35.6 инициализира
+ net/sctp/output.c в ядрото преди 2.6.35.6 инициализира
  []
 
 
-Overfull \hbox (36.22058pt too wide) in paragraph at lines 368--368
+Overfull \hbox (36.22058pt too wide) in paragraph at lines 369--369
 []     \T2A/cmtt/m/n/12 * This function extends the used data area of the buffe
 r at the buffer[] 
  []
 
 
-Overfull \hbox (42.39407pt too wide) in paragraph at lines 368--368
+Overfull \hbox (42.39407pt too wide) in paragraph at lines 369--369
 []     \T2A/cmtt/m/n/12 * start. If this would exceed the total buffer headroom
  the kernel will[] 
  []
 
 
-Overfull \hbox (17.7001pt too wide) in paragraph at lines 368--368
+Overfull \hbox (17.7001pt too wide) in paragraph at lines 369--369
 []     \T2A/cmtt/m/n/12 * panic. A pointer to the first byte of the extra data 
 is returned.[] 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 374--374
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
+Underfull \hbox (badness 10000) in paragraph at lines 391--391
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--392
-[][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
- git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
- []
-
-
-Overfull \hbox (11.43867pt too wide) in paragraph at lines 401--403
-\T2A/cmr/m/n/12 2.6.37-rc2 позволява на локален потребител да предизвика DoS ат
-ака чрез вектори,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--405
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
@@ -2052,12 +2040,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--405
 Underfull \hbox (badness 10000) in paragraph at lines 406--406
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
-\T2A/cmtt/m/n/10 63bfd7384b119409685a17d5c58f0b56e5dc03dahttp : / / git . kerne
-l . org / ?p = linux / kernel /
  []
 
 
@@ -2073,39 +2055,51 @@ l . org / ?p = linux / kernel /
  []
 
 
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 416.
+Underfull \hbox (badness 10000) in paragraph at lines 408--408
+[][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
+ git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--408
+\T2A/cmtt/m/n/10 63bfd7384b119409685a17d5c58f0b56e5dc03dahttp : / / git . kerne
+l . org / ?p = linux / kernel /
+ []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 416.
+(hyperref)                removing `\CYRO' on input line 417.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 416.
+(hyperref)                removing `\cyrp' on input line 417.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 416.
+(hyperref)                removing `\cyri' on input line 417.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 416.
+(hyperref)                removing `\cyrs' on input line 417.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 416.
+(hyperref)                removing `\cyra' on input line 417.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 416.
+(hyperref)                removing `\cyrn' on input line 417.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 416.
+(hyperref)                removing `\cyri' on input line 417.
 
 
-Overfull \hbox (46.32309pt too wide) in paragraph at lines 418--419
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 417.
+
+
+Overfull \hbox (46.32309pt too wide) in paragraph at lines 419--420
  [][] \T2A/cmr/m/it/12 arch/x86/hvm/vmx/vmcs.c \T2A/cmr/m/n/12 в virtual-machin
 e con-trol struc-ture (VM-CS) имплементацията
  []
@@ -2113,1020 +2107,1013 @@ e con-trol struc-ture (VM-CS) имплементацията
 [15]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 428.
+(hyperref)                removing `\CYRO' on input line 429.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 428.
+(hyperref)                removing `\cyrp' on input line 429.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 428.
+(hyperref)                removing `\cyri' on input line 429.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 428.
+(hyperref)                removing `\cyrs' on input line 429.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 428.
+(hyperref)                removing `\cyra' on input line 429.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 428.
+(hyperref)                removing `\cyrn' on input line 429.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 428.
+(hyperref)                removing `\cyri' on input line 429.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 428.
+(hyperref)                removing `\cyre' on input line 429.
 
 
-Overfull \hbox (2.95804pt too wide) in paragraph at lines 430--431
+Overfull \hbox (2.95804pt too wide) in paragraph at lines 431--432
 \T2A/cmr/m/n/12 rc6 позволява на обикновен потребител да получи важна информаци
 я от паметта
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--436
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 445.
+(hyperref)                removing `\CYRO' on input line 446.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 445.
+(hyperref)                removing `\cyrp' on input line 446.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 445.
+(hyperref)                removing `\cyri' on input line 446.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 445.
+(hyperref)                removing `\cyrs' on input line 446.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 445.
+(hyperref)                removing `\cyra' on input line 446.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 445.
+(hyperref)                removing `\cyrn' on input line 446.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 445.
+(hyperref)                removing `\cyri' on input line 446.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 445.
+(hyperref)                removing `\cyre' on input line 446.
 
 
-Overfull \hbox (8.27542pt too wide) in paragraph at lines 447--448
+Overfull \hbox (8.27542pt too wide) in paragraph at lines 448--449
  [][] \T2A/cmr/m/n/12 Няколко препълвания на целочислени променливи във функция
 та \T2A/cmr/m/it/12 snd_ctl_new
  []
 
 
-Overfull \hbox (17.47546pt too wide) in paragraph at lines 447--448
+Overfull \hbox (17.47546pt too wide) in paragraph at lines 448--449
 \T2A/cmr/m/n/12 на обикновен потребител да причини DoS (предизвикване на грешки
  в динамичната
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 453--453
+Underfull \hbox (badness 10000) in paragraph at lines 454--454
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / tiwai / sound-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 457.
+(hyperref)                removing `\CYRO' on input line 458.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 457.
+(hyperref)                removing `\cyrp' on input line 458.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 457.
+(hyperref)                removing `\cyri' on input line 458.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 457.
+(hyperref)                removing `\cyrs' on input line 458.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 457.
+(hyperref)                removing `\cyra' on input line 458.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 457.
+(hyperref)                removing `\cyrn' on input line 458.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 457.
+(hyperref)                removing `\cyri' on input line 458.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 457.
+(hyperref)                removing `\cyre' on input line 458.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--465
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 469.
+(hyperref)                removing `\CYRO' on input line 470.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 469.
+(hyperref)                removing `\cyrp' on input line 470.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 469.
+(hyperref)                removing `\cyri' on input line 470.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 469.
+(hyperref)                removing `\cyrs' on input line 470.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 469.
+(hyperref)                removing `\cyra' on input line 470.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 469.
+(hyperref)                removing `\cyrn' on input line 470.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 469.
+(hyperref)                removing `\cyri' on input line 470.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 469.
+(hyperref)                removing `\cyre' on input line 470.
 
 [17]
-Overfull \hbox (23.8736pt too wide) in paragraph at lines 498--498
+Overfull \hbox (23.8736pt too wide) in paragraph at lines 499--499
 []      \T2A/cmtt/m/n/12 copy_in_user(&kgf->gf_group,&gf32->gf_group,sizeof(kgf
 ->gf_group)))[] 
  []
 
 
-Overfull \hbox (21.31453pt too wide) in paragraph at lines 500--501
+Overfull \hbox (21.31453pt too wide) in paragraph at lines 501--502
  [][] \T2A/cmr/m/it/12 klen \T2A/cmr/m/n/12 е неотрицателно 32-битово число, по
 дадено от потребителското пространство,
  []
 
 
-Overfull \hbox (0.67374pt too wide) in paragraph at lines 500--501
+Overfull \hbox (0.67374pt too wide) in paragraph at lines 501--502
 \T2A/cmr/m/n/12 адрес в потребителското адресно пространаство и съдържанието на
  структурата
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 514.
+(hyperref)                removing `\CYRO' on input line 515.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 514.
+(hyperref)                removing `\cyrp' on input line 515.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 514.
+(hyperref)                removing `\cyri' on input line 515.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 514.
+(hyperref)                removing `\cyrs' on input line 515.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 514.
+(hyperref)                removing `\cyra' on input line 515.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 514.
+(hyperref)                removing `\cyrn' on input line 515.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 514.
+(hyperref)                removing `\cyri' on input line 515.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 514.
+(hyperref)                removing `\cyre' on input line 515.
 
 
-Overfull \hbox (21.06258pt too wide) in paragraph at lines 516--517
-\T2A/cmr/m/it/12 arch/x86/ia32/ia32entry.S \T2A/cmr/m/n/12 в Lin-ux ядрата пред
+Overfull \hbox (21.38889pt too wide) in paragraph at lines 517--518
+\T2A/cmr/m/it/12 arch/x86/ia32/ia32entry.S \T2A/cmr/m/n/12 в Lin-ux ядрото пред
 и 2.6.36-rc4-git2 на x86_64 платформи
  []
 
 
-Overfull \hbox (15.70572pt too wide) in paragraph at lines 516--517
+Overfull \hbox (15.70572pt too wide) in paragraph at lines 517--518
 \T2A/cmr/m/n/12 изпълнение на \T2A/cmr/m/it/12 ptrace \T2A/cmr/m/n/12 системнот
 о извикване. Това би могло да позволи на обикновен
  []
 
 
-Overfull \hbox (13.72748pt too wide) in paragraph at lines 516--517
+Overfull \hbox (13.72748pt too wide) in paragraph at lines 517--518
 \T2A/cmr/m/n/12 потребител да придобие по-високи права, като предизвика достъп 
 извън границите
  []
 
 
-Overfull \hbox (10.13405pt too wide) in paragraph at lines 516--517
+Overfull \hbox (10.13405pt too wide) in paragraph at lines 517--518
 \T2A/cmr/m/n/12 на таблицата със ситемни извиквания, използвайки RAX регистъра.
  Този проблем
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 526.
+(hyperref)                removing `\CYRO' on input line 527.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 526.
+(hyperref)                removing `\cyrp' on input line 527.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 526.
+(hyperref)                removing `\cyri' on input line 527.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 526.
+(hyperref)                removing `\cyrs' on input line 527.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 526.
+(hyperref)                removing `\cyra' on input line 527.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 526.
+(hyperref)                removing `\cyrn' on input line 527.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 526.
+(hyperref)                removing `\cyri' on input line 527.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 526.
+(hyperref)                removing `\cyre' on input line 527.
 
 
-Overfull \hbox (10.11588pt too wide) in paragraph at lines 528--529
+Overfull \hbox (10.44218pt too wide) in paragraph at lines 529--530
  [][] \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 do_anonymous_page \T2A/cmr/m/n
-/12 в \T2A/cmr/m/it/12 mm/memory.c \T2A/cmr/m/n/12 в Lin-ux ядрата преди 2.6.27
+/12 в \T2A/cmr/m/it/12 mm/memory.c \T2A/cmr/m/n/12 в Lin-ux ядрото преди 2.6.27
 .52,
  []
 
 
-Overfull \hbox (4.75508pt too wide) in paragraph at lines 528--529
+Overfull \hbox (4.75508pt too wide) in paragraph at lines 529--530
 \T2A/cmr/m/n/12 2.6.32.x преди 2.6.32.19, 2.6.34.x преди 2.6.34.4, и 2.6.35.x п
 реди 2.6.35.2 не разделя
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 538.
+(hyperref)                removing `\CYRO' on input line 539.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 538.
+(hyperref)                removing `\cyrp' on input line 539.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 538.
+(hyperref)                removing `\cyri' on input line 539.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 538.
+(hyperref)                removing `\cyrs' on input line 539.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 538.
+(hyperref)                removing `\cyra' on input line 539.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 538.
+(hyperref)                removing `\cyrn' on input line 539.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 538.
+(hyperref)                removing `\cyri' on input line 539.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 538.
+(hyperref)                removing `\cyre' on input line 539.
 
 
-Overfull \hbox (25.23509pt too wide) in paragraph at lines 540--541
- [][] \T2A/cmr/m/n/12 fs/cifs/cifssmb.c в CIFS имплементацията в Lin-ux ядрата 
+Overfull \hbox (25.5614pt too wide) in paragraph at lines 541--542
+ [][] \T2A/cmr/m/n/12 fs/cifs/cifssmb.c в CIFS имплементацията в Lin-ux ядрото 
 преди 2.6.34-rc4 позволява
  []
 
 
-Overfull \hbox (8.90167pt too wide) in paragraph at lines 540--541
+Overfull \hbox (8.90167pt too wide) in paragraph at lines 541--542
 \T2A/cmr/m/n/12 невалидна Coun-tHigh стойност, както е демонстрирано при OS/2 s
 erv-er. Сървърът
  []
 
 
-Overfull \hbox (3.2921pt too wide) in paragraph at lines 540--541
+Overfull \hbox (3.2921pt too wide) in paragraph at lines 541--542
 \T2A/cmr/m/n/12 операции за записване. Това води до грешно изчисление на "nbyte
 "и предизвиква
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--547
+Underfull \hbox (badness 10000) in paragraph at lines 548--548
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 553.
+(hyperref)                removing `\CYRO' on input line 554.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 553.
+(hyperref)                removing `\cyrp' on input line 554.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 553.
+(hyperref)                removing `\cyri' on input line 554.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 553.
+(hyperref)                removing `\cyrs' on input line 554.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 553.
+(hyperref)                removing `\cyra' on input line 554.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 553.
+(hyperref)                removing `\cyrn' on input line 554.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 553.
+(hyperref)                removing `\cyri' on input line 554.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 553.
+(hyperref)                removing `\cyre' on input line 554.
 
 
-Overfull \hbox (5.70813pt too wide) in paragraph at lines 555--556
+Overfull \hbox (5.70813pt too wide) in paragraph at lines 556--557
  [][] \T2A/cmr/m/n/12 Няколко препълвания на буферите в \T2A/cmr/m/it/12 fs/nfs
 d/nfs4xdr.c \T2A/cmr/m/n/12 в XDR имплементацията
  []
 
-
-Overfull \hbox (16.00182pt too wide) in paragraph at lines 555--556
-\T2A/cmr/m/n/12 NFSv4 искане за писане, свързано с функциите \T2A/cmr/m/it/12 r
-ead_buf \T2A/cmr/m/n/12 и \T2A/cmr/m/it/12 nfsd4_decode_compound\T2A/cmr/m/n/12
- . 
- []
-
 [19]
-Overfull \hbox (16.3179pt too wide) in paragraph at lines 557--558
+Overfull \hbox (16.3179pt too wide) in paragraph at lines 558--559
 \T2A/cmr/m/n/12 на READ_BUF ще мислят, че има много повече от страница свободно
  пространство
  []
 
 
-Overfull \hbox (23.8736pt too wide) in paragraph at lines 593--593
+Overfull \hbox (23.8736pt too wide) in paragraph at lines 594--594
 []\T2A/cmtt/m/n/12 +                               argp->end = argp->p + (argp-
 >pagelen>>2);[] 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 599--599
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 604.
+(hyperref)                removing `\CYRO' on input line 605.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 604.
+(hyperref)                removing `\cyrp' on input line 605.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 604.
+(hyperref)                removing `\cyri' on input line 605.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 604.
+(hyperref)                removing `\cyrs' on input line 605.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 604.
+(hyperref)                removing `\cyra' on input line 605.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 604.
+(hyperref)                removing `\cyrn' on input line 605.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 604.
+(hyperref)                removing `\cyri' on input line 605.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 604.
+(hyperref)                removing `\cyre' on input line 605.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 620--620
+Underfull \hbox (badness 10000) in paragraph at lines 621--621
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 624.
+(hyperref)                removing `\CYRO' on input line 625.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 624.
+(hyperref)                removing `\cyrp' on input line 625.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 624.
+(hyperref)                removing `\cyri' on input line 625.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 624.
+(hyperref)                removing `\cyrs' on input line 625.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 624.
+(hyperref)                removing `\cyra' on input line 625.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 624.
+(hyperref)                removing `\cyrn' on input line 625.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 624.
+(hyperref)                removing `\cyri' on input line 625.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 624.
+(hyperref)                removing `\cyre' on input line 625.
 
 
-Overfull \hbox (1.35628pt too wide) in paragraph at lines 626--627
+Overfull \hbox (1.35628pt too wide) in paragraph at lines 627--628
  [][] \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 ir-da_bind \T2A/cmr/m/n/12 от 
 \T2A/cmr/m/it/12 net/irda/af_irda.c \T2A/cmr/m/n/12 в Lin-ux ядрото преди верси
 я 2.6.36-
  []
 
 
-Overfull \hbox (26.77982pt too wide) in paragraph at lines 626--627
+Overfull \hbox (26.77982pt too wide) in paragraph at lines 627--628
 \T2A/cmr/m/n/12 rc3-след-20100901 не реагира правилно на случая, когато изпълне
 нието на функцията
  []
 
 
-Overfull \hbox (18.34746pt too wide) in paragraph at lines 626--627
+Overfull \hbox (18.34746pt too wide) in paragraph at lines 627--628
 \T2A/cmr/m/it/12 ir-da_open_tsap \T2A/cmr/m/n/12 се провали. Това позволява на 
 локални потребители да предизвикат
  []
 
 
-Overfull \hbox (2.79279pt too wide) in paragraph at lines 626--627
+Overfull \hbox (2.79279pt too wide) in paragraph at lines 627--628
 \T2A/cmr/m/n/12 DoS (дереференциранне на нулев указател), чрез няколко неуспешн
 и извиквания
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--632
+Underfull \hbox (badness 10000) in paragraph at lines 633--633
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / davem / net-[]2 . 6 . git ; a = commitdiff ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 636.
+(hyperref)                removing `\CYRO' on input line 637.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 636.
+(hyperref)                removing `\cyrp' on input line 637.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 636.
+(hyperref)                removing `\cyri' on input line 637.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 636.
+(hyperref)                removing `\cyrs' on input line 637.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 636.
+(hyperref)                removing `\cyra' on input line 637.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 636.
+(hyperref)                removing `\cyrn' on input line 637.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 636.
+(hyperref)                removing `\cyri' on input line 637.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 636.
+(hyperref)                removing `\cyre' on input line 637.
 
 
-Overfull \hbox (5.7295pt too wide) in paragraph at lines 638--643
+Overfull \hbox (5.7295pt too wide) in paragraph at lines 639--644
 \T2A/cmr/m/n/12 предизвикат DoS или евентуално някакъв друг проблем, като извик
 ат функцията
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 648--648
+Underfull \hbox (badness 10000) in paragraph at lines 649--649
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 652.
+(hyperref)                removing `\CYRO' on input line 653.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 652.
+(hyperref)                removing `\cyrp' on input line 653.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 652.
+(hyperref)                removing `\cyri' on input line 653.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 652.
+(hyperref)                removing `\cyrs' on input line 653.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 652.
+(hyperref)                removing `\cyra' on input line 653.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 652.
+(hyperref)                removing `\cyrn' on input line 653.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 652.
+(hyperref)                removing `\cyri' on input line 653.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 652.
+(hyperref)                removing `\cyre' on input line 653.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--667
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 671.
+(hyperref)                removing `\CYRO' on input line 672.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 671.
+(hyperref)                removing `\cyrp' on input line 672.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 671.
+(hyperref)                removing `\cyri' on input line 672.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 671.
+(hyperref)                removing `\cyrs' on input line 672.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 671.
+(hyperref)                removing `\cyra' on input line 672.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 671.
+(hyperref)                removing `\cyrn' on input line 672.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 671.
+(hyperref)                removing `\cyri' on input line 672.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 671.
+(hyperref)                removing `\cyre' on input line 672.
 
 
-Overfull \hbox (5.41023pt too wide) in paragraph at lines 673--678
+Overfull \hbox (25.96771pt too wide) in paragraph at lines 674--679
 \T2A/cmr/m/n/12 при някои пресмятания, които извършва. Локален потребител с дос
-тъп до mount-
- []
-
-
-Overfull \hbox (15.19385pt too wide) in paragraph at lines 673--678
-\T2A/cmr/m/n/12 или да предизвика DoS, чрез специална операция за преименуване,
- която задейства
+тъп до монтирана
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
+Underfull \hbox (badness 10000) in paragraph at lines 684--684
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 687.
+(hyperref)                removing `\CYRO' on input line 688.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 687.
+(hyperref)                removing `\cyrp' on input line 688.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 687.
+(hyperref)                removing `\cyri' on input line 688.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 687.
+(hyperref)                removing `\cyrs' on input line 688.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 687.
+(hyperref)                removing `\cyra' on input line 688.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 687.
+(hyperref)                removing `\cyrn' on input line 688.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 687.
+(hyperref)                removing `\cyri' on input line 688.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 687.
+(hyperref)                removing `\cyre' on input line 688.
 
 
-Overfull \hbox (11.11235pt too wide) in paragraph at lines 689--694
+Overfull \hbox (11.11235pt too wide) in paragraph at lines 690--695
 \T2A/cmr/m/n/12 предизвикат DoS (забиване) поради препълване на целочислен тип 
 във функцията
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
+Underfull \hbox (badness 10000) in paragraph at lines 701--701
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 704.
+(hyperref)                removing `\CYRO' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 704.
+(hyperref)                removing `\cyrp' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 704.
+(hyperref)                removing `\cyri' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 704.
+(hyperref)                removing `\cyrs' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 704.
+(hyperref)                removing `\cyra' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 704.
+(hyperref)                removing `\cyrn' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 704.
+(hyperref)                removing `\cyri' on input line 705.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 704.
+(hyperref)                removing `\cyre' on input line 705.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--716
+Underfull \hbox (badness 10000) in paragraph at lines 717--717
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a =
  []
 
 [23]
-Overfull \hbox (17.7001pt too wide) in paragraph at lines 745--745
+Overfull \hbox (17.7001pt too wide) in paragraph at lines 746--746
 []  \T2A/cmtt/m/n/12 user::rwx           вижда се, че успешно е променен user-а
  на файл aaa[] 
  []
 
 
-Overfull \hbox (5.4359pt too wide) in paragraph at lines 747--749
+Overfull \hbox (5.4359pt too wide) in paragraph at lines 748--750
  [][] \T2A/cmr/m/n/12 При нормални обстоятелства не би трябвало \T2A/cmr/m/it/1
 2 us-er2 \T2A/cmr/m/n/12 да може да променя списъка
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 752.
+(hyperref)                removing `\CYRO' on input line 753.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 752.
+(hyperref)                removing `\cyrp' on input line 753.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 752.
+(hyperref)                removing `\cyri' on input line 753.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 752.
+(hyperref)                removing `\cyrs' on input line 753.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 752.
+(hyperref)                removing `\cyra' on input line 753.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 752.
+(hyperref)                removing `\cyrn' on input line 753.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 752.
+(hyperref)                removing `\cyri' on input line 753.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 752.
+(hyperref)                removing `\cyre' on input line 753.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 765.
+(hyperref)                removing `\CYRO' on input line 766.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 765.
+(hyperref)                removing `\cyrp' on input line 766.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 765.
+(hyperref)                removing `\cyri' on input line 766.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 765.
+(hyperref)                removing `\cyrs' on input line 766.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 765.
+(hyperref)                removing `\cyra' on input line 766.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 765.
+(hyperref)                removing `\cyrn' on input line 766.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 765.
+(hyperref)                removing `\cyri' on input line 766.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 765.
+(hyperref)                removing `\cyre' on input line 766.
 
 
-Overfull \hbox (20.41676pt too wide) in paragraph at lines 767--771
+Overfull \hbox (20.41676pt too wide) in paragraph at lines 768--772
 \T2A/cmr/m/n/12 Това има неустановено въздействие, а векторът на атака използва
 ща тази уязвимост
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 776--776
+Underfull \hbox (badness 10000) in paragraph at lines 777--777
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 780.
+(hyperref)                removing `\CYRO' on input line 781.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 780.
+(hyperref)                removing `\cyrp' on input line 781.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 780.
+(hyperref)                removing `\cyri' on input line 781.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 780.
+(hyperref)                removing `\cyrs' on input line 781.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 780.
+(hyperref)                removing `\cyra' on input line 781.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 780.
+(hyperref)                removing `\cyrn' on input line 781.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 780.
+(hyperref)                removing `\cyri' on input line 781.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 780.
+(hyperref)                removing `\cyre' on input line 781.
 
 
-Overfull \hbox (21.28406pt too wide) in paragraph at lines 811--812
+Overfull \hbox (21.28406pt too wide) in paragraph at lines 812--813
 \T2A/cmr/m/n/12 Вижда се, че непривилигирован потребител може да пише в \T2A/cm
 r/m/it/12 /mnt/test/.reiserfs_priv\T2A/cmr/m/n/12 . 
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 815.
+(hyperref)                removing `\CYRO' on input line 816.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 815.
+(hyperref)                removing `\cyrp' on input line 816.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 815.
+(hyperref)                removing `\cyri' on input line 816.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 815.
+(hyperref)                removing `\cyrs' on input line 816.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 815.
+(hyperref)                removing `\cyra' on input line 816.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 815.
+(hyperref)                removing `\cyrn' on input line 816.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 815.
+(hyperref)                removing `\cyri' on input line 816.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 815.
+(hyperref)                removing `\cyre' on input line 816.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+Underfull \hbox (badness 10000) in paragraph at lines 828--828
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 832.
+(hyperref)                removing `\CYRO' on input line 833.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 832.
+(hyperref)                removing `\cyrp' on input line 833.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 832.
+(hyperref)                removing `\cyri' on input line 833.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 832.
+(hyperref)                removing `\cyrs' on input line 833.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 832.
+(hyperref)                removing `\cyra' on input line 833.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 832.
+(hyperref)                removing `\cyrn' on input line 833.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 832.
+(hyperref)                removing `\cyri' on input line 833.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 832.
+(hyperref)                removing `\cyre' on input line 833.
+
+
+Overfull \hbox (3.18015pt too wide) in paragraph at lines 835--838
+\T2A/cmr/m/n/12 биват следвани NFS symlink-овете, което позволява на атакуващ д
+а окаже неясно
+ []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 846.
+(hyperref)                removing `\CYRO' on input line 847.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 846.
+(hyperref)                removing `\cyrp' on input line 847.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 846.
+(hyperref)                removing `\cyri' on input line 847.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 846.
+(hyperref)                removing `\cyrs' on input line 847.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 846.
+(hyperref)                removing `\cyra' on input line 847.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 846.
+(hyperref)                removing `\cyrn' on input line 847.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 846.
+(hyperref)                removing `\cyri' on input line 847.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 846.
+(hyperref)                removing `\cyre' on input line 847.
 
 
-Overfull \hbox (0.58354pt too wide) in paragraph at lines 848--854
+Overfull \hbox (0.58354pt too wide) in paragraph at lines 849--855
  [][] \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 pro-cess-com-pl_compat \T2A/cm
 r/m/n/12 от \T2A/cmr/m/it/12 drivers/usb/core/devio.c \T2A/cmr/m/n/12 при верси
 я на Lin-
  []
 
 
-Overfull \hbox (15.52226pt too wide) in paragraph at lines 848--854
+Overfull \hbox (15.52226pt too wide) in paragraph at lines 849--855
 \T2A/cmr/m/n/12 ux ядрото 2.6.32 и по-ранни от нея, не изтрива данните от буфер
 а на прехвърлянето
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 865.
+(hyperref)                removing `\CYRO' on input line 866.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 865.
+(hyperref)                removing `\cyrp' on input line 866.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 865.
+(hyperref)                removing `\cyri' on input line 866.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 865.
+(hyperref)                removing `\cyrs' on input line 866.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 865.
+(hyperref)                removing `\cyra' on input line 866.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 865.
+(hyperref)                removing `\cyrn' on input line 866.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 865.
+(hyperref)                removing `\cyri' on input line 866.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 865.
+(hyperref)                removing `\cyre' on input line 866.
 
 
-Overfull \hbox (11.00601pt too wide) in paragraph at lines 867--871
+Overfull \hbox (11.00601pt too wide) in paragraph at lines 868--872
  [][] \T2A/cmr/m/n/12 Функцията \T2A/cmr/m/it/12 nfs_wait_on_request \T2A/cmr/m
 /n/12 от \T2A/cmr/m/it/12 fs/nfs/pagelist.c \T2A/cmr/m/n/12 в Lin-ux ядрото при
  версиите
@@ -3135,165 +3122,165 @@ Overfull \hbox (11.00601pt too wide) in paragraph at lines 867--871
 [26]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 881.
+(hyperref)                removing `\CYRO' on input line 882.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 881.
+(hyperref)                removing `\cyrp' on input line 882.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 881.
+(hyperref)                removing `\cyri' on input line 882.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 881.
+(hyperref)                removing `\cyrs' on input line 882.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 881.
+(hyperref)                removing `\cyra' on input line 882.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 881.
+(hyperref)                removing `\cyrn' on input line 882.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 881.
+(hyperref)                removing `\cyri' on input line 882.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 881.
+(hyperref)                removing `\cyre' on input line 882.
 
 
-Overfull \hbox (4.66292pt too wide) in paragraph at lines 883--889
+Overfull \hbox (4.66292pt too wide) in paragraph at lines 884--890
 \T2A/cmr/m/n/12 цикъл) посредством специфични MPEG2-TS фреймове, когато указате
 л, свързан
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 895--895
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 899.
+(hyperref)                removing `\CYRO' on input line 900.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 899.
+(hyperref)                removing `\cyrp' on input line 900.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 899.
+(hyperref)                removing `\cyri' on input line 900.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 899.
+(hyperref)                removing `\cyrs' on input line 900.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 899.
+(hyperref)                removing `\cyra' on input line 900.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 899.
+(hyperref)                removing `\cyrn' on input line 900.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 899.
+(hyperref)                removing `\cyri' on input line 900.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 899.
+(hyperref)                removing `\cyre' on input line 900.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 912.
+(hyperref)                removing `\CYRO' on input line 913.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 912.
+(hyperref)                removing `\cyrp' on input line 913.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 912.
+(hyperref)                removing `\cyri' on input line 913.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 912.
+(hyperref)                removing `\cyrs' on input line 913.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 912.
+(hyperref)                removing `\cyra' on input line 913.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 912.
+(hyperref)                removing `\cyrn' on input line 913.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 912.
+(hyperref)                removing `\cyri' on input line 913.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 912.
+(hyperref)                removing `\cyre' on input line 913.
 
 
-Overfull \hbox (33.58237pt too wide) in paragraph at lines 914--922
+Overfull \hbox (33.58237pt too wide) in paragraph at lines 915--923
 \T2A/cmr/m/n/12 от големината на файловете в \T2A/cmr/m/it/12 sys-fs \T2A/cmr/m
 /n/12 в \T2A/cmr/m/it/12 net/bluetooth/l2cap.c\T2A/cmr/m/n/12 , \T2A/cmr/m/it/1
 2 net/bluetooth/rfcomm/core.c\T2A/cmr/m/n/12 ,
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 927--927
+Underfull \hbox (badness 10000) in paragraph at lines 928--928
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 931.
+(hyperref)                removing `\CYRO' on input line 932.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 931.
+(hyperref)                removing `\cyrp' on input line 932.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 931.
+(hyperref)                removing `\cyri' on input line 932.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 931.
+(hyperref)                removing `\cyrs' on input line 932.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 931.
+(hyperref)                removing `\cyra' on input line 932.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 931.
+(hyperref)                removing `\cyrn' on input line 932.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 931.
+(hyperref)                removing `\cyri' on input line 932.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 931.
+(hyperref)                removing `\cyre' on input line 932.
 
 
-Overfull \hbox (35.83028pt too wide) in paragraph at lines 933--940
+Overfull \hbox (35.83028pt too wide) in paragraph at lines 934--941
 \T2A/cmr/m/it/12 net/ipv4/tcp_input.c \T2A/cmr/m/n/12 в Lin-ux ядрото преди вер
 сия 2.6.20, когато IPV6_RECVPKTINFO
  []
 
 
-Overfull \hbox (53.34904pt too wide) in paragraph at lines 933--940
+Overfull \hbox (53.34904pt too wide) in paragraph at lines 934--941
 \T2A/cmr/m/n/12 освобождаването на структурата \T2A/cmr/m/it/12 skb \T2A/cmr/m/
 n/12 с извикването на функцията \T2A/cmr/m/it/12 tcp_rcv_state_process()\T2A/cm
 r/m/n/12 . 
@@ -3301,203 +3288,203 @@ r/m/n/12 .
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 942.
+(hyperref)                removing `\CYRO' on input line 943.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 942.
+(hyperref)                removing `\cyrp' on input line 943.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 942.
+(hyperref)                removing `\cyri' on input line 943.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 942.
+(hyperref)                removing `\cyrs' on input line 943.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 942.
+(hyperref)                removing `\cyra' on input line 943.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 942.
+(hyperref)                removing `\cyrn' on input line 943.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 942.
+(hyperref)                removing `\cyri' on input line 943.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 942.
+(hyperref)                removing `\cyre' on input line 943.
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 944--944
+Underfull \hbox (badness 4156) in paragraph at lines 945--945
 [][][]\T2A/cmr/m/n/10 Transparent Inter-Process Com-mu-ni-ca-tion  мрежов прот
 окол за между-процесна
  []
 
 
-Overfull \hbox (0.4948pt too wide) in paragraph at lines 944--948
+Overfull \hbox (0.4948pt too wide) in paragraph at lines 945--949
 \T2A/cmr/m/n/12 на локални потребители да предизвикат DoS изпращайки пакети пре
 з AF_TIPC
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 958.
+(hyperref)                removing `\CYRO' on input line 959.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 958.
+(hyperref)                removing `\cyrp' on input line 959.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 958.
+(hyperref)                removing `\cyri' on input line 959.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 958.
+(hyperref)                removing `\cyrs' on input line 959.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 958.
+(hyperref)                removing `\cyra' on input line 959.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 958.
+(hyperref)                removing `\cyrn' on input line 959.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 958.
+(hyperref)                removing `\cyri' on input line 959.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 958.
+(hyperref)                removing `\cyre' on input line 959.
 
 [28]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 968.
+(hyperref)                removing `\CYRO' on input line 969.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 968.
+(hyperref)                removing `\cyrp' on input line 969.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 968.
+(hyperref)                removing `\cyri' on input line 969.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 968.
+(hyperref)                removing `\cyrs' on input line 969.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 968.
+(hyperref)                removing `\cyra' on input line 969.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 968.
+(hyperref)                removing `\cyrn' on input line 969.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 968.
+(hyperref)                removing `\cyri' on input line 969.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 968.
+(hyperref)                removing `\cyre' on input line 969.
 
 
-Overfull \hbox (2.2271pt too wide) in paragraph at lines 970--980
+Overfull \hbox (2.2271pt too wide) in paragraph at lines 971--981
 \T2A/cmr/m/n/12 GFS2 файлова система и после променят правата за този файл. С т
 ази уязвимост
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 985.
+(hyperref)                removing `\CYRO' on input line 986.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 985.
+(hyperref)                removing `\cyrp' on input line 986.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 985.
+(hyperref)                removing `\cyri' on input line 986.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 985.
+(hyperref)                removing `\cyrs' on input line 986.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 985.
+(hyperref)                removing `\cyra' on input line 986.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 985.
+(hyperref)                removing `\cyrn' on input line 986.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 985.
+(hyperref)                removing `\cyri' on input line 986.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 985.
+(hyperref)                removing `\cyre' on input line 986.
 
 
-Overfull \hbox (1.95612pt too wide) in paragraph at lines 987--992
+Overfull \hbox (1.95612pt too wide) in paragraph at lines 988--993
  [][] \T2A/cmr/m/n/12 Тази уязвимост е открита от Себастиан Крамер в \T2A/cmr/m
 /it/12 drivers/connector/connector.c
  []
 
 
-Overfull \hbox (15.65062pt too wide) in paragraph at lines 987--992
+Overfull \hbox (15.65062pt too wide) in paragraph at lines 988--993
 \T2A/cmr/m/n/12 изпращане на множество NETLINK_CONNECTOR съобщения до ядрото, л
 окални
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 997--997
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
 [][][][]$\T2A/cmtt/m/n/10 http : / / git . kernel . org / ?p = linux / kernel /
  git / torvalds / linux-[]2 . 6 . git ; a = commit ; h =
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 1002.
+(hyperref)                removing `\CYRO' on input line 1003.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 1002.
+(hyperref)                removing `\cyrp' on input line 1003.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 1002.
+(hyperref)                removing `\cyri' on input line 1003.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 1002.
+(hyperref)                removing `\cyrs' on input line 1003.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 1002.
+(hyperref)                removing `\cyra' on input line 1003.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 1002.
+(hyperref)                removing `\cyrn' on input line 1003.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 1002.
+(hyperref)                removing `\cyri' on input line 1003.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 1002.
+(hyperref)                removing `\cyre' on input line 1003.
 
 
-Overfull \hbox (6.05928pt too wide) in paragraph at lines 1004--1008
+Overfull \hbox (6.05928pt too wide) in paragraph at lines 1005--1008
 \T2A/cmr/m/n/12 от 2.6.33-rc7 не управлява правилно определен брояч, което позв
 олява на локални
  []
@@ -3616,9 +3603,9 @@ Overfull \hbox (22.69461pt too wide) in paragraph at lines 1036--1044
  []
 
 
-Overfull \hbox (9.40865pt too wide) in paragraph at lines 1036--1044
-\T2A/cmr/m/it/12 load_elf_binary \T2A/cmr/m/n/12 от \T2A/cmr/m/it/12 fs/binfmt_
-elf.c \T2A/cmr/m/n/12 не подсигурява че ELF интерпретатора е налице
+Overfull \hbox (15.3306pt too wide) in paragraph at lines 1036--1044
+\T2A/cmr/m/n/12 налице преди да извика макроса SET_PERSONALITY. Това позволява 
+на локални
  []
 
 
@@ -3658,6 +3645,12 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\cyre' on input line 1055.
+
+
+Overfull \hbox (13.54306pt too wide) in paragraph at lines 1057--1063
+\T2A/cmr/m/n/12 mess". Засяга във версиите на ядрото преди 2.6.32.4. Проблемът,
+ заедно с примерно
+ []
 
 [30]
 
@@ -4130,7 +4123,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\cyrn' on input line 1200.
 
-<table.jpg, id=1118, 335.45325pt x 595.62524pt>
+<table.jpg, id=1119, 335.45325pt x 595.62524pt>
 File: table.jpg Graphic file (type jpg)
  <use table.jpg>pdfTeX warning (ext4): destination with the same identifier (na
 me{section.2}) has been already used, duplicate ignored
@@ -4379,7 +4372,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\cyri' on input line 1203.
 
 [34 <D:/FMI/fmi_projects/NetSec/doc/table.jpg>]
-<time_for_exploit.png, id=1123, 414.04688pt x 408.77719pt>
+<time_for_exploit.png, id=1124, 414.04688pt x 408.77719pt>
 File: time_for_exploit.png Graphic file (type png)
 
 <use time_for_exploit.png>
@@ -4626,23 +4619,33 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\cyri' on input line 1210.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1215.
-[36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1215.
- (D:\FMI\fmi_projects\NetSec\doc\doc1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1215.
+
+Overfull \hbox (13.23811pt too wide) in paragraph at lines 1212--1213
+\T2A/cmr/m/n/12 поправката е направена много преди проблема да е придобил публи
+чност, вероятно
+ []
+
+<time_for_fix.png, id=1130, 413.29407pt x 409.53pt>
+File: time_for_fix.png Graphic file (type png)
+ <use time_for_fix.png>
+Overfull \hbox (4.12651pt too wide) in paragraph at lines 1214--1215
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1217.
+[36 <D:/FMI/fmi_projects/NetSec/doc/time_for_fix.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1217.
+
+(D:\FMI\fmi_projects\NetSec\doc\doc1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1217.
 Package rerunfilecheck Info: File `doc1.out' has not changed.
 (rerunfilecheck)             Checksum: 9A5046C1EA411E9BE0BFE6C11D6960DF;7670.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 7939 strings out of 495285
- 112966 string characters out of 3179816
+ 7945 strings out of 495285
+ 113076 string characters out of 3179816
  206042 words of memory out of 3000000
- 10666 multiletter control sequences out of 15000+200000
+ 10670 multiletter control sequences out of 15000+200000
  22702 words of font info for 51 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  31i,8n,31p,1210b,452s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4664,9 +4667,9 @@ ts/type1/public/cm-super/sfti1200.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
 type1/public/cm-super/sfti1728.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/typ
 e1/public/cm-super/sftt1000.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on doc1.pdf (36 pages, 883873 bytes).
+Output written on doc1.pdf (36 pages, 895856 bytes).
 PDF statistics:
- 1254 PDF objects out of 1440 (max. 8388607)
- 313 named destinations out of 1000 (max. 500000)
- 995 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1256 PDF objects out of 1440 (max. 8388607)
+ 314 named destinations out of 1000 (max. 500000)
+ 1000 words of extra memory for PDF output out of 10000 (max. 10000000)
 
