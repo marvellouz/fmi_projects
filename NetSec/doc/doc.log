@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  18 JAN 2011 11:45
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  18 JAN 2011 12:15
 entering extended mode
 **doc.tex
 (D:\FMI\fmi_projects\NetSec\doc\doc.tex
@@ -1466,6 +1466,6 @@ Here is how much of TeX's memory you used:
  9911 multiletter control sequences out of 15000+200000
  4702 words of font info for 16 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 31i,0n,31p,8419b,39s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,0n,31p,4289b,39s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 !  ==> Fatal error occurred, no output PDF file produced!
