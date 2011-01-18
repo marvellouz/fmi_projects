@@ -1,0 +1,202 @@
+\select@language {bulgarian}
+\contentsline {paragraph}{}{6}{section*.3}
+\contentsline {paragraph}{}{6}{section*.4}
+\contentsline {paragraph}{}{6}{section*.5}
+\contentsline {paragraph}{}{6}{section*.6}
+\contentsline {part}{I\hspace {1em}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre } \IeC {\cyrv } \IeC {\cyrs }\IeC {\cyri }\IeC {\cyrg }\IeC {\cyru }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrt }\IeC {\cyra } \IeC {\cyrn }\IeC {\cyra } Linux \IeC {\cyrya }\IeC {\cyrd }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyro } \IeC {\cyrv } \IeC {\cyrp }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre } 12 \IeC {\cyrm }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyre }\IeC {\cyrc }\IeC {\cyra }}{7}{part.1}
+\contentsline {section}{\numberline {1}CVE-2010-4347 CVSS Score 6.9}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{7}{subsection.1.1}
+\contentsline {paragraph}{}{7}{section*.7}
+\contentsline {subsection}{\numberline {1.2}Exploit}{7}{subsection.1.2}
+\contentsline {paragraph}{}{7}{section*.8}
+\contentsline {paragraph}{}{7}{section*.9}
+\contentsline {paragraph}{}{8}{section*.10}
+\contentsline {section}{\numberline {2}CVE-2010-4346 CVSS Score 2.1}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{8}{subsection.2.1}
+\contentsline {paragraph}{}{8}{section*.11}
+\contentsline {section}{\numberline {3}CVE-2010-3881 CVSS Score 1.9}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{9}{subsection.3.1}
+\contentsline {paragraph}{}{9}{section*.12}
+\contentsline {section}{\numberline {4}CVE-2010-3880 CVSS Score 4.9}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{10}{subsection.4.1}
+\contentsline {paragraph}{}{10}{section*.13}
+\contentsline {section}{\numberline {5}CVE-2010-4157 CVSS Score 6.0}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{10}{subsection.5.1}
+\contentsline {paragraph}{}{10}{section*.14}
+\contentsline {section}{\numberline {6}CVE-2010-3904 CVSS Score 7.2}{10}{section.6}
+\contentsline {subsection}{\numberline {6.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{10}{subsection.6.1}
+\contentsline {paragraph}{}{10}{section*.15}
+\contentsline {section}{\numberline {7}CVE-2010-3066 CVSS Score 4.9}{11}{section.7}
+\contentsline {subsection}{\numberline {7.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{11}{subsection.7.1}
+\contentsline {paragraph}{}{11}{section*.16}
+\contentsline {section}{\numberline {8}CVE-2010-2962 CVSS Score 7.2}{11}{section.8}
+\contentsline {subsection}{\numberline {8.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{11}{subsection.8.1}
+\contentsline {paragraph}{}{11}{section*.17}
+\contentsline {section}{\numberline {9}CVE-2010-3705 CVSS Score 8.3}{12}{section.9}
+\contentsline {subsection}{\numberline {9.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{12}{subsection.9.1}
+\contentsline {paragraph}{}{12}{section*.18}
+\contentsline {section}{\numberline {10}CVE-2010-2963 CVSS Score 6.2}{12}{section.10}
+\contentsline {subsection}{\numberline {10.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{12}{subsection.10.1}
+\contentsline {paragraph}{}{12}{section*.19}
+\contentsline {section}{\numberline {11}CVE-2010-3698 CVSS Score 4.6}{12}{section.11}
+\contentsline {subsection}{\numberline {11.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{12}{subsection.11.1}
+\contentsline {paragraph}{}{12}{section*.20}
+\contentsline {section}{\numberline {12}CVE-2010-4249 CVSS Score 4.9}{13}{section.12}
+\contentsline {subsection}{\numberline {12.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{13}{subsection.12.1}
+\contentsline {paragraph}{}{13}{section*.21}
+\contentsline {subsection}{\numberline {12.2}Exploit}{13}{subsection.12.2}
+\contentsline {paragraph}{}{13}{section*.22}
+\contentsline {section}{\numberline {13}CVE-2010-3858 CVSS Score 4.9}{13}{section.13}
+\contentsline {subsection}{\numberline {13.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{13}{subsection.13.1}
+\contentsline {paragraph}{}{13}{section*.23}
+\contentsline {subsection}{\numberline {13.2}Exploit}{14}{subsection.13.2}
+\contentsline {paragraph}{}{14}{section*.24}
+\contentsline {section}{\numberline {14}CVE-2010-4248 CVSS Score 4.7}{14}{section.14}
+\contentsline {subsection}{\numberline {14.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{14}{subsection.14.1}
+\contentsline {paragraph}{}{14}{section*.25}
+\contentsline {section}{\numberline {15}CVE-2010-3432 CVSS Score 7.8}{14}{section.15}
+\contentsline {subsection}{\numberline {15.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{14}{subsection.15.1}
+\contentsline {section}{\numberline {16}CVE-2010-4165 CVSS Score 4.9}{15}{section.16}
+\contentsline {section}{\numberline {17} CVE-2010-4169 CVSS Score 4.9}{15}{section.17}
+\contentsline {section}{\numberline {18}CVE-2010-2938 CVSS Score 4.9}{16}{section.18}
+\contentsline {subsection}{\numberline {18.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{16}{subsection.18.1}
+\contentsline {paragraph}{}{16}{section*.26}
+\contentsline {section}{\numberline {19}CVE-2010-3437 CVSS Score 6.6}{16}{section.19}
+\contentsline {subsection}{\numberline {19.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{16}{subsection.19.1}
+\contentsline {paragraph}{}{16}{section*.27}
+\contentsline {subsection}{\numberline {19.2}Exploit}{16}{subsection.19.2}
+\contentsline {paragraph}{}{16}{section*.28}
+\contentsline {section}{\numberline {20}CVE-2010-3442 CVSS Score 4.7}{16}{section.20}
+\contentsline {subsection}{\numberline {20.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{16}{subsection.20.1}
+\contentsline {paragraph}{}{16}{section*.29}
+\contentsline {section}{\numberline {21}CVE-2010-2653 CVSS Score 6.9}{17}{section.21}
+\contentsline {subsection}{\numberline {21.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{17}{subsection.21.1}
+\contentsline {paragraph}{}{17}{section*.30}
+\contentsline {section}{\numberline {22}CVE-2010-3081 CVSS Score 7.2}{17}{section.22}
+\contentsline {subsection}{\numberline {22.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{17}{subsection.22.1}
+\contentsline {paragraph}{}{17}{section*.31}
+\contentsline {paragraph}{}{17}{section*.32}
+\contentsline {paragraph}{}{18}{section*.33}
+\contentsline {paragraph}{}{18}{section*.34}
+\contentsline {paragraph}{}{18}{section*.35}
+\contentsline {subsection}{\numberline {22.2}Exploit}{18}{subsection.22.2}
+\contentsline {paragraph}{}{18}{section*.36}
+\contentsline {section}{\numberline {23}CVE-2010-3301 CVSS Score 7.2}{18}{section.23}
+\contentsline {subsection}{\numberline {23.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{18}{subsection.23.1}
+\contentsline {paragraph}{}{18}{section*.37}
+\contentsline {section}{\numberline {24}CVE-2010-2240 CVSS Score 7.2}{19}{section.24}
+\contentsline {subsection}{\numberline {24.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{19}{subsection.24.1}
+\contentsline {paragraph}{}{19}{section*.38}
+\contentsline {section}{\numberline {25}CVE-2010-2248 CVSS Score 7.8}{19}{section.25}
+\contentsline {subsection}{\numberline {25.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{19}{subsection.25.1}
+\contentsline {paragraph}{}{19}{section*.39}
+\contentsline {section}{\numberline {26}CVE-2010-2521 CVSS Score 10}{20}{section.26}
+\contentsline {subsection}{\numberline {26.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{20}{subsection.26.1}
+\contentsline {paragraph}{}{20}{section*.40}
+\contentsline {paragraph}{}{20}{section*.41}
+\contentsline {section}{\numberline {27}CVE-2010-2495 CVSS Score 10}{21}{section.27}
+\contentsline {subsection}{\numberline {27.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{21}{subsection.27.1}
+\contentsline {paragraph}{}{21}{section*.42}
+\contentsline {section}{\numberline {28}CVE-2010-2954 CVSS Score 4.9}{21}{section.28}
+\contentsline {subsection}{\numberline {28.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{21}{subsection.28.1}
+\contentsline {paragraph}{}{21}{section*.43}
+\contentsline {section}{\numberline {29}CVE-2010-2960 CVSS Score 7.2}{22}{section.29}
+\contentsline {subsection}{\numberline {29.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{22}{subsection.29.1}
+\contentsline {paragraph}{}{22}{section*.44}
+\contentsline {section}{\numberline {30}CVE-2010-2959 CVSS Score 7.2}{22}{section.30}
+\contentsline {subsection}{\numberline {30.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{22}{subsection.30.1}
+\contentsline {paragraph}{}{22}{section*.45}
+\contentsline {section}{\numberline {31}CVE-2010-2798 CVSS Score 7.2}{22}{section.31}
+\contentsline {subsection}{\numberline {31.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{22}{subsection.31.1}
+\contentsline {paragraph}{}{22}{section*.46}
+\contentsline {section}{\numberline {32}CVE-2010-3015 CVSS Score 4.7}{23}{section.32}
+\contentsline {subsection}{\numberline {32.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{23}{subsection.32.1}
+\contentsline {paragraph}{}{23}{section*.47}
+\contentsline {section}{\numberline {33}CVE-2010-2071 CVSS Score 4.6}{23}{section.33}
+\contentsline {subsection}{\numberline {33.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{23}{subsection.33.1}
+\contentsline {paragraph}{}{23}{section*.48}
+\contentsline {subsection}{\numberline {33.2}Exploit}{24}{subsection.33.2}
+\contentsline {paragraph}{}{24}{section*.49}
+\contentsline {paragraph}{}{24}{section*.50}
+\contentsline {section}{\numberline {34}CVE-2010-1641 CVSS Score 4.6}{24}{section.34}
+\contentsline {subsection}{\numberline {34.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{24}{subsection.34.1}
+\contentsline {paragraph}{}{24}{section*.51}
+\contentsline {section}{\numberline {35}CVE-2010-1162 CVSS Score 7.2}{25}{section.35}
+\contentsline {subsection}{\numberline {35.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{25}{subsection.35.1}
+\contentsline {paragraph}{}{25}{section*.52}
+\contentsline {section}{\numberline {36}CVE-2010-1146 CVSS Score 6.9}{25}{section.36}
+\contentsline {subsection}{\numberline {36.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{25}{subsection.36.1}
+\contentsline {paragraph}{}{25}{section*.53}
+\contentsline {subsection}{\numberline {36.2}Exploit}{25}{subsection.36.2}
+\contentsline {section}{\numberline {37}CVE-2010-1148 CVSS Score 4.7}{26}{section.37}
+\contentsline {subsection}{\numberline {37.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{26}{subsection.37.1}
+\contentsline {paragraph}{}{26}{section*.54}
+\contentsline {section}{\numberline {38}CVE-2010-1088 CVSS Score 5.4}{26}{section.38}
+\contentsline {subsection}{\numberline {38.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{26}{subsection.38.1}
+\contentsline {paragraph}{}{26}{section*.55}
+\contentsline {section}{\numberline {39}CVE-2010-1083 CVSS Score 4.7}{26}{section.39}
+\contentsline {subsection}{\numberline {39.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{26}{subsection.39.1}
+\contentsline {paragraph}{}{26}{section*.56}
+\contentsline {section}{\numberline {40}CVE-2010-1087 CVSS Score 7.8}{27}{section.40}
+\contentsline {subsection}{\numberline {40.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{27}{subsection.40.1}
+\contentsline {paragraph}{}{27}{section*.57}
+\contentsline {section}{\numberline {41}CVE-2010-1086 CVSS Score 7.8}{27}{section.41}
+\contentsline {subsection}{\numberline {41.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{27}{subsection.41.1}
+\contentsline {paragraph}{}{27}{section*.58}
+\contentsline {section}{\numberline {42}CVE-2010-1085 CVSS Score 7.1}{27}{section.42}
+\contentsline {subsection}{\numberline {42.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{27}{subsection.42.1}
+\contentsline {paragraph}{}{27}{section*.59}
+\contentsline {section}{\numberline {43}CVE-2010-1084 CVSS Score 7.1}{28}{section.43}
+\contentsline {subsection}{\numberline {43.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{28}{subsection.43.1}
+\contentsline {paragraph}{}{28}{section*.60}
+\contentsline {section}{\numberline {44}CVE-2010-1188 CVSS Score 7.1}{28}{section.44}
+\contentsline {subsection}{\numberline {44.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{28}{subsection.44.1}
+\contentsline {paragraph}{}{28}{section*.61}
+\contentsline {section}{\numberline {45}CVE-2010-1187 CVSS Score 4.9}{28}{section.45}
+\contentsline {subsection}{\numberline {45.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{28}{subsection.45.1}
+\contentsline {paragraph}{}{28}{section*.62}
+\contentsline {section}{\numberline {46}CVE-2010-0437 CVSS Score 7.8}{29}{section.46}
+\contentsline {subsection}{\numberline {46.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{29}{subsection.46.1}
+\contentsline {paragraph}{}{29}{section*.63}
+\contentsline {section}{\numberline {47}CVE-2010-0727 CVSS Score 4.7}{29}{section.47}
+\contentsline {subsection}{\numberline {47.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{29}{subsection.47.1}
+\contentsline {paragraph}{}{29}{section*.64}
+\contentsline {section}{\numberline {48}CVE-2010-0410 CVSS Score 4.9}{29}{section.48}
+\contentsline {subsection}{\numberline {48.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{29}{subsection.48.1}
+\contentsline {paragraph}{}{29}{section*.65}
+\contentsline {section}{\numberline {49}CVE-2010-0623 CVSS Score 4.9}{29}{section.49}
+\contentsline {subsection}{\numberline {49.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{29}{subsection.49.1}
+\contentsline {paragraph}{}{29}{section*.66}
+\contentsline {section}{\numberline {50}CVE-2010-0622 CVSS Score 2.1}{30}{section.50}
+\contentsline {subsection}{\numberline {50.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{30}{subsection.50.1}
+\contentsline {paragraph}{}{30}{section*.67}
+\contentsline {section}{\numberline {51}CVE-2010-0307 CVSS Score 4.7}{30}{section.51}
+\contentsline {subsection}{\numberline {51.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{30}{subsection.51.1}
+\contentsline {paragraph}{}{30}{section*.68}
+\contentsline {section}{\numberline {52}CVE-2010-0291 CVSS Score 4.6}{31}{section.52}
+\contentsline {subsection}{\numberline {52.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{31}{subsection.52.1}
+\contentsline {paragraph}{}{31}{section*.69}
+\contentsline {section}{\numberline {53}CVE-2009-4272 CVSS Score 7.8}{31}{section.53}
+\contentsline {subsection}{\numberline {53.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{31}{subsection.53.1}
+\contentsline {paragraph}{}{31}{section*.70}
+\contentsline {section}{\numberline {54}CVE-2010-0006 CVSS Score 7.1}{31}{section.54}
+\contentsline {subsection}{\numberline {54.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{31}{subsection.54.1}
+\contentsline {paragraph}{}{31}{section*.71}
+\contentsline {section}{\numberline {55}CVE-2010-0007 CVSS Score 2.1}{32}{section.55}
+\contentsline {subsection}{\numberline {55.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{32}{subsection.55.1}
+\contentsline {paragraph}{}{32}{section*.72}
+\contentsline {section}{\numberline {56}CVE-2009-4141 CVSS Score 7.2}{32}{section.56}
+\contentsline {subsection}{\numberline {56.1}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{32}{subsection.56.1}
+\contentsline {paragraph}{}{32}{section*.73}
+\contentsline {paragraph}{}{32}{section*.74}
+\contentsline {subsection}{\numberline {56.2}Exploit}{33}{subsection.56.2}
+\contentsline {paragraph}{}{33}{section*.75}
+\contentsline {paragraph}{}{33}{section*.76}
+\contentsline {part}{II\hspace {1em}\IeC {\CYRS }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyra }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrz }}{34}{part.2}
+\contentsline {section}{\numberline {1}\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrz }\IeC {\cyri }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyre } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrv }\IeC {\cyrs }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyri } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyro } \IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyrya }\IeC {\cyrt } \IeC {\cyrd }\IeC {\cyro } \IeC {\cyrp }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrn } DoS}{34}{section.1}
+\contentsline {section}{\numberline {2}\IeC {\CYRS }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyra }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrz } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrv }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyro } \IeC {\cyrz }\IeC {\cyra } \IeC {\cyri }\IeC {\cyrz }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrz }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyre } \IeC {\cyrn }\IeC {\cyra } exploit \IeC {\cyrz }\IeC {\cyra } \IeC {\cyrn }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyri }}{35}{section.2}
+\contentsline {paragraph}{}{35}{section*.77}
+\contentsline {section}{\numberline {3}\IeC {\CYRS }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyra }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrz } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrv }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyro } \IeC {\cyrz }\IeC {\cyra } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyre } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrn }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyri }}{36}{section.3}
+\contentsline {paragraph}{}{36}{section*.78}
+\contentsline {section}{\numberline {4}K\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrk }\IeC {\cyro } \IeC {\cyrv }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyre } \IeC {\cyrs }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrd } \IeC {\cyro }\IeC {\cyrb }\IeC {\cyrya }\IeC {\cyrv }\IeC {\cyrya }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyro } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrk }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyre }\IeC {\cyrn } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyre }\IeC {\cyrm } \IeC {\cyrv } \IeC {\cyrs }\IeC {\cyri }\IeC {\cyrg }\IeC {\cyru }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrt }\IeC {\cyra } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrya }\IeC {\cyrd }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyro } \IeC {\cyre } \IeC {\cyrv }\IeC {\cyrhrdsn }\IeC {\cyrz }\IeC {\cyrm }\IeC {\cyro }\IeC {\cyrzh }\IeC {\cyrn }\IeC {\cyro } \IeC {\cyrm }\IeC {\cyra }\IeC {\cyrsh }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyra } \IeC {\cyrd }\IeC {\cyra } \IeC {\cyrb }\IeC {\cyrhrdsn }\IeC {\cyrd }\IeC {\cyre } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyra }(exploited) \IeC {\cyri } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrk }\IeC {\cyro } \IeC {\cyre } \IeC {\cyrv }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrya }\IeC {\cyrt }\IeC {\cyrn }\IeC {\cyro } \IeC {\cyrt }\IeC {\cyro }\IeC {\cyrv }\IeC {\cyra } \IeC {\cyrd }\IeC {\cyra } \IeC {\cyrs }\IeC {\cyre } \IeC {\cyrs }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyri }}{37}{section.4}
+\contentsline {paragraph}{}{37}{section*.79}

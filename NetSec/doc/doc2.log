@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  18 JAN 2011 15:05
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.8)  18 JAN 2011 15:45
 entering extended mode
-**doc1.tex
-(D:\FMI\fmi_projects\NetSec\doc\doc1.tex
+**doc2.tex
+(D:\FMI\fmi_projects\NetSec\doc\doc2.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
@@ -860,7 +860,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-(D:\FMI\fmi_projects\NetSec\doc\doc1.aux
+(D:\FMI\fmi_projects\NetSec\doc\doc2.aux
 ! Text line contains an invalid character.
 l.3  
                                                                             ...
@@ -1466,6 +1466,6 @@ Here is how much of TeX's memory you used:
  9911 multiletter control sequences out of 15000+200000
  4702 words of font info for 16 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 31i,0n,31p,25510b,39s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,0n,31p,12435b,39s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 !  ==> Fatal error occurred, no output PDF file produced!
