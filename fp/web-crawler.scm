@@ -48,14 +48,43 @@
   
   )
 
-(define (save-html! current-url save-location))
+(define (get-html current-url)
+  
+  )
+
+;======================================
+
+(define (get-html u)
+    (get-pure-port (string->url u)))
+
+(define (read-and-write in out)
+  (let ((res (read-bytes 512 in)))
+    (if (not (eof-object? res))
+      (begin
+        (write-bytes res out)
+        (read-and-write in out)
+        )
+      out
+      )
+    )
+  )
+
+;(define in (get-html "http://docs.racket-lang.org/gui/index.html"))
+;(define out (open-output-file "outputfile1"))
+;(read-and-write in out)
+;(close-output-port out)
+
+(define (save-html! current-url save-location file-name)
+  (define in (get-html current-url))
+  (define out (open-output-file (string->path (string-append save-location file-name))))
+  (read-and-write in out)
+  (close-output-port out)
 
 (define (crawl current-url depth save-location)
   (let (resources (normalize-resources (find-all-resources current-url)))
     (begin
-      (save-html! current-url save-location)
-    (save-resources! resources)
-  )))
+      (save-html! current-url save-location file-name)
+      (save-resources! resources))))
   
 (define (calculate-local-location res save-location) 
   
