@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCrowler", "WebCrowler\WebCrowler.csproj", "{3AFD2C3F-FE28-419F-90B9-45855CAC23D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCrawler", "WebCrowler\WebCrawler.csproj", "{3AFD2C3F-FE28-419F-90B9-45855CAC23D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

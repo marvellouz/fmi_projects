@@ -10,16 +10,17 @@ namespace WebCrowler.Model
     class LinksParser
     {
         //Regex string for finding all page links in the content of a page
-        private const string _LINK_REGEX = "href=\"[a-zA-Z./:&\\d_-]+\"";
+        private const string _LINK_REGEX = "href=\"([^>]+)\"";
+        //Regex string for finding all page images in the content of a page
+        private const string _IMG_REGEX = "src=\"([^>]+)\"";
 
         #region Private Fields
         private List<string> _goodUrls = new List<string>();
         private List<string> _badUrls = new List<string>();
-        private List<string> _otherUrls = new List<string>();
-        private List<string> _externalUrls = new List<string>();
-        private List<string> _exceptions = new List<string>();
+        private List<string> _cssUrls = new List<string>();
+        private List<string> _jsUrls = new List<string>();
+        private List<string> _imgUrls = new List<string>();
         #endregion
-
 
         #region Public Properties
 
@@ -35,54 +36,69 @@ namespace WebCrowler.Model
             set { _badUrls = value; }
         }
 
-        public List<string> OtherUrls
+        public List<string> cssUrls
         {
-            get { return _otherUrls; }
-            set { _otherUrls = value; }
+            get { return _cssUrls; }
+            set { _cssUrls = value; }
         }
 
-        public List<string> ExternalUrls
+        public List<string> jsUrls
         {
-            get { return _externalUrls; }
-            set { _externalUrls = value; }
+            get { return _jsUrls; }
+            set { _jsUrls = value; }
         }
 
-        public List<string> Exceptions
+        public List<string> imgUrls
         {
-            get { return _exceptions; }
-            set { _exceptions = value; }
+            get { return _imgUrls; }
+            set { _imgUrls = value; }
         }
-
         #endregion
-
 
         //Default constructor
         public LinksParser() { }
         
-        //Parsing for different links
-            public void Parse(Page page, string url)
+            //Parsing for different links
+            public void Parse(Page page)
             {
-                MatchCollection matches = Regex.Matches(page.Content, _LINK_REGEX);
-                for (int i = 0; i <= matches.Count - 1; i++)
+                MatchCollection HrefMatches = Regex.Matches(page.Content, _LINK_REGEX);
+                MatchCollection ImgMatches = Regex.Matches(page.Content, _LINK_REGEX);
+                
+                for (int i = 0; i <= HrefMatches.Count - 1; i++)
                 {
-                    if (matches[i].Value == String.Empty)
+                    if (HrefMatches[i].Value == String.Empty)
                     {
-                        BadUrls.Add("Blank url value on page " + url);
+                        BadUrls.Add("Blank url value on page " + page.Url);
                         continue;
                     }
 
                     string href = null;
-                    try
+
+                    href = HrefMatches[i].Groups[1].Value;
+
+                    if (IsCSS(href))
                     {
-                        href = matches[i].Value.Replace("href=\"", "");
-                        //the url
-                        href = href.Substring(0, href.IndexOf("\""));
-                        GoodUrls.Add(href);
+                        cssUrls.Add(href);
                     }
-                    catch (Exception exc)
+                    else if (IsJS(href))
                     {
-                        Exceptions.Add("Error parsing matched href: " + exc.Message);
-                    } 
+                        jsUrls.Add(href);
+                    }
+                    else GoodUrls.Add(href);
+                }
+                
+                for (int i = 0; i <= ImgMatches.Count - 1; i++)
+                {
+                    if (ImgMatches[i].Value == String.Empty)
+                    {
+                        BadUrls.Add("Blank img value on page " + page.Url);
+                        continue;
+                    }
+                    
+                    string src = null;
+                    src = HrefMatches[i].Groups[1].Value;
+
+                    imgUrls.Add(src);
                 }
             }
 
@@ -100,19 +116,24 @@ namespace WebCrowler.Model
             return url_scheme;
         }
 
+        public static bool IsCSS(string href)
+        {
+            string extension = href.Substring(href.LastIndexOf(".") + 1, href.Length - href.LastIndexOf(".") - 1);
+            if (extension == ".css")
+            {
+                return true;
+            }
+            return false;
+        }
 
-        //private static bool IsExternalUrl(string url)
-        //{
-        //    if ((BaseUrl(url) == (UrlScheme(url) + "localhost")) || (BaseUrl(url) == (UrlScheme(url) + "127.0.0.1")))
-        //    {
-        //        return false;
-        //    }
-        //    else if (UrlScheme(url) == "http://" || UrlScheme(url) == "https://")
-        //    {
-        //        return true;
-        //    }
-
-        //    return false;
-        //}
+        public static bool IsJS(string href)
+        {
+            string extension = href.Substring(href.LastIndexOf(".") + 1, href.Length - href.LastIndexOf(".") - 1);
+            if (extension == ".js")
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

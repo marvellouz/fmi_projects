@@ -12,17 +12,52 @@ namespace WebCrowler.Model
         #region Private Fields
 
         private static List<Page> _pages = new List<Page>();
-        private static List<string> _externalUrls = new List<string>();
-        private static List<string> _otherUrls = new List<string>();
-        private static List<string> _failedUrls = new List<string>();
-        private static List<string> _exceptions = new List<string>();
-        private static List<string> _classes = new List<string>();
-        private static StringBuilder _logBuffer = new StringBuilder();
 
         #endregion
 
-        public static void Crawl()
+        public static void CrawlPage(string url)
         {
+            if (!PageHasBeenCrawled(url))
+            {
+                LinksParser parser = new LinksParser();
+                Page page = new Page();
+                page.Url = url;
+                page.Content = GetPageContent(url);
+                parser.Parse(page);
+                page.Hrefs = (List<string>)parser.GoodUrls.Select(element => ResolveRelativeUrl(url, element));
+                page.CssHrefs = (List<string>)parser.cssUrls.Select(element => ResolveRelativeUrl(url, element));
+                page.JsHrefs = (List<string>)parser.jsUrls.Select(element => ResolveRelativeUrl(url, element));
+
+                _pages.Add(page);
+            }
+        }
+
+        private static bool PageHasBeenCrawled(string url)
+        {
+            foreach (Page page in _pages)
+            {
+                if (page.Url == url)
+                    return true;
+            }
+
+            return false;
+        }
+        
+        public static string ResolveRelativeUrl(string currentUrl, string url)
+        {
+            Uri currentUri = new Uri(currentUrl);
+            Uri relativeUri = new Uri(url);
+            
+            if (!relativeUri.IsAbsoluteUri)
+            {
+                Uri resolved = new Uri(currentUri, url);
+                return resolved.AbsoluteUri;
+            }
+            else
+            {
+                return url;
+            }
+            
         }
 
         public static string GetPageContent(string url)
@@ -36,5 +71,15 @@ namespace WebCrowler.Model
             return page_content;
         }
 
+        public static void SavePageContent(string page_content, string file_path, string file_name)
+        {
+            File.WriteAllText((file_path + file_name), page_content, Encoding.UTF8);
+        }
+
+        public void SaveFile(string url, string save_path, string file_name)
+        {
+            WebClient wc = new WebClient();
+            wc.DownloadFile(url, (save_path + file_name));
+        }
     }
 }

@@ -1,0 +1,13 @@
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\bin\Debug\WebCrowler.exe
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\bin\Debug\WebCrowler.pdb
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\MainWindow.baml
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\MainWindow.g.cs
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\App.g.cs
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\WebCrowler_MarkupCompile.cache
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\WebCrowler.g.resources
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\WebCrowler.Properties.Resources.resources
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\WebCrowler.exe
+D:\FMI\fmi_projects\FMIdotNOTandWTF\WebCrowler\WebCrowler\obj\x86\Debug\WebCrowler.pdb
