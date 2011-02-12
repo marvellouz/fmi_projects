@@ -13,7 +13,7 @@ CREATE TABLE Audit (
 GO
 
 ALTER TABLE Audit ADD CONSTRAINT FK_Audit_Orders 
-FOREIGN KEY(OrderID) REFERENCES Shipping (OrderID)
+FOREIGN KEY(OrderID) REFERENCES Shipping (ShippingID)
 
 GO
 

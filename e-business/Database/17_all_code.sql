@@ -62,8 +62,8 @@ CREATE TABLE Tax (
 GO
 
 INSERT INTO TAX (TaxID, TaxType, TaxPercentage) 
-VALUES (1, 'Sales Tax at 8.5%', 8.5), 
-       (2, 'No Tax', 0)
+VALUES (1, 'Такса 8.5%', 8.5), 
+       (2, 'Без такса', 0)
 
 GO
 
@@ -77,13 +77,13 @@ CREATE TABLE Shipping (
 GO
 
 INSERT INTO Shipping (ShippingID, ShippingType, ShippingCost, ShippingRegionID) 
-VALUES (1, 'Next Day Delivery ($20)', 20, 2),
-       (2, '3-4 Days ($10)', 10, 2),
-       (3, '7 Days ($5)', 5, 2),
-       (4, 'By Air (7 Days, $25)', 25, 3),
-       (5, 'By Sea (28 days, $10)', 10, 3),
-       (6, 'By Air (10 days, $35)', 35, 4),
-       (7, 'By Sea (38 days, $30), 30, 4)
+VALUES (1, 'Доставка на следващия ден (20 BGN)', 20, 2),
+       (2, '3-4 дена (10 BGN)', 10, 2),
+       (3, '7 дена (5 BGN)', 5, 2),
+       (4, 'По въздух (7 дена, 25 BGN)', 25, 3),
+       (5, 'По море (28 дена, 10 BGN)', 10, 3),
+       (6, 'По въздух (10 дена, 35 BGN)', 35, 4),
+       (7, 'По море (38 дена, 30 BGN)', 30, 4)
 
 GO
 

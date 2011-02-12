@@ -26,7 +26,7 @@ GO
 
 -- Create CatalogCreateProductReview stored procedure
 CREATE PROCEDURE CatalogCreateProductReview
-(@CustomerId INT, @ProductId INT, @Review TEXT, @Rating SMALLINT)
+(@CustomerId uniqueidentifier, @ProductId INT, @Review TEXT, @Rating SMALLINT)
 AS
 INSERT INTO Review (CustomerID, ProductID, Review, Rating, DateCreated)
    VALUES (@CustomerId, @ProductId, @Review, @Rating, GETDATE())

@@ -8,22 +8,28 @@ SET IDENTITY_INSERT Category ON
 GO
 
 INSERT INTO Category (CategoryID, DepartmentID, Name, Description )		
-VALUES (1, 1, 'Love & Romance', 'Here''s our collection of balloons with romantic messages.')
+VALUES (1, 1, 'Графика', 'Картини от категория графика')
 
 INSERT INTO Category (CategoryID, DepartmentID, Name, Description )		
-VALUES (2, 1, 'Birthdays', 'Tell someone "Happy Birthday" with one of these wonderful balloons!')
+VALUES (2, 1, 'Живопис', 'Картини от категория живопис')
 
 INSERT INTO Category (CategoryID, DepartmentID, Name, Description )		
-VALUES (3, 1, 'Weddings', 'Going to a wedding? Here''s a collection of balloons for that special event!')
+VALUES (3, 1, 'Скулптура', 'Скулптури')
 
 INSERT INTO Category (CategoryID, DepartmentID, Name, Description )		
-VALUES (4, 2, 'Message Balloons', 'Why write on paper, when you can deliver your message on a balloon?')
+VALUES (4, 1, 'Приложни изкуства', 'Приложни изкуства - дърворезба, текстил, керамика')
 
 INSERT INTO Category (CategoryID, DepartmentID, Name, Description )		
-VALUES (5, 2, 'Cartoons', 'Buy a balloon with your child''s favorite cartoon character!')
+VALUES (5, 2, 'Графика', 'Картини от категория графика')
 
 INSERT INTO Category (CategoryID, DepartmentID, Name, Description )		
-VALUES (6, 2, 'Miscellaneous', 'Various baloons that your kid will most certainly love!')
+VALUES (6, 2, 'Живопис', 'Картини от категория живопис')
+
+INSERT INTO Category (CategoryID, DepartmentID, Name, Description )		
+VALUES (7, 2, 'Скулптура', 'Скулптура')
+
+INSERT INTO Category (CategoryID, DepartmentID, Name, Description )		
+VALUES (8, 2, 'Приложни изкуства', 'Приложни изкуства - дърворезба, текстил, керамика')
 
 GO
 
