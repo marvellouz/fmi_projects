@@ -4,15 +4,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">  
-  Enter data to encrypt:
+  Въведете данни за криптиране:
   <br />
   <asp:TextBox ID="encryptBox" runat="server" />
   <br />
-  Enter data to decrypt:
+  Въведете данни за декриптиране:
   <br />
   <asp:TextBox ID="decryptBox" runat="server" />
   <br />
-  <asp:Button ID="processButton" runat="server" Text="Process" OnClick="processButton_Click" />
+  <asp:Button ID="processButton" runat="server" Text="Давай" OnClick="processButton_Click" />
   <br />
   <asp:Label ID="result" runat="server" />
 </asp:Content>

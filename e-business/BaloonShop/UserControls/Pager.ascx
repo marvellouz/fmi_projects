@@ -1,12 +1,12 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Pager.ascx.cs" Inherits="UserControls_Pager" %>
 <p>
-Page 
+Страница 
 <asp:Label ID="currentPageLabel" runat="server" />
-of
+от
 <asp:Label ID="howManyPagesLabel" runat="server" />
 |
 
-<asp:HyperLink ID="previousLink" Runat="server">Previous</asp:HyperLink>
+<asp:HyperLink ID="previousLink" Runat="server">Предишна</asp:HyperLink>
 
 <asp:Repeater ID="pagesRepeater" runat="server">
   <ItemTemplate>
@@ -14,5 +14,5 @@ of
   </ItemTemplate>
 </asp:Repeater>
 
-<asp:HyperLink ID="nextLink" Runat="server">Next</asp:HyperLink>
+<asp:HyperLink ID="nextLink" Runat="server">Следваща</asp:HyperLink>
 </p>

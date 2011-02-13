@@ -2,57 +2,57 @@ USE BalloonShop
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(1, 1)
+VALUES(1, 2)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(2, 1)
+VALUES(2, 2)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(3, 1)
+VALUES(3, 2)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(4, 1)
+VALUES(4, 2)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(5, 1)
+VALUES(5, 2)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(6, 1)
+VALUES(6, 2)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(7, 1)
+VALUES(7, 2)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(8, 1)
+VALUES(8, 2)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(9, 2)
+VALUES(9, 1)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(10, 2)
+VALUES(10, 1)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(11, 2)
+VALUES(11, 1)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(12, 2)
+VALUES(12, 1)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(13, 2)
+VALUES(13, 1)
 GO
 
 INSERT INTO ProductCategory(ProductID, CategoryID)		
-VALUES(14, 2)
+VALUES(14, 1)
 GO

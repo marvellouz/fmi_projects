@@ -15,7 +15,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-  <title>BalloonShop: Online Store Demo</title>
+  <title>Електронен магазин за картини</title>
   <asp:ContentPlaceHolder id="head" runat="server">
   </asp:ContentPlaceHolder>
 </head>
@@ -33,7 +33,7 @@
               <uc6:CartSummary ID="CartSummary1" runat="server" />
             </p></div></div><div class="Right">
           <div class="Header">
-            <asp:HyperLink ID="HeaderLink" ImageUrl="~/Images/BalloonShopLogo.png" NavigateUrl="~/" ToolTip="BalloonShop logo" Text="BalloonShop logo" runat="server" />
+            <asp:HyperLink ID="HeaderLink" ImageUrl="~/Images/BalloonShopLogo.png" NavigateUrl="~/" ToolTip="BalloonShop logo" Text="Електронен магазин за картини лого" runat="server" />
           </div>
           <div class="Contents">           
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

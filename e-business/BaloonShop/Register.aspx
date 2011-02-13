@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:LoginView ID="LoginView1" runat="server">
     <LoggedInTemplate>
-      You are already registered.
+      Вие вече сте регистриран.
     </LoggedInTemplate>
   </asp:LoginView>
   <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" BackColor="#F7F6F3" 
@@ -30,7 +30,7 @@
     <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
     <StepStyle BorderWidth="0px" />
     <WizardSteps>
-      <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server" />
+      <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server" Title = "Регистрация"/>
       <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server" />
     </WizardSteps>
   </asp:CreateUserWizard>

@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="CategoriesList.ascx.cs" Inherits="UserControls_CategoriesList" %>
 <asp:DataList ID="list" runat="server" CssClass="CategoriesList" Width="200px">
   <HeaderTemplate>
-    Choose a Category
+    Изберете катекгория
   </HeaderTemplate>
   <HeaderStyle CssClass="CategoriesListHead" />
   <ItemTemplate>

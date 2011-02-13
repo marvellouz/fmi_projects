@@ -1,4 +1,4 @@
-USE BalloonShop
+USE Balloonshop
 
 GO
 
@@ -13,15 +13,17 @@ CREATE TABLE Review (
 
 GO
 
+GO
 -- Create CatalogGetProductReviews stored procedure
 CREATE PROCEDURE CatalogGetProductReviews(@ProductID INT)
 AS
-SELECT c.Name, r.Review, r.Rating, r.DateCreated
+SELECT u.UserName as CustomerName,
+r.Review as ProductReview,
+r.DateCreated as ReviewDate
 FROM Review r
-INNER JOIN Customer c ON c.CustomerID = r.CustomerID
+INNER JOIN aspnet_Users u ON u.UserID = r.CustomerID
 WHERE r.ProductID = @ProductID
 ORDER BY r.DateCreated DESC
-
 GO
 
 -- Create CatalogCreateProductReview stored procedure
@@ -30,6 +32,5 @@ CREATE PROCEDURE CatalogCreateProductReview
 AS
 INSERT INTO Review (CustomerID, ProductID, Review, Rating, DateCreated)
    VALUES (@CustomerId, @ProductId, @Review, @Rating, GETDATE())
-
 GO
 

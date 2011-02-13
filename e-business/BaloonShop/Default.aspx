@@ -10,13 +10,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>
-    <span class="CatalogTitle">Welcome to BalloonShop!</span>
+    <span class="CatalogTitle">Добре дошли в електронния магазин за картини!</span>
   </h1>
   <h2>
-    <span class="CatalogDescription">This week we have a special price
-for these fantastic products: </span>
+    <span class="CatalogDescription">Тази седмица има специални цени за следните продукти:</span>
   </h2>
   <uc1:ProductsList ID="ProductsList1" runat="server" />
 </asp:Content>
-
-

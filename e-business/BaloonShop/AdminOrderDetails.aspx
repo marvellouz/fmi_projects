@@ -2,60 +2,60 @@
   CodeFile="AdminOrderDetails.aspx.cs" Inherits="AdminOrderDetails" EnableViewState="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
-  <span class="AdminTitle">BalloonShop Admin
+  <span class="AdminTitle">Електронен магазин за картини (аднинистраторска част)
     <br />
-    Order Details </span>
+    Поръчки </span>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminPlaceHolder" runat="Server">
   <h2>
     <asp:Label ID="orderIdLabel" runat="server" CssClass="AdminTitle" Text="Order #000" />
   </h2>
-  <span class="WideLabel">Total Amount:</span>
+  <span class="WideLabel">Общо количество:</span>
   <asp:Label ID="totalAmountLabel" runat="server" CssClass="ProductPrice" />
   <br />
-  <span class="WideLabel">Date Created:</span>
+  <span class="WideLabel">Дата на създаване:</span>
   <asp:TextBox ID="dateCreatedTextBox" runat="server" Width="400px" />
   <br />
-  <span class="WideLabel">Date Shipped:</span>
+  <span class="WideLabel">Дата на доставка:</span>
   <asp:TextBox ID="dateShippedTextBox" runat="server" Width="400px" />
   <br />
-  <span class="WideLabel">Status:</span>
-  Verified
+  <span class="WideLabel">Статус:</span>
+  Приета
   <asp:CheckBox ID="verifiedCheck" runat="server" />
-  Completed
+  Завършена
   <asp:CheckBox ID="completedCheck" runat="server" />
-  Canceled
+  Отменена
   <asp:CheckBox ID="canceledCheck" runat="server" />
   <br />
-  <span class="WideLabel">Comments:</span>
+  <span class="WideLabel">Коментари:</span>
   <asp:TextBox ID="commentsTextBox" runat="server" Width="400px" />
   <br />
-  <span class="WideLabel">Customer Name:</span>
+  <span class="WideLabel">Име на клиента:</span>
   <asp:TextBox ID="customerNameTextBox" runat="server" Width="400px" />
   <br />
-  <span class="WideLabel">Address:</span>
+  <span class="WideLabel">Адрес:</span>
   <asp:TextBox ID="shippingAddressTextBox" runat="server" Width="400px" />
   <br />
-  <span class="WideLabel">Customer Email:</span>
+  <span class="WideLabel">Email на клиента:</span>
   <asp:TextBox ID="customerEmailTextBox" runat="server" Width="400px" />
   <br />
-  <asp:Button ID="editButton" runat="server" Text="Edit" Width="100px" 
+  <asp:Button ID="editButton" runat="server" Text="Редактирай" Width="100px" 
     onclick="editButton_Click" />
-  <asp:Button ID="updateButton" runat="server" Text="Update" Width="100px" 
+  <asp:Button ID="updateButton" runat="server" Text="Обнови" Width="100px" 
     onclick="updateButton_Click" />
-  <asp:Button ID="cancelButton" runat="server" Text="Cancel" Width="100px" 
+  <asp:Button ID="cancelButton" runat="server" Text="Отмени" Width="100px" 
     onclick="cancelButton_Click" /><br />
   <asp:Button ID="markVerifiedButton" runat="server" 
-    Text="Mark Order as Verified" Width="310px" 
+    Text="Маркирай поръчките като приети" Width="310px" 
     onclick="markVerifiedButton_Click" /><br />
   <asp:Button ID="markCompletedButton" runat="server" 
-    Text="Mark Order as Completed" Width="310px" 
+    Text="Маркирай поръчките като завършени" Width="310px" 
     onclick="markCompletedButton_Click" /><br />
   <asp:Button ID="markCanceledButton" runat="server" 
-    Text="Mark Order as Canceled" Width="310px" 
+    Text="Маркирай поръчките като отменени" Width="310px" 
     onclick="markCanceledButton_Click" /><br />
   <p>
-    The order contains these items:
+    Поръчката се състои от:
   </p>
   <asp:GridView ID="grid" runat="server" AutoGenerateColumns="False" BackColor="White" Width="100%">
     <Columns>

@@ -91,7 +91,7 @@ a.CategorySelected {
 }
 
 .CatalogTitle {
-  color: red;
+  color: #bf11e4;
   font-size: 24px;
   font-weight: bold;
 }
@@ -103,12 +103,19 @@ a.CategorySelected {
   text-align: justify;
 }
 
+.Header img 
+{
+    text-align: left;
+}
+
 .ProductList img {
   border: 2px solid #c6e1ec;
   float: left;
+  padding: 3px;
   margin-right: 5px;
   vertical-align: top;
 }
+
 .ProductTitle {
   font-size: 15px;
   font-weight: bold;
@@ -224,4 +231,10 @@ border-bottom: #fff solid 3px;
 display: block;
 padding: 5px;
 width: 100%;
+}
+
+.Contents img 
+{
+    border: 2px solid #c6e1ec;
+    padding: 3px;
 }

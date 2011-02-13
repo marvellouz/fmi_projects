@@ -29,7 +29,7 @@ public static class Utilities
         // Create the mail message
         MailMessage mailMessage = new MailMessage(from, to, subject, body);
         // Send mail
-        mailClient.Send(mailMessage);
+        //mailClient.Send(mailMessage);
     }
 
     // Send error log mail

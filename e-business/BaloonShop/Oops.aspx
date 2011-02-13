@@ -11,14 +11,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>BalloonShop: Oops!</title>
+    <title>Електронен магазин за картини: Уупс!</title>
 </head>
 <body>
   <form id="form1" runat="server">
     <asp:HyperLink ID="HeaderLink" ImageUrl="~/Images/BalloonShopLogo.png" NavigateUrl="~/" ToolTip="BalloonShop logo" Text="BalloonShop logo" runat="server" />    
-    <p>Your request generated an internal error!</p>
-    <p>We apologize for the inconvenience. The error has been reported and will be fixed as soon as possible. Thank you!</p>
-    <p>The <b>BalloonShop</b> team</p>
+    <p>Вашата заявка предизвика грешка!</p>
+    <p>Извинете за неудобството. Изпратено е съобщение за грешката. Благодарим Ви!</p>
+    <p>Екипът</p>
   </form>
 </body>
 </html>

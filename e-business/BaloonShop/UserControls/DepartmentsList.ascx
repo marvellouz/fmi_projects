@@ -2,7 +2,7 @@
 <asp:DataList ID="list" runat="server" Width="200px" CssClass="DepartmentsList">
   <HeaderStyle CssClass="DepartmentsListHead" />
   <HeaderTemplate>
-    Choose a Department
+    Изберете раздел
   </HeaderTemplate>  
   <ItemTemplate>
     <asp:HyperLink 

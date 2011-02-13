@@ -2,9 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
   <span class="AdminTitle">
-    BalloonShop Admin
+    Електронен магазин за картини (аднинистраторска част)
     <br />
-    Categories in 
+    Категории в
     <asp:HyperLink ID="deptLink" runat="server" />
   </span>
 </asp:Content>
@@ -17,8 +17,8 @@
     onrowcancelingedit="grid_RowCancelingEdit" onrowdeleting="grid_RowDeleting" 
     onrowediting="grid_RowEditing" onrowupdating="grid_RowUpdating">
     <Columns>
-      <asp:BoundField DataField="Name" HeaderText="Category Name" SortExpression="Name" />
-      <asp:TemplateField HeaderText="Category Description" SortExpression="Description">
+      <asp:BoundField DataField="Name" HeaderText="Име на категорията" SortExpression="Name" />
+      <asp:TemplateField HeaderText="Описание на категорията" SortExpression="Description">
         <ItemTemplate>
           <asp:Label ID="Label1" runat="server" Text='<%# Bind("Description") %>'>
           </asp:Label>
@@ -29,19 +29,19 @@
       </asp:TemplateField>
       <asp:TemplateField>
         <ItemTemplate>
-          <asp:HyperLink runat="server" ID="link" NavigateUrl='<%# "AdminProducts.aspx?DepartmentID=" + Request.QueryString["DepartmentID"] + "&amp;CategoryID=" + Eval("CategoryID")%>' Text="View Products">
+          <asp:HyperLink runat="server" ID="link" NavigateUrl='<%# "AdminProducts.aspx?DepartmentID=" + Request.QueryString["DepartmentID"] + "&amp;CategoryID=" + Eval("CategoryID")%>' Text="Виж продуктите">
           </asp:HyperLink>
         </ItemTemplate>
       </asp:TemplateField>
       <asp:CommandField ShowEditButton="True" />
-      <asp:ButtonField CommandName="Delete" Text="Delete" />
+      <asp:ButtonField CommandName="Delete" Text="Изтрий" />
     </Columns>
   </asp:GridView>
-  <p>Create a new category:</p>
-  <p>Name:</p>
+  <p>Създаване на нова категория:</p>
+  <p>Име:</p>
   <asp:TextBox ID="newName" runat="server" Width="400px" />
-  <p>Description:</p>
+  <p>Описание:</p>
   <asp:TextBox ID="newDescription" runat="server" Width="400px" Height="70px" TextMode="MultiLine" />
-  <p><asp:Button ID="createCategory" Text="Create Category" runat="server" 
+  <p><asp:Button ID="createCategory" Text="Създай категория" runat="server" 
       onclick="createCategory_Click" /></p>
 </asp:Content>

@@ -2,9 +2,9 @@
     CodeFile="AdminDepartments.aspx.cs" Inherits="AdminDepartments" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
-    <span class="AdminTitle">BalloonShop Admin
+    <span class="AdminTitle">Електронен магазин за картини (аднинистраторска част)
         <br />
-        Departments </span>
+        Отдели </span>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminPlaceHolder" runat="Server">
     <asp:Label ID="statusLabel" runat="server" CssClass="AdminError"></asp:Label>
@@ -13,9 +13,9 @@
         onrowdeleting="grid_RowDeleting" onrowediting="grid_RowEditing" 
         onrowupdating="grid_RowUpdating">
         <Columns>
-            <asp:BoundField DataField="Name" HeaderText="Department Name" 
+            <asp:BoundField DataField="Name" HeaderText="Име на отдела" 
                 SortExpression="Name" />
-            <asp:TemplateField HeaderText="Department Description" 
+            <asp:TemplateField HeaderText="Описание на отдела" 
                 SortExpression="Description">
                 <EditItemTemplate>
                     <asp:TextBox ID="descriptionTextBox" runat="server" 
@@ -28,16 +28,16 @@
             </asp:TemplateField>
             <asp:HyperLinkField DataNavigateUrlFields="DepartmentID" 
                 DataNavigateUrlFormatString="AdminCategories.aspx?DepartmentID={0}" 
-                HeaderText="View Categories" Text="View Categories" />
+                HeaderText="Виж категориите" Text="Виж категориите" />
             <asp:CommandField ShowEditButton="True" />
-            <asp:ButtonField CommandName="Delete" Text="Delete" />
+            <asp:ButtonField CommandName="Delete" Text="Изтрий" />
         </Columns>
     </asp:GridView>
-    <p>Create a new department:</p>
-<p>Name:</p>
+    <p>Създаване на нов отдел:</p>
+<p>Име:</p>
 <asp:TextBox ID="newName" runat="server" Width="400px" />
-<p>Description:</p>
+<p>Описание:</p>
 <asp:TextBox ID="newDescription" runat="server" Width="400px" Height="70px" TextMode="MultiLine" />
-<p><asp:Button ID="createDepartment" Text="Create Department" runat="server" 
+<p><asp:Button ID="createDepartment" Text="Създай отдел" runat="server" 
         onclick="createDepartment_Click" /></p>
 </asp:Content>

@@ -7,7 +7,16 @@ public partial class Register : System.Web.UI.Page
     {
         // Set the title of the page
         this.Title = BalloonShopConfiguration.SiteName +
-        " : Register";
+        " : Регистрация";
+        CreateUserWizard1.UserNameLabelText = "Потребителско име: ";
+        CreateUserWizard1.PasswordLabelText = "Парола: ";
+        CreateUserWizard1.ConfirmPasswordLabelText = "Повторете паролата: ";
+        CreateUserWizard1.QuestionLabelText = "Таен въпрос: ";
+        CreateUserWizard1.AnswerLabelText = "Отговор: ";
+        CreateUserWizard1.CreateUserButtonText = "Регистрация";
+        CreateUserWizard1.ContinueButtonText = "Регистрация";
+
+
     }
     protected void CreateUserWizard1_CreatedUser(object sender,
     EventArgs e)

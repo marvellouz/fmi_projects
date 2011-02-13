@@ -10,3 +10,26 @@ CREATE TABLE ShippingRegion(
 
 GO
 
+
+TRUNCATE TABLE ShippingRegion
+GO
+
+SET IDENTITY_INSERT ShippingRegion ON
+GO
+
+insert into ShippingRegion(ShippingRegionID, ShippingRegion)
+values (1, 'София')
+
+
+insert into ShippingRegion(ShippingRegionID, ShippingRegion)
+values(2, 'Пловдив')
+
+
+insert into ShippingRegion(ShippingRegionID, ShippingRegion)
+values(3, 'Стара Загора')
+
+
+SET IDENTITY_INSERT ShippingRegion OFF
+GO
+
+select * from ShippingRegion

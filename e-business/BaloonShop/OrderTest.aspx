@@ -2,10 +2,10 @@
   CodeFile="OrderTest.aspx.cs" Inherits="OrderTest" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
-  <span class="AdminTitle">BalloonShop Customer Order Access Test</span>
+  <span class="AdminTitle">Електронен магазин за картини - теставане на поръчка</span>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminPlaceHolder" runat="Server">
-  Order number:
+  Номер на поръчка:
   <asp:TextBox runat="server" ID="orderIDBox" />
   <br />
   <asp:Button runat="server" ID="goButton" Text="Go" onclick="goButton_Click" />
@@ -14,17 +14,17 @@
   <asp:Label runat="server" ID="resultLabel" />
   <br />
   <br />
-  <strong>Customer address:</strong>
+  <strong>Адрес на клиента:</strong>
   <br />
   <asp:Label runat="server" ID="addressLabel" />
   <br />
   <br />
-  <strong>Customer credit card:</strong>
+  <strong>Кредитна карта на клиента:</strong>
   <br />
   <asp:Label runat="server" ID="creditCardLabel" />
   <br />
   <br />
-  <strong>Order details:</strong>
+  <strong>Данни за поръчката:</strong>
   <br />
   <asp:Label runat="server" ID="orderLabel" />
 </asp:Content>
