@@ -260,7 +260,7 @@ public class ProfileWrapper
         }
         catch
         {
-            creditCard = "Not entered.";
+            creditCard = "Не е въведена.";
         }
     }
 

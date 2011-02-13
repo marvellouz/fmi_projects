@@ -32,7 +32,7 @@ public partial class Catalog : System.Web.UI.Page
             DepartmentDetails dd = CatalogAccess.GetDepartmentDetails(departmentId);
             catalogDescriptionLabel.Text = HttpUtility.HtmlEncode(cd.Description);
             // Set the title of the page
-            this.Title = HttpUtility.HtmlEncode(BalloonShopConfiguration.SiteName +
+            this.Title = HttpUtility.HtmlEncode(GalleryConfiguration.SiteName +
                          ": " + dd.Name + ": " + cd.Name);
         }
         // If browsing a department...
@@ -43,7 +43,7 @@ public partial class Catalog : System.Web.UI.Page
             catalogTitleLabel.Text = HttpUtility.HtmlEncode(dd.Name);
             catalogDescriptionLabel.Text = HttpUtility.HtmlEncode(dd.Description);
             // Set the title of the page
-            this.Title = HttpUtility.HtmlEncode(BalloonShopConfiguration.SiteName + ": " + dd.Name);
+            this.Title = HttpUtility.HtmlEncode(GalleryConfiguration.SiteName + ": " + dd.Name);
         }
     }
 }

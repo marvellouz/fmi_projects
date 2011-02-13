@@ -17,7 +17,7 @@ public partial class Search : System.Web.UI.Page
             titleLabel.Text = "Product Search";
             descriptionLabel.Text = "You searched for \"" + searchString + "\"";
             // set the title of the page
-            this.Title = BalloonShopConfiguration.SiteName +
+            this.Title = GalleryConfiguration.SiteName +
             " : Product Search : " + searchString;
         }
     }

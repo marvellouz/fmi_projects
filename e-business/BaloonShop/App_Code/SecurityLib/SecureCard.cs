@@ -112,7 +112,7 @@ namespace SecurityLib
             }
             catch
             {
-                throw new SecureCardException("Unable to encrypt data.");
+                throw new SecureCardException("Невъзможност за криптиране на данните.");
             }
         }
 
@@ -131,7 +131,7 @@ namespace SecurityLib
             }
             catch
             {
-                throw new SecureCardException("Unable to decrypt data.");
+                throw new SecureCardException("Невъзможност за декриптиране на данните.");
             }
         }
 
@@ -145,7 +145,7 @@ namespace SecurityLib
                 }
                 else
                 {
-                    throw new SecureCardException("Data not decrypted.");
+                    throw new SecureCardException("Данните не са криптирани.");
                 }
             }
         }
@@ -160,7 +160,7 @@ namespace SecurityLib
                 }
                 else
                 {
-                    throw new SecureCardException("Data not decrypted.");
+                    throw new SecureCardException("Данните не са декриптирани.");
                 }
             }
         }
@@ -176,7 +176,7 @@ namespace SecurityLib
                 }
                 else
                 {
-                    throw new SecureCardException("Data not decrypted.");
+                    throw new SecureCardException("Данните не са декриптирани.");
                 }
             }
         }
@@ -191,7 +191,7 @@ namespace SecurityLib
                 }
                 else
                 {
-                    throw new SecureCardException("Data not decrypted.");
+                    throw new SecureCardException("Данните не са декриптирани.");
                 }
             }
         }
@@ -206,7 +206,7 @@ namespace SecurityLib
                 }
                 else
                 {
-                    throw new SecureCardException("Data not decrypted.");
+                    throw new SecureCardException("Данните не са декриптирани.");
                 }
             }
         }
@@ -221,7 +221,7 @@ namespace SecurityLib
                 }
                 else
                 {
-                    throw new SecureCardException("Data not decrypted.");
+                    throw new SecureCardException("Данните не са декриптирани.");
                 }
             }
         }
@@ -236,7 +236,7 @@ namespace SecurityLib
                 }
                 else
                 {
-                    throw new SecureCardException("Data not decrypted.");
+                    throw new SecureCardException("Данните не са декриптирани.");
                 }
             }
         }
@@ -251,7 +251,7 @@ namespace SecurityLib
                 }
                 else
                 {
-                    throw new SecureCardException("Data not decrypted.");
+                    throw new SecureCardException("Данните не са декриптирани.");
                 }
             }
         }

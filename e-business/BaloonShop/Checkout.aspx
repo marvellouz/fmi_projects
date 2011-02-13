@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BalloonShop.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Gallery.master" AutoEventWireup="true"
   CodeFile="Checkout.aspx.cs" Inherits="Checkout" %>
 
 <%@ Register TagPrefix="uc1" TagName="CustomerDetailsEdit" 
@@ -26,7 +26,7 @@ Src="UserControls/CustomerDetailsEdit.ascx" %>
         SortExpression="Subtotal" />
     </Columns>
   </asp:GridView>
-  <asp:Label ID="Label2" runat="server" Text="Общо количество: " 
+  <asp:Label ID="Label2" runat="server" Text="Общо: " 
     CssClass="ProductDescription" />
   <asp:Label ID="totalAmountLabel" runat="server" Text="Label" 
     CssClass="ProductPrice" />

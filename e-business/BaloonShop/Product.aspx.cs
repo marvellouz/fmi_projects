@@ -39,7 +39,7 @@ public partial class Product : System.Web.UI.Page
         priceLabel.Text = String.Format("{0:c}", pd.Price);
         productImage.ImageUrl = Link.ToProductImage(pd.Image);
         // Set the title of the page
-        this.Title = BalloonShopConfiguration.SiteName + ": " + pd.Name;
+        this.Title = GalleryConfiguration.SiteName + ": " + pd.Name;
 
         // obtain the attributes of the product
         //DataTable attrTable =

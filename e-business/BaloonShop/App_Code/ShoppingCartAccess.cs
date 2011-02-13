@@ -25,10 +25,10 @@ public class ShoppingCartAccess
             HttpContext context = HttpContext.Current;
            
             // check if the cart ID exists as a cookie
-            if (context.Request.Cookies["BalloonShop_CartID"] != null)
+            if (context.Request.Cookies["Gallery_CartID"] != null)
             {
                 // return the id
-                return context.Request.Cookies["BalloonShop_CartID"].Value;
+                return context.Request.Cookies["Gallery_CartID"].Value;
             }
             else
             // if the cart ID doesn't exist in the cookie as well, generate a new ID
@@ -36,9 +36,9 @@ public class ShoppingCartAccess
                 // generate a new GUID
                 string cartId = Guid.NewGuid().ToString();
                 // create the cookie object and set its value
-                HttpCookie cookie = new HttpCookie("BalloonShop_CartID", cartId);
+                HttpCookie cookie = new HttpCookie("Gallery_CartID", cartId);
                 // set the cookie's expiration date
-                int howManyDays = BalloonShopConfiguration.CartPersistDays;
+                int howManyDays = GalleryConfiguration.CartPersistDays;
                 DateTime currentDate = DateTime.Now;
                 TimeSpan timeSpan = new TimeSpan(howManyDays, 0, 0, 0);
                 DateTime expirationDate = currentDate.Add(timeSpan);
@@ -291,7 +291,7 @@ public class ShoppingCartAccess
         // create a new parameter
         param = comm.CreateParameter();
         param.ParameterName = "@DescriptionLength";
-        param.Value = BalloonShopConfiguration.ProductDescriptionLength;
+        param.Value = GalleryConfiguration.ProductDescriptionLength;
         param.DbType = DbType.Int32;
         comm.Parameters.Add(param);
         // execute the stored procedure

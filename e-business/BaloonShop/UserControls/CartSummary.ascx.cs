@@ -37,7 +37,7 @@ public partial class UserControls_CartSummary : System.Web.UI.UserControl
                 list.DataSource = dt;
                 list.DataBind();
                 // set up controls
-                cartSummaryLabel.Text = "Cart summary ";
+                cartSummaryLabel.Text = "Количка ";
                 viewCartLink.Visible = true;
                 // display the total amount
                 decimal amount = ShoppingCartAccess.GetTotalAmount();

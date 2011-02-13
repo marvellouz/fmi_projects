@@ -31,7 +31,7 @@ namespace CommerceLib
             ContinueNow = true;
 
             // log start of execution
-            CreateAudit("Order Processor started.", 10000);
+            CreateAudit("Обработката на поръчката е започнала.", 10000);
 
             // process pipeline section
             try
@@ -45,26 +45,26 @@ namespace CommerceLib
             }
             catch (OrderProcessorException ex)
             {
-                MailAdmin("Order Processing error occurred.",
+                MailAdmin("Грешка при обработката на поръчката.",
                   ex.Message, ex.SourceStage);
-                CreateAudit("Order Processing error occurred.", 10002);
+                CreateAudit("Грешка при обработката на поръчката.", 10002);
                 throw new OrderProcessorException(
-                  "Error occurred, order aborted. "
-                  + "Details mailed to administrator.", 100);
+                  "Възникна грешка, поръчката е спряна. "
+                  + "Изпратен е e-mail до администратора.", 100);
             }
             catch (Exception ex)
             {
-                MailAdmin("Order Processing error occurred.", ex.Message,
+                MailAdmin("Грешка при обработването на поръчката.", ex.Message,
                   100);
-                CreateAudit("Order Processing error occurred.", 10002);
+                CreateAudit("Грешка при обработването на поръчката.", 10002);
                 throw new OrderProcessorException(
-                  "Unknown error, order aborted. "
-                  + "Details mailed to administrator.", 100);
+                  "Възникна грешка, поръчката е спряна. "
+                  + "Изпратен е e-mail до администратора.", 100);
             }
             finally
             {
                 CommerceLibAccess.CreateAudit(Order.OrderID,
-                  "Order Processor finished.", 10001);
+                  "Обработката на поръчката приключи.", 10001);
             }
         }
 

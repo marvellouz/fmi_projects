@@ -10,9 +10,9 @@ namespace CommerceLib
           string message, int sourceStage)
         {
             // Send mail to administrator
-            string to = BalloonShopConfiguration.ErrorLogEmail;
-            string from = BalloonShopConfiguration.OrderProcessorEmail;
-            string body = "Message: " + message
+            string to = GalleryConfiguration.ErrorLogEmail;
+            string from = GalleryConfiguration.OrderProcessorEmail;
+            string body = "Съобщение: " + message
                + "\nSource: " + sourceStage.ToString()
                + "\nOrder ID: " + orderID.ToString();
             Utilities.SendMail(from, to, subject, body);

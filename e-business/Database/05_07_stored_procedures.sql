@@ -22,7 +22,7 @@ GO
 CREATE PROCEDURE CatalogGetProductDetails
 (@ProductID INT)
 AS
-SELECT Name, Description, Price, Thumbnail, Image, PromoFront, PromoDept
+SELECT Name, Description, Price, Thumbnail, Image, Technique, PromoFront, PromoDept
 FROM Product
 WHERE ProductID = @ProductID
 
@@ -53,6 +53,7 @@ DECLARE @Products TABLE
  Price MONEY,
  Thumbnail NVARCHAR(50),
  Image NVARCHAR(50),
+ Technique NVARCHAR(50) NULL,
  PromoFront bit,
  PromoDept bit)
 
@@ -63,7 +64,7 @@ SELECT ROW_NUMBER() OVER (ORDER BY Product.ProductID),
        ProductID, Name,
        CASE WHEN LEN(Description) <= @DescriptionLength THEN Description 
             ELSE SUBSTRING(Description, 1, @DescriptionLength) + '...' END 
-       AS Description, Price, Thumbnail, Image, PromoFront, PromoDept
+       AS Description, Price, Thumbnail, Image, Technique, PromoFront, PromoDept
 FROM Product
 WHERE PromoFront = 1
 
@@ -72,7 +73,7 @@ SELECT @HowManyProducts = COUNT(ProductID) FROM @Products
 
 -- extract the requested page of products
 SELECT ProductID, Name, Description, Price, Thumbnail,
-       Image, PromoFront, PromoDept
+       Image, Technique, PromoFront, PromoDept
 FROM @Products
 WHERE RowNumber > (@PageNumber - 1) * @ProductsPerPage
   AND RowNumber <= @PageNumber * @ProductsPerPage
@@ -141,6 +142,7 @@ DECLARE @Products TABLE
  Price MONEY,
  Thumbnail NVARCHAR(50),
  Image NVARCHAR(50),
+ Technique NVARCHAR(50) NULL,
  PromoFront bit,
  PromoDept bit)
 
@@ -149,13 +151,13 @@ INSERT INTO @Products
 SELECT ROW_NUMBER() OVER (ORDER BY ProductID) AS Row,
        ProductID, Name, SUBSTRING(Description, 1, @DescriptionLength)
 + '...' AS Description,
-       Price, Thumbnail, Image, PromoFront, PromoDept
+       Price, Thumbnail, Image,Technique, PromoFront, PromoDept
 FROM
 (SELECT DISTINCT Product.ProductID, Product.Name,
        CASE WHEN LEN(Product.Description) <= @DescriptionLength 
             THEN Product.Description 
             ELSE SUBSTRING(Product.Description, 1, @DescriptionLength) + '...' END 
-       AS Description, Price, Thumbnail, Image, PromoFront, PromoDept 
+       AS Description, Price, Thumbnail, Image, Technique, PromoFront, PromoDept 
   FROM Product INNER JOIN ProductCategory
                       ON Product.ProductID = ProductCategory.ProductID
               INNER JOIN Category
@@ -169,7 +171,7 @@ SELECT @HowManyProducts = COUNT(ProductID) FROM @Products
 
 -- extract the requested page of products
 SELECT ProductID, Name, Description, Price, Thumbnail,
-       Image, PromoFront, PromoDept
+       Image, Technique, PromoFront, PromoDept
 FROM @Products
 WHERE RowNumber > (@PageNumber - 1) * @ProductsPerPage
   AND RowNumber <= @PageNumber * @ProductsPerPage

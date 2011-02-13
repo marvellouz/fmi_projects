@@ -6,7 +6,7 @@ CREATE PROCEDURE CatalogGetAllProductsInCategory
 (@CategoryID INT)
 AS
 SELECT Product.ProductID, Name, Description, Price, Thumbnail, 
-       Image, PromoDept, PromoFront
+       Image, Technique, PromoDept, PromoFront
 FROM Product INNER JOIN ProductCategory
   ON Product.ProductID = ProductCategory.ProductID
 WHERE ProductCategory.CategoryID = @CategoryID
@@ -20,6 +20,7 @@ CREATE PROCEDURE CatalogCreateProduct
  @Price MONEY,
  @Thumbnail NVARCHAR(50),
  @Image NVARCHAR(50),
+ @Technique NVARCHAR(50),
  @PromoFront BIT,
  @PromoDept BIT)
 AS
@@ -33,6 +34,7 @@ INSERT INTO Product
      Price, 
      Thumbnail, 
      Image,
+     Technique,
      PromoFront, 
      PromoDept)
 VALUES 
@@ -41,6 +43,7 @@ VALUES
      @Price, 
      @Thumbnail, 
      @Image,
+     @Technique,
      @PromoFront, 
      @PromoDept)
 -- Save the generated product ID to a variable
@@ -58,6 +61,7 @@ CREATE PROCEDURE CatalogUpdateProduct
  @Price MONEY,
  @Thumbnail VARCHAR(50),
  @Image VARCHAR(50),
+ @Technique NVARCHAR(50),
  @PromoFront BIT,
  @PromoDept BIT)
 AS
@@ -67,6 +71,7 @@ SET Name = @ProductName,
     Price = @Price,
     Thumbnail = @Thumbnail,
     Image = @Image,
+    Technique = @Technique,
     PromoFront = @PromoFront,
     PromoDept = @PromoDept
 WHERE ProductID = @ProductID

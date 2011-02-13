@@ -1,5 +1,5 @@
-﻿<%@ Page Title="BalloonShop : Customer Details" Language="C#" 
-MasterPageFile="~/BalloonShop.master" AutoEventWireup="true" 
+﻿<%@ Page Title="Галерия: Данни за клиента" Language="C#" 
+MasterPageFile="~/Gallery.master" AutoEventWireup="true" 
 CodeFile="CustomerDetails.aspx.cs" Inherits="CustomerDetails" %>
 
 <%@ Register TagPrefix="uc1" TagName="CustomerDetailsEdit" 

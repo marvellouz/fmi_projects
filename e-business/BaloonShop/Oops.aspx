@@ -15,7 +15,7 @@
 </head>
 <body>
   <form id="form1" runat="server">
-    <asp:HyperLink ID="HeaderLink" ImageUrl="~/Images/BalloonShopLogo.png" NavigateUrl="~/" ToolTip="BalloonShop logo" Text="BalloonShop logo" runat="server" />    
+    <asp:HyperLink ID="HeaderLink" ImageUrl="~/Images/GalleryLogo.png" NavigateUrl="~/" ToolTip="Gallery logo" Text="Gallery logo" runat="server" />    
     <p>Вашата заявка предизвика грешка!</p>
     <p>Извинете за неудобството. Изпратено е съобщение за грешката. Благодарим Ви!</p>
     <p>Екипът</p>

@@ -47,7 +47,7 @@
   <asp:GridView ID="grid" runat="server" AutoGenerateColumns="False" 
     DataKeyNames="OrderID" onselectedindexchanged="grid_SelectedIndexChanged">
     <Columns>
-      <asp:BoundField DataField="OrderID" HeaderText="OrderID" ReadOnly="True" 
+      <asp:BoundField DataField="OrderID" HeaderText="ID на поръчката" ReadOnly="True" 
         SortExpression="OrderID" />
       <asp:BoundField DataField="DateCreated" HeaderText="Дата на създаване" 
         ReadOnly="True" SortExpression="DateCreated" />

@@ -2,15 +2,15 @@
   CodeFile="AdminOrderDetails.aspx.cs" Inherits="AdminOrderDetails" EnableViewState="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
-  <span class="AdminTitle">Електронен магазин за картини (аднинистраторска част)
+  <span class="AdminTitle">Електронен магазин за картини (администраторска част)
     <br />
     Поръчки </span>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminPlaceHolder" runat="Server">
   <h2>
-    <asp:Label ID="orderIdLabel" runat="server" CssClass="AdminTitle" Text="Order #000" />
+    <asp:Label ID="orderIdLabel" runat="server" CssClass="AdminTitle" Text="Поръчка #000" />
   </h2>
-  <span class="WideLabel">Общо количество:</span>
+  <span class="WideLabel">Общо:</span>
   <asp:Label ID="totalAmountLabel" runat="server" CssClass="ProductPrice" />
   <br />
   <span class="WideLabel">Дата на създаване:</span>
@@ -59,11 +59,11 @@
   </p>
   <asp:GridView ID="grid" runat="server" AutoGenerateColumns="False" BackColor="White" Width="100%">
     <Columns>
-      <asp:BoundField DataField="ProductID" HeaderText="Product ID" ReadOnly="True" SortExpression="ProductID" />
-      <asp:BoundField DataField="ProductName" HeaderText="Product Name" ReadOnly="True" SortExpression="ProductName" />
-      <asp:BoundField DataField="Quantity" HeaderText="Quantity" ReadOnly="True" SortExpression="Quantity" />
-      <asp:BoundField DataField="UnitCost" HeaderText="Unit Cost" ReadOnly="True" SortExpression="UnitCost" />
-      <asp:BoundField DataField="Subtotal" HeaderText="Subtotal" ReadOnly="True" SortExpression="Subtotal" />
+      <asp:BoundField DataField="ProductID" HeaderText="ID на продукта" ReadOnly="True" SortExpression="ProductID" />
+      <asp:BoundField DataField="ProductName" HeaderText="Име на продукта" ReadOnly="True" SortExpression="ProductName" />
+      <asp:BoundField DataField="Quantity" HeaderText="Количество" ReadOnly="True" SortExpression="Quantity" />
+      <asp:BoundField DataField="UnitCost" HeaderText="Единична цена" ReadOnly="True" SortExpression="UnitCost" />
+      <asp:BoundField DataField="Subtotal" HeaderText="Подсума" ReadOnly="True" SortExpression="Subtotal" />
     </Columns>
   </asp:GridView>
 </asp:Content>

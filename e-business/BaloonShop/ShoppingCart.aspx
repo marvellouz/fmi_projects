@@ -1,4 +1,4 @@
-﻿<%@ Page Title="BalloonShop: Shopping Cart" Language="C#" MasterPageFile="~/BalloonShop.master"
+﻿<%@ Page Title="Gallery: Shopping Cart" Language="C#" MasterPageFile="~/Gallery.master"
   AutoEventWireup="true" CodeFile="ShoppingCart.aspx.cs" Inherits="ShoppingCart" %>
 
 <%@ Register src="UserControls/UserControls/ProductRecommendations.ascx" tagname="ProductRecommendations" tagprefix="uc1" %>
@@ -21,7 +21,7 @@
       <asp:BoundField DataField="Price" DataFormatString="{0:c}" HeaderText="Цена" ReadOnly="True"
         SortExpression="Price" />
       <asp:BoundField DataField="Attributes" HeaderText="Опции" ReadOnly="True" />
-      <asp:TemplateField HeaderText="Quantity">
+      <asp:TemplateField HeaderText="Количество">
         <ItemTemplate>
           <asp:TextBox ID="editQuantity" runat="server" CssClass="GridEditingRow" Width="24px"
             MaxLength="2" Text='<%#Eval("Quantity")%>' />
@@ -33,7 +33,7 @@
     </Columns>
   </asp:GridView>
   <p align="right">
-    <span>Общо количество: </span>
+    <span>Общо: </span>
     <asp:Label ID="totalAmountLabel" runat="server" Text="Етикет" />
   </p>
   <p align="right">

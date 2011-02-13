@@ -19,11 +19,11 @@
 </asp:DataList>
 <asp:Panel ID="addReviewPanel" runat="server">
     <p>
-        Споделета своето мнение!</p>
+        Споделетe своето мнение!</p>
     <p>
         <asp:TextBox runat="server" ID="reviewTextBox" Rows="3" Columns="88" TextMode="MultiLine" />
     </p>
-    <asp:LinkButton ID="addReviewButton" runat="server" OnClick="addReviewButton_Click">Добавете своео мнение</asp:LinkButton>
+    <asp:LinkButton ID="addReviewButton" runat="server" OnClick="addReviewButton_Click">Добавете своето мнение</asp:LinkButton>
 </asp:Panel>
 <asp:LoginView ID="LoginView1" runat="server">
     <AnonymousTemplate>

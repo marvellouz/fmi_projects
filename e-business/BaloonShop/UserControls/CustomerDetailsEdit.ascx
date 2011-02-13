@@ -3,7 +3,7 @@
 <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DataObjectTypeName="ProfileWrapper"
     SelectMethod="GetData" TypeName="ProfileDataSource" UpdateMethod="UpdateData">
 </asp:ObjectDataSource>
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BalloonShopConnection %>"
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:GalleryConnection %>"
     SelectCommand="SELECT [ShippingRegionID], [ShippingRegion] FROM [ShippingRegion]">
 </asp:SqlDataSource>
 <asp:FormView ID="FormView1" runat="server" DataSourceID="ObjectDataSource1">

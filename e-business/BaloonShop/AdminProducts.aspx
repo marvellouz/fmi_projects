@@ -2,9 +2,9 @@
     CodeFile="AdminProducts.aspx.cs" Inherits="AdminProducts" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
-    <span class="AdminTitle">Електронен магазин за картини (аднинистраторска част)
+    <span class="AdminTitle">Електронен магазин за картини (администраторска част)
         <br />
-        Продукти в
+        Продукти в 
         <asp:HyperLink ID="catLink" runat="server" />
     </span>
 </asp:Content>
@@ -44,21 +44,25 @@
                     </asp:Label>
                 </ItemTemplate>
                 <EditItemTemplate>
-                    <asp:TextBox ID="priceTextBox" runat="server" Width="45px" Text='<%# String.Format("{0:0.00}", Eval("Price")) %>'>
+                    <asp:TextBox ID="priceTextBox" runat="server" Width="45px" 
+                    Text='<%# String.Format("{0:0.00}", Eval("Price")) %>'>
                     </asp:TextBox>
                 </EditItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Малка снимка" SortExpression="Thumbnail">
                 <EditItemTemplate>
-                    <asp:TextBox ID="thumbTextBox" Width="80px" runat="server" Text='<%# Bind("Thumbnail") %>'></asp:TextBox>
+                    <asp:TextBox ID="thumbTextBox" Width="80px" runat="server" 
+                    Text='<%# Bind("Thumbnail") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:Label ID="Label3" runat="server" Text='<%# Bind("Thumbnail") %>'></asp:Label>
+                    <asp:Label ID="Label3" runat="server" 
+                    Text='<%# Bind("Thumbnail") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Снимка" SortExpression="Image">
                 <EditItemTemplate>
-                    <asp:TextBox ID="imageTextBox" Width="80px" runat="server" Text='<%# Bind("Image") %>'></asp:TextBox>
+                    <asp:TextBox ID="imageTextBox" Width="80px" runat="server" 
+                    Text='<%# Bind("Image") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label4" runat="server" Text='<%# Bind("Image") %>'></asp:Label>
@@ -68,14 +72,15 @@
             <asp:CheckBoxField DataField="PromoFront" HeaderText="Cat. prom." SortExpression="PromoFront" />
             <asp:TemplateField>
                 <ItemTemplate>
-                    <asp:HyperLink runat="server" Text="Избери" NavigateUrl='<%# "AdminProductDetails.aspx?DepartmentID=" +
+                    <asp:HyperLink runat="server" Text="Избери" 
+                    NavigateUrl='<%# "AdminProductDetails.aspx?DepartmentID=" +
                 Request.QueryString["DepartmentID"] + "&amp;CategoryID=" +
                 Request.QueryString["CategoryID"] + "&amp;ProductID=" +
                 Eval("ProductID") %>' ID="HyperLink1">
                     </asp:HyperLink>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:CommandField ShowEditButton="True" />
+            <asp:CommandField ShowEditButton="True" EditText="Редактирай" />
         </Columns>
     </asp:GridView>
     <p>

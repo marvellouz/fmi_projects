@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/BalloonShop.master" Title="Електронен магазин за картини: Какво търсите?" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Gallery.master" Title="Електронен магазин за картини: Какво търсите?" %>
 <script runat="server">
 protected void Page_Load(object sender, EventArgs e)
     {
@@ -13,7 +13,7 @@ protected void Page_Load(object sender, EventArgs e)
 <p>
 За съжаление страницата, която търсите не съществува в нашия уебсайт!
 </p>
-<p>Посетете нания
+<p>Посетете нашия
 <asp:HyperLink ID="HyperLink1" runat="server" Target="~/" Text="каталог" />,
 .
 </p>

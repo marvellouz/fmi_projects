@@ -1,4 +1,4 @@
-﻿<%@ Page Title="BalloonShop: Online Store Demo" Language="C#" MasterPageFile="~/BalloonShop.master" %>
+﻿<%@ Page Title="Галерия - Електронен магазин за картини" Language="C#" MasterPageFile="~/Gallery.master" %>
 
 <%@ Register src="UserControls/ProductsList.ascx" tagname="ProductsList" tagprefix="uc1" %>
 

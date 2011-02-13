@@ -14,6 +14,6 @@ public partial class Login : System.Web.UI.Page
         // set focus on the username text box when the page loads
         usernameTextBox.Focus();
         // set the page title
-        this.Title = BalloonShopConfiguration.SiteName + ": Login";
+        this.Title = GalleryConfiguration.SiteName + ": Login";
     }
 }

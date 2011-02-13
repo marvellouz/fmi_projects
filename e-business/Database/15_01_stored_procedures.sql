@@ -138,4 +138,3 @@ WHERE ProductID IN
    ORDER BY COUNT(ProductID) DESC
    )
 
-

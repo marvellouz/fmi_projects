@@ -2,9 +2,9 @@
     CodeFile="AdminProductDetails.aspx.cs" Inherits="AdminProductDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
-    <span class="AdminTitle">Електронен магазин за картини (аднинистраторска част)
+    <span class="AdminTitle">Електронен магазин за картини (администраторска част)
         <br />
-        Back to
+        Обратно към
         <asp:HyperLink ID="catLink" runat="server" />
     </span>
 </asp:Content>
@@ -26,7 +26,7 @@
     <p>
         Добави продукта към тази категория:
         <asp:DropDownList ID="categoriesListAssign" runat="server" />
-        <asp:Button ID="assignButton" runat="server" Text="Assign" OnClick="assignButton_Click" />
+        <asp:Button ID="assignButton" runat="server" Text="Добави (ох)" OnClick="assignButton_Click" />
         <p>
             Премести продукта в тази категория:
             <asp:DropDownList ID="categoriesListMove" runat="server" />

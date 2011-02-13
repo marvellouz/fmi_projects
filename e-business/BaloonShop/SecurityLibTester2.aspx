@@ -1,4 +1,4 @@
-﻿<%@ Page Title="SecurityLib Test Page 2" Language="C#" MasterPageFile="~/BalloonShop.master" AutoEventWireup="true"
+﻿<%@ Page Title="SecurityLib Test Page 2" Language="C#" MasterPageFile="~/Gallery.master" AutoEventWireup="true"
   CodeFile="SecurityLibTester2.aspx.cs" Inherits="SecurityLibTester2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">

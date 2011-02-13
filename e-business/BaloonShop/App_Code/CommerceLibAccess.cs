@@ -232,7 +232,7 @@ public class CommerceLibOrderDetailInfo
 
     public void Refresh()
     {
-        ItemAsString = Quantity.ToString() + " " + ProductName + ", $" + UnitCost.ToString() + " each, total cost $" + Subtotal.ToString();
+        ItemAsString = Quantity.ToString() + " " + ProductName + ", " + UnitCost.ToString() + "лв , общо " + Subtotal.ToString() + " лв.";
     }
 }
 
@@ -323,7 +323,7 @@ public class CommerceLibOrderInfo
         // Add shipping cost
         if (Shipping.ShippingID != -1)
         {
-            sb.AppendLine("Shipping: " + Shipping.ShippingType);
+            sb.AppendLine("Доставка: " + Shipping.ShippingType);
             TotalCost += Shipping.ShippingCost;
         }
 
@@ -332,13 +332,13 @@ public class CommerceLibOrderInfo
         {
             double taxAmount = Math.Round(TotalCost * Tax.TaxPercentage,
               MidpointRounding.AwayFromZero) / 100.0;
-            sb.AppendLine("Tax: " + Tax.TaxType + ", $"
-              + taxAmount.ToString());
+            sb.AppendLine("Tax: " + Tax.TaxType + ", "
+              + taxAmount.ToString()+ " лв.");
             TotalCost += taxAmount;
         }
         sb.AppendLine();
-        sb.Append("Total order cost: $");
-        sb.Append(TotalCost.ToString());
+        sb.Append("Total order cost: ");
+        sb.Append(TotalCost.ToString() + " лв.");
         OrderAsString = sb.ToString();
 
         // get customer address string

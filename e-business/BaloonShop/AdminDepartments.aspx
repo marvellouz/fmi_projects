@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
     <span class="AdminTitle">Електронен магазин за картини (аднинистраторска част)
         <br />
-        Отдели </span>
+        Раздели </span>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminPlaceHolder" runat="Server">
     <asp:Label ID="statusLabel" runat="server" CssClass="AdminError"></asp:Label>
@@ -29,7 +29,7 @@
             <asp:HyperLinkField DataNavigateUrlFields="DepartmentID" 
                 DataNavigateUrlFormatString="AdminCategories.aspx?DepartmentID={0}" 
                 HeaderText="Виж категориите" Text="Виж категориите" />
-            <asp:CommandField ShowEditButton="True" />
+            <asp:CommandField ShowEditButton="True" EditText="Промени"  />
             <asp:ButtonField CommandName="Delete" Text="Изтрий" />
         </Columns>
     </asp:GridView>

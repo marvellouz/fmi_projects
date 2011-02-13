@@ -19,13 +19,13 @@ public static class Utilities
     string body)
     {
         // Configure mail client
-        SmtpClient mailClient = new SmtpClient(BalloonShopConfiguration.MailServer);
+        SmtpClient mailClient = new SmtpClient(GalleryConfiguration.MailServer);
 
         mailClient.EnableSsl = true;
         mailClient.Port = 465;
 
         // Set credentials (for SMTP servers that require authentication)
-        mailClient.Credentials = new NetworkCredential(BalloonShopConfiguration.MailUsername, BalloonShopConfiguration.MailPassword);
+        mailClient.Credentials = new NetworkCredential(GalleryConfiguration.MailUsername, GalleryConfiguration.MailPassword);
         // Create the mail message
         MailMessage mailMessage = new MailMessage(from, to, subject, body);
         // Send mail
@@ -49,11 +49,11 @@ public static class Utilities
         errorMessage += "\n\n Method: " + ex.TargetSite;
         errorMessage += "\n\n Stack Trace: \n\n" + ex.StackTrace;
         // send error email in case the option is activated in Web.Config
-        if (BalloonShopConfiguration.EnableErrorLogEmail)
+        if (GalleryConfiguration.EnableErrorLogEmail)
         {
-            string from = BalloonShopConfiguration.MailFrom;
-            string to = BalloonShopConfiguration.ErrorLogEmail;
-            string subject = "BalloonShop Error Report";
+            string from = GalleryConfiguration.MailFrom;
+            string to = GalleryConfiguration.ErrorLogEmail;
+            string subject = "Gallery Error Report";
             string body = errorMessage;
             SendMail(from, to, subject, body);
         }

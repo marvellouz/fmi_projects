@@ -51,9 +51,9 @@ public static class GenericDataAccess
     public static DbCommand CreateCommand()
     {
         // Obtain the database provider name
-        string dataProviderName = BalloonShopConfiguration.DbProviderName;
+        string dataProviderName = GalleryConfiguration.DbProviderName;
         // Obtain the database connection string
-        string connectionString = BalloonShopConfiguration.DbConnectionString;
+        string connectionString = GalleryConfiguration.DbConnectionString;
         // Create a new data provider factory
         DbProviderFactory factory = DbProviderFactories.
         GetFactory(dataProviderName);

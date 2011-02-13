@@ -166,7 +166,7 @@ howManyPages)
     // create a new parameter
     DbParameter param = comm.CreateParameter();
     param.ParameterName = "@DescriptionLength";
-    param.Value = BalloonShopConfiguration.ProductDescriptionLength;
+    param.Value = GalleryConfiguration.ProductDescriptionLength;
     param.DbType = DbType.Int32;
     comm.Parameters.Add(param);
     // create a new parameter
@@ -178,7 +178,7 @@ howManyPages)
     // create a new parameter
     param = comm.CreateParameter();
     param.ParameterName = "@ProductsPerPage";
-    param.Value = BalloonShopConfiguration.ProductsPerPage;
+    param.Value = GalleryConfiguration.ProductsPerPage;
     param.DbType = DbType.Int32;
     comm.Parameters.Add(param);
     // create a new parameter
@@ -193,7 +193,7 @@ howManyPages)
     int howManyProducts = Int32.Parse(comm.Parameters
     ["@HowManyProducts"].Value.ToString());
     howManyPages = (int)Math.Ceiling((double)howManyProducts /
-    (double)BalloonShopConfiguration.ProductsPerPage);
+    (double)GalleryConfiguration.ProductsPerPage);
     // return the page of products
     return table;
 }
@@ -214,7 +214,7 @@ comm.Parameters.Add(param);
 // create a new parameter
 param = comm.CreateParameter();
 param.ParameterName = "@DescriptionLength";
-param.Value = BalloonShopConfiguration.ProductDescriptionLength;
+param.Value = GalleryConfiguration.ProductDescriptionLength;
 param.DbType = DbType.Int32;
 comm.Parameters.Add(param);
 // create a new parameter
@@ -226,7 +226,7 @@ comm.Parameters.Add(param);
 // create a new parameter
 param = comm.CreateParameter();
 param.ParameterName = "@ProductsPerPage";
-param.Value = BalloonShopConfiguration.ProductsPerPage;
+param.Value = GalleryConfiguration.ProductsPerPage;
 param.DbType = DbType.Int32;
 comm.Parameters.Add(param);
 // create a new parameter
@@ -241,7 +241,7 @@ DataTable table = GenericDataAccess.ExecuteSelectCommand(comm);
 int howManyProducts = Int32.Parse
 (comm.Parameters["@HowManyProducts"].Value.ToString());
 howManyPages = (int)Math.Ceiling((double)howManyProducts /
-(double)BalloonShopConfiguration.ProductsPerPage);
+(double)GalleryConfiguration.ProductsPerPage);
 // return the page of products
 return table;
 }
@@ -262,7 +262,7 @@ comm.Parameters.Add(param);
 // create a new parameter
 param = comm.CreateParameter();
 param.ParameterName = "@DescriptionLength";
-param.Value = BalloonShopConfiguration.ProductDescriptionLength;
+param.Value = GalleryConfiguration.ProductDescriptionLength;
 param.DbType = DbType.Int32;
 comm.Parameters.Add(param);
 // create a new parameter
@@ -274,7 +274,7 @@ comm.Parameters.Add(param);
 // create a new parameter
 param = comm.CreateParameter();
 param.ParameterName = "@ProductsPerPage";
-param.Value = BalloonShopConfiguration.ProductsPerPage;
+param.Value = GalleryConfiguration.ProductsPerPage;
 param.DbType = DbType.Int32;
 comm.Parameters.Add(param);
 // create a new parameter
@@ -289,7 +289,7 @@ DataTable table = GenericDataAccess.ExecuteSelectCommand(comm);
 int howManyProducts = Int32.Parse
 (comm.Parameters["@HowManyProducts"].Value.ToString());
 howManyPages = (int)Math.Ceiling((double)howManyProducts /
-(double)BalloonShopConfiguration.ProductsPerPage);
+(double)GalleryConfiguration.ProductsPerPage);
 // return the page of products
 return table;
 }
@@ -320,7 +320,7 @@ return table;
          // create a new parameter
         DbParameter param = comm.CreateParameter();
         param.ParameterName = "@DescriptionLength";
-        param.Value = BalloonShopConfiguration.ProductDescriptionLength;
+        param.Value = GalleryConfiguration.ProductDescriptionLength;
         param.DbType = DbType.Int32;
         comm.Parameters.Add(param);
         // create a new parameter
@@ -338,7 +338,7 @@ return table;
         // create a new parameter
         param = comm.CreateParameter();
         param.ParameterName = "@ProductsPerPage";
-        param.Value = BalloonShopConfiguration.ProductsPerPage;
+        param.Value = GalleryConfiguration.ProductsPerPage;
         param.DbType = DbType.Int32;
         comm.Parameters.Add(param);
         // create a new parameter
@@ -371,7 +371,7 @@ return table;
         int howManyProducts =
         Int32.Parse(comm.Parameters["@HowManyResults"].Value.ToString());
         howManyPages = (int)Math.Ceiling((double)howManyProducts /
-        (double)BalloonShopConfiguration.ProductsPerPage);
+        (double)GalleryConfiguration.ProductsPerPage);
         // return the page of products
         return table;
     }
@@ -928,7 +928,7 @@ public static bool UpdateCategory(string id, string name, string description)
         // create a new parameter
         param = comm.CreateParameter();
         param.ParameterName = "@DescriptionLength";
-        param.Value = BalloonShopConfiguration.ProductDescriptionLength;
+        param.Value = GalleryConfiguration.ProductDescriptionLength;
         param.DbType = DbType.Int32;
         comm.Parameters.Add(param);
         // execute the stored procedure

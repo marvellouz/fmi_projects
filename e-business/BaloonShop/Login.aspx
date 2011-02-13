@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BalloonShop.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Gallery.master" AutoEventWireup="true" 
+CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -17,24 +18,28 @@
                               </tr>
                               <tr>
                                   <td align="right">
-                                      <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">Потребителско име:</asp:Label>
+                                      <asp:Label ID="UserNameLabel" runat="server" 
+                                      AssociatedControlID="UserName">Потребителско име:</asp:Label>
                                   </td>
                                   <td>
                                       <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
                                       <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" 
                                           ControlToValidate="UserName" ErrorMessage="Потребителското име е задължително." 
-                                          ToolTip="Потребителското име е задължително." ValidationGroup="loginControl">*</asp:RequiredFieldValidator>
+                                          ToolTip="Потребителското име е задължително." 
+                                          ValidationGroup="loginControl">*</asp:RequiredFieldValidator>
                                   </td>
                               </tr>
                               <tr>
                                   <td align="right">
-                                      <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Парола:</asp:Label>
+                                      <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">
+                                      Парола:</asp:Label>
                                   </td>
                                   <td>
                                       <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
                                       <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" 
                                           ControlToValidate="Password" ErrorMessage="Паролата е задължителна." 
-                                          ToolTip="Паролата е задължителна." ValidationGroup="loginControl">*</asp:RequiredFieldValidator>
+                                          ToolTip="Паролата е задължителна." 
+                                          ValidationGroup="loginControl">*</asp:RequiredFieldValidator>
                                   </td>
                               </tr>
                               <tr>

@@ -1,8 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.master" AutoEventWireup="true" CodeFile="AdminCategories.aspx.cs" Inherits="AdminCategories" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.master" AutoEventWireup="true" 
+CodeFile="AdminCategories.aspx.cs" Inherits="AdminCategories" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="titlePlaceHolder" runat="Server">
   <span class="AdminTitle">
-    Електронен магазин за картини (аднинистраторска част)
+    Електронен магазин за картини (администраторска част)
     <br />
     Категории в
     <asp:HyperLink ID="deptLink" runat="server" />
@@ -24,16 +25,19 @@
           </asp:Label>
         </ItemTemplate>
         <EditItemTemplate>
-          <asp:TextBox ID="descriptionTextBox" runat="server" TextMode="MultiLine" Text='<%# Bind("Description") %>' Height="70px" Width="400px" />
+          <asp:TextBox ID="descriptionTextBox" runat="server" TextMode="MultiLine" 
+          Text='<%# Bind("Description") %>' Height="70px" Width="400px" />
         </EditItemTemplate>
       </asp:TemplateField>
       <asp:TemplateField>
         <ItemTemplate>
-          <asp:HyperLink runat="server" ID="link" NavigateUrl='<%# "AdminProducts.aspx?DepartmentID=" + Request.QueryString["DepartmentID"] + "&amp;CategoryID=" + Eval("CategoryID")%>' Text="Виж продуктите">
+          <asp:HyperLink runat="server" ID="link" 
+          NavigateUrl='<%# "AdminProducts.aspx?DepartmentID=" + Request.QueryString["DepartmentID"] + "&amp;CategoryID=" + Eval("CategoryID")%>' 
+          Text="Виж продуктите">
           </asp:HyperLink>
         </ItemTemplate>
       </asp:TemplateField>
-      <asp:CommandField ShowEditButton="True" />
+      <asp:CommandField ShowEditButton="True" EditText="Редактирай"/>
       <asp:ButtonField CommandName="Delete" Text="Изтрий" />
     </Columns>
   </asp:GridView>
