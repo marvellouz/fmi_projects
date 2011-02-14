@@ -36,6 +36,7 @@ public partial class Product : System.Web.UI.Page
         // Display product details
         titleLabel.Text = pd.Name;
         descriptionLabel.Text = pd.Description;
+        techniqueLabel.Text = pd.Technique;
         priceLabel.Text = String.Format("{0:c}", pd.Price);
         productImage.ImageUrl = Link.ToProductImage(pd.Image);
         // Set the title of the page

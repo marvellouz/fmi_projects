@@ -15,7 +15,12 @@
     <asp:Image ID="productImage" runat="server" />
   </p>
   <p>
+  <b>Описание:</b>
     <asp:Label CssClass="ProductDescription" ID="descriptionLabel" runat="server" Text="Етикет"></asp:Label>
+  </p>
+  <p>
+  <b>Техника:</b>
+    <asp:Label ID="techniqueLabel" runat="server"></asp:Label>
   </p>
   <p>
     <b>Цена:</b>
