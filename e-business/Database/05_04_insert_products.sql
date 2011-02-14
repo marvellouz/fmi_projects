@@ -1,4 +1,4 @@
-USE BalloonShop
+USE Gallery
 GO
 
 TRUNCATE TABLE Author

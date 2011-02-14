@@ -1,5 +1,5 @@
 -- Connect to the BalloonShop database
-USE BalloonShop
+USE Gallery
 
 -- Create attribute table (stores attributes such as Size and Color)
 CREATE TABLE Attribute (

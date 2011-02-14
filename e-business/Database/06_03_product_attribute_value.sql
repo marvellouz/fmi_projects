@@ -1,4 +1,4 @@
-USE BalloonShop
+USE Gallery
 
 -- Create ProductAttributeValue table (associates attribute values to products)
 CREATE TABLE ProductAttributeValue (

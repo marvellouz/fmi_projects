@@ -1,4 +1,4 @@
-USE BalloonShop
+USE Gallery
 
 -- Create the foreign keys
 ALTER TABLE AttributeValue ADD CONSTRAINT FK_AttributeValue_Attribute FOREIGN KEY(AttributeID)

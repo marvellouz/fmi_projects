@@ -1,4 +1,4 @@
-USE Balloonshop
+USE Gallery
 
 GO
 

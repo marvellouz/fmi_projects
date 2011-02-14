@@ -1,4 +1,4 @@
-USE BalloonShop
+USE Gallery
 
 GO
 
@@ -8,7 +8,7 @@ VALUES ('Български художници', 'Български художници')
 GO
 
 INSERT INTO Department(Name, Description )		
-VALUES ('Чуждестранни художници', '!уждестранни художници')
+VALUES ('Чуждестранни художници', 'Чуждестранни художници')
 
 GO
 

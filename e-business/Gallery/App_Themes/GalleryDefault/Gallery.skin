@@ -1,0 +1,6 @@
+﻿<asp:GridView runat="server" CssClass="Grid" CellPadding="4" AutoGenerateColumns="False">
+<HeaderStyle CssClass="GridHeader" />
+<RowStyle CssClass="GridRow" />
+<AlternatingRowStyle CssClass="GridAlternateRow" />
+<SelectedRowStyle CssClass="GridSelectedRow"/>
+</asp:GridView>
