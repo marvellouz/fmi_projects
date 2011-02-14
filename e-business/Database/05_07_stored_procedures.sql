@@ -80,6 +80,9 @@ WHERE RowNumber > (@PageNumber - 1) * @ProductsPerPage
 
 GO
 
+DROP  PROCEDURE CatalogGetProductsInCategory
+GO
+
 CREATE PROCEDURE CatalogGetProductsInCategory
 (@CategoryID INT,
 @DescriptionLength INT,
@@ -97,6 +100,7 @@ DECLARE @Products TABLE
  Price MONEY,
  Thumbnail NVARCHAR(50),
  Image NVARCHAR(50),
+ Technique NVARCHAR(50),
  PromoFront bit,
  PromoDept bit)
 
@@ -107,7 +111,7 @@ SELECT ROW_NUMBER() OVER (ORDER BY Product.ProductID),
        Product.ProductID, Name,
        CASE WHEN LEN(Description) <= @DescriptionLength THEN Description 
             ELSE SUBSTRING(Description, 1, @DescriptionLength) + '...' END 
-       AS Description, Price, Thumbnail, Image, PromoFront, PromoDept 
+       AS Description, Price, Thumbnail, Image, Technique, PromoFront, PromoDept 
 FROM Product INNER JOIN ProductCategory
   ON Product.ProductID = ProductCategory.ProductID
 WHERE ProductCategory.CategoryID = @CategoryID
@@ -117,7 +121,7 @@ SELECT @HowManyProducts = COUNT(ProductID) FROM @Products
 
 -- extract the requested page of products
 SELECT ProductID, Name, Description, Price, Thumbnail,
-       Image, PromoFront, PromoDept
+       Image, Technique, PromoFront, PromoDept
 FROM @Products
 WHERE RowNumber > (@PageNumber - 1) * @ProductsPerPage
   AND RowNumber <= @PageNumber * @ProductsPerPage

@@ -1,0 +1,102 @@
+***************
+*** 3,19 ****
+    <asp:LoginView ID="LoginView1" runat="server">
+      <AnonymousTemplate>
+        <tr>
+-         <td class="UserInfoHead">Welcome!</td>
+        </tr>    
+        <tr>
+          <td class="UserInfoContent">
+-           You are not logged in.
+            <br />
+-           <asp:LoginStatus ID="LoginStatus1" runat="server" />
+-           or
+            <asp:HyperLink runat="server" ID="registerLink"
+-             NavigateUrl="~/Register.aspx" Text="Register"
+-             ToolTip="Go to the registration page"/>
+          </td>
+        </tr>
+      </AnonymousTemplate>
+--- 3,19 ----
+    <asp:LoginView ID="LoginView1" runat="server">
+      <AnonymousTemplate>
+        <tr>
++         <td class="UserInfoHead">Добре дошли!</td>
+        </tr>    
+        <tr>
+          <td class="UserInfoContent">
++           Не сте влезли.
+            <br />
++           <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Вход" />
++           или
+            <asp:HyperLink runat="server" ID="registerLink"
++             NavigateUrl="~/Register.aspx" Text="регистрация"
++             ToolTip="Go to the registration page"/>.
+          </td>
+        </tr>
+      </AnonymousTemplate>
+***************
+*** 29,41 ****
+              <td class="UserInfoContent">              
+                <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                <br />
+-               <a href="/">BookShop</a>   
+                <br />
+-               <a href="AdminDepartments.aspx">Catalog Admin</a>
+                <br />
+-               <a href="AdminShoppingCart.aspx">Cart Admin</a>
+                <br />
+-               <a href="AdminOrders.aspx">Orders Admin</a>
+              </td>
+            </tr>          
+          </ContentTemplate>
+--- 29,41 ----
+              <td class="UserInfoContent">              
+                <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                <br />
++               <a href="/">Магазин за книги</a>   
+                <br />
++               <a href="AdminDepartments.aspx">Администрация каталог</a>
+                <br />
++               <a href="AdminShoppingCart.aspx">Администрация колички</a>
+                <br />
++               <a href="AdminOrders.aspx">Администрация поръчки</a>
+              </td>
+            </tr>          
+          </ContentTemplate>
+***************
+*** 44,50 ****
+          <ContentTemplate>
+            <tr>
+              <td class="UserInfoHead">
+-               <asp:LoginName ID="LoginName2" runat="server" FormatString="Hello, <b>{0}</b>!" />
+              </td>
+            </tr>            
+            <tr>
+--- 44,50 ----
+          <ContentTemplate>
+            <tr>
+              <td class="UserInfoHead">
++               <asp:LoginName ID="LoginName2" runat="server" FormatString="Здравейте, <b>{0}</b>!" />
+              </td>
+            </tr>            
+            <tr>
+***************
+*** 53,60 ****
+                <br />
+                <asp:HyperLink runat="server" ID="detailsLink"
+                  NavigateUrl="~/CustomerDetails.aspx"
+-                 Text="Edit Details"
+-                 ToolTip="Edit your personal details" />
+            </td>
+          </ContentTemplate>
+        </asp:RoleGroup>
+--- 53,60 ----
+                <br />
+                <asp:HyperLink runat="server" ID="detailsLink"
+                  NavigateUrl="~/CustomerDetails.aspx"
++                 Text="Редактиране на детайли"
++                 ToolTip="Редатирайте личните си детайли" />
+            </td>
+          </ContentTemplate>
+        </asp:RoleGroup>
