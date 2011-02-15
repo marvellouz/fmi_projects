@@ -96,7 +96,7 @@ public static class GalleryConfiguration
     {
         get
         {
-            return ConfigurationManager.AppSettings["ErrorLogEmail"];
+            return ConfigurationManager.AppSettings["MailFrom"];
         }
     }
 

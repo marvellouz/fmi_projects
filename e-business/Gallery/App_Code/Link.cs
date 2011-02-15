@@ -17,6 +17,7 @@ public class Link
     // prepares a string to be included in an URL
     private static string PrepareUrlText(string urlText)
     {
+        urlText = Transliterator.bgToLatin(urlText);
         // remove all characters that aren't a-z, 0-9, dash, underscore or space
         urlText = purifyUrlRegex.Replace(urlText, "");
 
@@ -42,7 +43,7 @@ public class Link
         // return the absolute path
         return HttpUtility.UrlPathEncode(
           String.Format("http://{0}:{1}{2}{3}",
-          uri.Host, uri.Port, app, relativeUri));
+          uri.Host, uri.Port, app, Transliterator.bgToLatin(relativeUri)));
     }
 
     // 301 redirects to correct product URL if not already there

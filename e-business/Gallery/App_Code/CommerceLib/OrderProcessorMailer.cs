@@ -11,7 +11,7 @@ namespace CommerceLib
         {
             // Send mail to administrator
             string to = GalleryConfiguration.ErrorLogEmail;
-            string from = GalleryConfiguration.OrderProcessorEmail;
+            string from = GalleryConfiguration.MailFrom;
             string body = "Съобщение: " + message
                + "\nSource: " + sourceStage.ToString()
                + "\nOrder ID: " + orderID.ToString();

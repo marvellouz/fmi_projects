@@ -23,8 +23,7 @@ public partial class UserControls_ProductReviews : System.Web.UI.UserControl
             }
             protected void addReviewButton_Click(object sender, EventArgs e)
             {
-            string customerId = Membership.GetUser(
-            HttpContext.Current.User.Identity.Name)
+            string customerId = Membership.GetUser(HttpContext.Current.User.Identity.Name)
             .ProviderUserKey.ToString();
             string productId = Request.QueryString["ProductID"];
             CatalogAccess.AddReview(customerId, productId, reviewTextBox.Text);

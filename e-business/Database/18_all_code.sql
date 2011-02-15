@@ -2,10 +2,12 @@ USE Gallery
 
 GO
 
+drop table Audit
+
 CREATE TABLE Audit (
-  AuditID INT NOT NULL PRIMARY KEY,
+  AuditID INT NOT NULL identity(1, 1) PRIMARY KEY,
   OrderID INT NOT NULL,
-  DateStamp DATETIME NOT NULL,
+  DateStamp DATETIME NOT NULL default getdate(),
   Message NVARCHAR(512),
   MessageNumber INT
 ) 
