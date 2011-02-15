@@ -98,18 +98,12 @@ namespace WebCrowler.ViewModel
             }
         }
 
-        //eto q funkciqta
-        //into e null i za twa
-        //
         private List<string> f(List<string> parserGoodUrls)
         {
-            List<string> into = new List<string>(); //...
+            List<string> into = new List<string>(); 
             foreach (var e in parserGoodUrls)
             {
                 try
-                    //skivsh li?
-                    // ne trqbwa li da e stati4en metod tova
-                    //mi nz
                 {
                     into.Add(ResolveRelativeUrl(url, e));
                 }
