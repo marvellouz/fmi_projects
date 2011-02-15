@@ -15,6 +15,21 @@ namespace WebCrowler.ViewModel
         private static List<Page> _pages = new List<Page>();
 
         #endregion
+
+        private List<string> results;
+        public List<string> Results
+        {
+            get
+            {
+                return this.results;
+            }
+            set
+            {
+                this.results = value;
+            }
+        }
+
+
         private string url;
         public string Url
         {
@@ -25,24 +40,24 @@ namespace WebCrowler.ViewModel
             set
             {
                 this.url = value;
-                this.CrawlPage();
             }
         }
         
         public void CrawlPage()
         {
-            if (!PageHasBeenCrawled(this.url))
+            if (!PageHasBeenCrawled(url))
             {
                 LinksParser parser = new LinksParser();
                 Page page = new Page();
-                page.Url = this.url;
+                page.Url = url;
                 page.Content = GetPageContent(this.url);
                 parser.Parse(page);
-                page.Hrefs = (List<string>)parser.GoodUrls.Select(element => ResolveRelativeUrl(this.url, element));
-                page.CssHrefs = (List<string>)parser.cssUrls.Select(element => ResolveRelativeUrl(this.url, element));
-                page.JsHrefs = (List<string>)parser.jsUrls.Select(element => ResolveRelativeUrl(this.url, element));
+                page.Hrefs = (List<string>)parser.GoodUrls.Select(element => ResolveRelativeUrl(url, element));
+                page.CssHrefs = (List<string>)parser.cssUrls.Select(element => ResolveRelativeUrl(url, element));
+                page.JsHrefs = (List<string>)parser.jsUrls.Select(element => ResolveRelativeUrl(url, element));
 
                 _pages.Add(page);
+                results = page.Hrefs;
             }
         }
 

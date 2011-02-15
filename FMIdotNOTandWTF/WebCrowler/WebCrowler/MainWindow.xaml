@@ -6,9 +6,14 @@
     <Window.DataContext>
         <vm:CrawlerViewModel />
     </Window.DataContext>
+
+
     <Grid>
         <TextBox Text="{Binding url;}" Width="200"
                  Margin="12,12,292,269" />
-        <Button Command="{Binding CrawlPage}" Margin="247,13,135,269" />
+        <Button Click="{Binding CrawlPage}" Margin="247,13,135,269" />
+        <ListBox Margin="0,74,0,70" ItemsSource="{Binding Results, UpdateSourceTrigger=LostFocus}">
+            
+        </ListBox>
     </Grid>
 </Window>
