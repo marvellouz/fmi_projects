@@ -7,13 +7,12 @@
         <vm:CrawlerViewModel />
     </Window.DataContext>
 
-
     <Grid>
-        <TextBox Text="{Binding url;}" Width="200"
+        <TextBox Text="{Binding Url, UpdateSourceTrigger=PropertyChanged}" Width="200"
                  Margin="12,12,292,269" />
-        <Button Click="{Binding CrawlPage}" Margin="247,13,135,269" />
-        <ListBox Margin="0,74,0,70" ItemsSource="{Binding Results, UpdateSourceTrigger=LostFocus}">
-            
+        <Button x:Name="b" Command="{Binding Path=CrawlCommand}" Margin="247,13,135,269" />
+
+        <ListBox x:Name="listResults" Margin="0,74,0,70" ItemsSource="{Binding Path=ResultsCollection, UpdateSourceTrigger=PropertyChanged}">
         </ListBox>
     </Grid>
 </Window>

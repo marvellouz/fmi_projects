@@ -10,7 +10,7 @@ namespace WebCrowler.Model
     class LinksParser
     {
         //Regex string for finding all page links in the content of a page
-        private const string _LINK_REGEX = "href=\"([^>]+)\"";
+        private const string _LINK_REGEX = "href\\s*=\\s*(?:\"(?<1>[^\"]*)\"|(?<1>\\S+))";// "href=\"([^>]+)\"";
         //Regex string for finding all page images in the content of a page
         private const string _IMG_REGEX = "src=\"([^>]+)\"";
 
@@ -119,21 +119,14 @@ namespace WebCrowler.Model
         public static bool IsCSS(string href)
         {
             string extension = href.Substring(href.LastIndexOf(".") + 1, href.Length - href.LastIndexOf(".") - 1);
-            if (extension == ".css")
-            {
-                return true;
-            }
-            return false;
+            return (extension == ".css");
+          
         }
 
         public static bool IsJS(string href)
         {
             string extension = href.Substring(href.LastIndexOf(".") + 1, href.Length - href.LastIndexOf(".") - 1);
-            if (extension == ".js")
-            {
-                return true;
-            }
-            return false;
+            return (extension == ".js");
         }
     }
 }

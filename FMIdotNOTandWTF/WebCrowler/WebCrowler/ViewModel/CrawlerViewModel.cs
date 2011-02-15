@@ -5,6 +5,9 @@ using System.Text;
 using System.Net;
 using System.IO;
 using WebCrowler.Model;
+using System.Windows.Input;
+using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace WebCrowler.ViewModel
 {
@@ -17,6 +20,18 @@ namespace WebCrowler.ViewModel
         #endregion
 
         private List<string> results;
+        
+        public ObservableCollection<string> ResultsCollection
+        {
+            get;
+            private set;
+        }
+
+        public CrawlerViewModel()
+        {
+            ResultsCollection = new ObservableCollection<string>();
+        }
+
         public List<string> Results
         {
             get
@@ -42,7 +57,23 @@ namespace WebCrowler.ViewModel
                 this.url = value;
             }
         }
-        
+
+
+        RelayCommand _crawlCommand;
+        public ICommand CrawlCommand
+        {
+            get
+            {
+                if (_crawlCommand == null)
+                {
+                    _crawlCommand = new RelayCommand(param => this.CrawlPage(),
+                        param => this.CanSave);
+                }
+                return _crawlCommand;
+            }
+        }
+
+
         public void CrawlPage()
         {
             if (!PageHasBeenCrawled(url))
@@ -52,13 +83,44 @@ namespace WebCrowler.ViewModel
                 page.Url = url;
                 page.Content = GetPageContent(this.url);
                 parser.Parse(page);
-                page.Hrefs = (List<string>)parser.GoodUrls.Select(element => ResolveRelativeUrl(url, element));
-                page.CssHrefs = (List<string>)parser.cssUrls.Select(element => ResolveRelativeUrl(url, element));
-                page.JsHrefs = (List<string>)parser.jsUrls.Select(element => ResolveRelativeUrl(url, element));
+
+                //page.Hrefs = parser.GoodUrls.Select(element => ResolveRelativeUrl(url, element)).ToList();
+                //page.CssHrefs = parser.cssUrls.Select(element => ResolveRelativeUrl(url, element)).ToList();
+                //page.JsHrefs = parser.jsUrls.Select(element => ResolveRelativeUrl(url, element)).ToList();
+
+                page.Hrefs = f(parser.GoodUrls);
+                page.CssHrefs = f(parser.cssUrls);
+                page.JsHrefs = f(parser.jsUrls);
 
                 _pages.Add(page);
-                results = page.Hrefs;
+                Results = page.Hrefs;
+                Results.ForEach(x => ResultsCollection.Add(x));
             }
+        }
+
+        //eto q funkciqta
+        //into e null i za twa
+        //
+        private List<string> f(List<string> parserGoodUrls)
+        {
+            List<string> into = new List<string>(); //...
+            foreach (var e in parserGoodUrls)
+            {
+                try
+                    //skivsh li?
+                    // ne trqbwa li da e stati4en metod tova
+                    //mi nz
+                {
+                    into.Add(ResolveRelativeUrl(url, e));
+                }
+                catch (UriFormatException)
+                {
+                    continue;
+                }
+            
+            }
+            return into;
+
         }
 
         private static bool PageHasBeenCrawled(string url)
@@ -110,5 +172,7 @@ namespace WebCrowler.ViewModel
             WebClient wc = new WebClient();
             wc.DownloadFile(url, (save_path + file_name));
         }
+
+        public bool CanSave { get { return url != null; } }
     }
 }
