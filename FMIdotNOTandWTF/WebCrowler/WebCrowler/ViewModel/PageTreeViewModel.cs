@@ -5,6 +5,8 @@ using System.Text;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using WebCrowler.Model;
+using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace WebCrowler.ViewModel
 {
@@ -44,6 +46,26 @@ namespace WebCrowler.ViewModel
 
                 _resultsEnumerator = null;
             }
+        }
+
+        public void CrawlPage()
+        {
+            if(! isValidUrl(this._startUrl))
+            {
+                MessageBox.Show(
+                "Невалиден url.",
+                "Опитайте отново.",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information
+                );
+            }
+        }
+
+        public static bool isValidUrl(string url)
+        {
+            string pattern = @"^(http|https)\://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*[^\.\,\)\(\s]$";
+            Regex reg = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            return reg.IsMatch(url);
         }
 
     }

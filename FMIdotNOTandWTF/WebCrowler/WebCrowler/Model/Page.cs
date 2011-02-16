@@ -68,15 +68,6 @@ namespace WebCrowler.Model
 
         }
 
-
-        //move to the viewmodel!
-        public static bool isValidUrl(string url)
-        {
-            string pattern = @"^(http|https)\://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*[^\.\,\)\(\s]$";
-            Regex reg = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            return reg.IsMatch(url);
-        } 
-
         public static string NormalizeUrl (string url)
         {
             if ((url.StartsWith("http://")) || url.StartsWith("https://"))
