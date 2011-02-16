@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Net;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace WebCrowler.Model
 {
@@ -31,18 +32,24 @@ namespace WebCrowler.Model
 
         public Page(string url)
         {
+            url = NormalizeUrl(url);
             this._url = url;
             this._content = GetPageContent(url);
             LinksParser parser = new LinksParser();
             parser.Parse(this);
-            this._hrefs = f(parser.GoodUrls);
-            this._css_hrefs = f(parser.cssUrls);
-            this._js_hrefs = f(parser.jsUrls);
+            this._hrefs = f(parser.GoodUrls, this._url);
+            this._css_hrefs = f(parser.cssUrls, this._url);
+            this._js_hrefs = f(parser.jsUrls, this._url);
         }
 
         #endregion
 
-        private List<string> f(List<string> parserGoodUrls)
+        public void LoadChildren()
+        {
+            this._hrefs.ForEach(x => this._children.Add(new Page(x)));
+        }
+
+        private List<string> f(List<string> parserGoodUrls, string url)
         {
             List<string> into = new List<string>();
             foreach (var e in parserGoodUrls)
@@ -61,6 +68,27 @@ namespace WebCrowler.Model
 
         }
 
+
+        //move to the viewmodel!
+        public static bool isValidUrl(string url)
+        {
+            string pattern = @"^(http|https)\://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*[^\.\,\)\(\s]$";
+            Regex reg = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            return reg.IsMatch(url);
+        } 
+
+        public static string NormalizeUrl (string url)
+        {
+            if ((url.StartsWith("http://")) || url.StartsWith("https://"))
+            {
+                return url;
+            }
+            else
+            {
+                return "http://" + url;
+            }
+        }
+        
         public static string ResolveRelativeUrl(string currentUrl, string url)
         {
             Uri currentUri = new Uri(currentUrl);
@@ -89,14 +117,12 @@ namespace WebCrowler.Model
             return page_content;
         }
 
-        //Get/Set content
         public string Content
         {
             get { return _content; }
             set { _content = value; }
         }
 
-        //Get/Set url
         public string Url
         {
             get { return _url; }
