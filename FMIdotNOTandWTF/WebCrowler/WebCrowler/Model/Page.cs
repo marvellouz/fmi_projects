@@ -17,6 +17,12 @@ namespace WebCrowler.Model
         
         #endregion
 
+        readonly List<Page> _children = new List<Page>();
+        public IList<Page> Children
+        {
+            get { return _children; }
+        }
+
         //Default Construgtor
         public Page() { }
         
