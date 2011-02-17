@@ -12,36 +12,73 @@ namespace WebCrowler.ViewModel
     {
         #region Data
 
-        readonly ReadOnlyCollection<PageViewModel> _children;
+        readonly ObservableCollection<PageViewModel> _children;
         readonly PageViewModel _parent;
         readonly Page _page;
-
+        static readonly PageViewModel DummyChild = new PageViewModel();
         bool _isExpanded;
         bool _isSelected;
 
         #endregion
 
          public PageViewModel(Page page)
-            : this(page, null)
+        {
+             this._page = page;
+             _children = new ObservableCollection<PageViewModel>();
+             _children.Add(DummyChild);
+        }
+
+        // This is used to create the DummyChild instance.
+        protected PageViewModel()
         {
         }
 
-        private PageViewModel(Page page, PageViewModel parent)
+        public bool HasDummyChild
         {
-            _page = page;
-            _parent = parent;
+            get { return this._children.Count == 1 && this._children[0] == DummyChild; }
+        }
 
-            _children = new ReadOnlyCollection<PageViewModel>(
-                    (from child in _page.Children
-                     select new PageViewModel(child, this))
-                     .ToList<PageViewModel>());
+        public string Url
+        {
+            get { return this._page.Url; }
+        }
+
+        public void LoadChildren()
+        {
+            _children.Clear();
+            _page.LoadChildren();
+            foreach(Page p in _page.Children) 
+            {
+               
+                    BackgroundWorker worker = new BackgroundWorker();
+
+                    worker.DoWork += delegate(object s, DoWorkEventArgs args)
+                    {
+                            //да го парализирам!! :D
+                            PageViewModel pvm = new PageViewModel(p);
+                            _children.Add(pvm);
+                    };
+                    //worker.RunWorkerCompleted += delegate(object s, RunWorkerCompletedEventArgs args)
+                    //{
+                    //    object result = args.Result;
+                    //};
+                    worker.RunWorkerAsync();
+
+            }
         }
 
         #region Properties
-
-        public ReadOnlyCollection<PageViewModel> Children { get { return _children; } }
-
-        public string Url { get { return _page.Url; } }
+        public ObservableCollection<PageViewModel> Children
+        {
+            get
+            {
+                if (HasDummyChild)
+                {
+                    LoadChildren();
+                }
+                return _children;
+            }
+        }
 
         public string Content { get { return _page.Content; } }
 
@@ -52,6 +89,14 @@ namespace WebCrowler.ViewModel
         public List<string> Hrefs { get { return _page.Hrefs; } }
 
         #endregion
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            if (this.PropertyChanged != null)
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public bool IsExpanded
         {
@@ -82,23 +127,5 @@ namespace WebCrowler.ViewModel
                 }
             }
         }
-
-        public PageViewModel Parent
-        {
-            get { return _parent; }
-        }
-
-        #region INotifyPropertyChanged Members
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            if (this.PropertyChanged != null)
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        #endregion
-
     }
 }

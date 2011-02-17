@@ -64,7 +64,7 @@ namespace WebCrowler.Model
                 MatchCollection HrefMatches = Regex.Matches(page.Content, _LINK_REGEX);
                 MatchCollection ImgMatches = Regex.Matches(page.Content, _LINK_REGEX);
                 
-                for (int i = 0; i <= HrefMatches.Count - 1; i++)
+                for (int i = 5; i <= Math.Min(HrefMatches.Count - 1, 10); i++)
                 {
                     if (HrefMatches[i].Value == String.Empty)
                     {

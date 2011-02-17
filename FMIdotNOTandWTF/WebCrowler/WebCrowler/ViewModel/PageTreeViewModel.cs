@@ -2,71 +2,53 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WebCrowler.Model;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-using WebCrowler.Model;
-using System.Text.RegularExpressions;
-using System.Windows;
 
 namespace WebCrowler.ViewModel
 {
     class PageTreeViewModel
     {
-        #region Data
+        PageViewModel _rootPage;
+        ObservableCollection<PageViewModel> _firstLevel;
+        string _currentUrl;
 
-        readonly ReadOnlyCollection<PageViewModel> _firstGeneration;
-        readonly PageViewModel _rootPage;
-        readonly ICommand _findPagesCommand;
-
-        IEnumerator<PageViewModel> _resultsEnumerator;
-        
-        string _startUrl = String.Empty;
-
-        #endregion
-
-        public PageTreeViewModel(Page rootPage)
+        public PageTreeViewModel()
         {
-            _rootPage = new PageViewModel(rootPage);
-
-            _firstGeneration = new ReadOnlyCollection<PageViewModel>(
-                new PageViewModel[] { _rootPage });
-
-            //_findPagesCommand = new FindPagesTreeCommand(this);
+            _firstLevel = new ObservableCollection<PageViewModel>();
         }
 
-        public string StartUrl
+        RelayCommand _crawlCommand;
+        public ICommand CrawlCommand
         {
-            get { return _startUrl; }
-            set
+            get
             {
-                if (value == _startUrl)
-                    return;
-
-                _startUrl = value;
-
-                _resultsEnumerator = null;
+                if (_crawlCommand == null)
+                {
+                    _crawlCommand = new RelayCommand(param => this.CrawlRootPage(),
+                        param => this.CanSave);
+                }
+                return _crawlCommand;
             }
         }
 
-        public void CrawlPage()
+        public void CrawlRootPage()
         {
-            if(! isValidUrl(this._startUrl))
-            {
-                MessageBox.Show(
-                "Невалиден url.",
-                "Опитайте отново.",
-                MessageBoxButton.OK,
-                MessageBoxImage.Information
-                );
-            }
+             _rootPage = new PageViewModel(new Page(CurrentUrl));
+             _firstLevel.Clear();
+             _rootPage.LoadChildren();
+             _rootPage.Children.ToList().ForEach(x => _firstLevel.Add(x));
         }
 
-        public static bool isValidUrl(string url)
-        {
-            string pattern = @"^(http|https)\://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*[^\.\,\)\(\s]$";
-            Regex reg = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            return reg.IsMatch(url);
+        public bool CanSave { get { return CurrentUrl != null; } }
+
+        public string CurrentUrl 
+        { 
+            get { return _currentUrl; }
+            set { _currentUrl = value; }
         }
+        public ObservableCollection<PageViewModel> FirstLevel { get { return _firstLevel; } }
 
     }
 }

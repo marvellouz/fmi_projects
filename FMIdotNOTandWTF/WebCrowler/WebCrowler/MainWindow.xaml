@@ -4,15 +4,39 @@
         xmlns:vm="clr-namespace:WebCrowler.ViewModel"
         Title="MainWindow" Height="350" Width="525">
     <Window.DataContext>
-        <vm:CrawlerViewModel />
+        <vm:PageTreeViewModel />
     </Window.DataContext>
 
     <Grid>
-        <TextBox Text="{Binding Url, UpdateSourceTrigger=PropertyChanged}" Width="200"
+        <TextBox x:Name="tb" Text="{Binding CurrentUrl, UpdateSourceTrigger=PropertyChanged}" Width="200"
                  Margin="12,12,292,269" />
-        <Button x:Name="b" Command="{Binding Path=CrawlCommand}" Margin="247,13,135,269" />
+        <Button x:Name="b" Command="{Binding Path=CrawlCommand}" Margin="247,13,135,269" >
+            Crawl!
+        </Button>
 
-        <ListBox x:Name="listResults" Margin="0,74,0,70" ItemsSource="{Binding Path=ResultsCollection, UpdateSourceTrigger=PropertyChanged}">
-        </ListBox>
+        <!--<ListBox x:Name="listResults" Margin="0,74,0,70" ItemsSource="{Binding Path=ResultsCollection, UpdateSourceTrigger=PropertyChanged}">
+        </ListBox>-->
+
+        <TreeView ItemsSource="{Binding FirstLevel}" Margin="12,92,12,12">
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="{x:Type TreeViewItem}">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                    <Setter Property="FontWeight" Value="Normal" />
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TreeView.ItemContainerStyle>
+
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Url}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+
     </Grid>
 </Window>

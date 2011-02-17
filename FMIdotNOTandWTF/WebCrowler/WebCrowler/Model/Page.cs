@@ -20,10 +20,13 @@ namespace WebCrowler.Model
         
         #endregion
 
-        readonly List<Page> _children = new List<Page>();
+        List<Page> _children = new List<Page>();
         public IList<Page> Children
         {
-            get { return _children; }
+            get 
+            {
+                return _children; 
+            }
         }
 
         #region Constructors
@@ -46,7 +49,7 @@ namespace WebCrowler.Model
 
         public void LoadChildren()
         {
-            this._hrefs.ForEach(x => this._children.Add(new Page(x)));
+          this._hrefs.ForEach(x => this._children.Add(new Page(x)));
         }
 
         private List<string> f(List<string> parserGoodUrls, string url)

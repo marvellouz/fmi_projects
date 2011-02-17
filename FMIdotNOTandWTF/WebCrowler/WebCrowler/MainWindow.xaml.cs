@@ -23,6 +23,7 @@ namespace WebCrowler
         public MainWindow()
         {
             InitializeComponent();
+            this.tb.Text = "http://fmi.uni-sofia.bg";
         }
     }
 }
