@@ -1,6 +1,7 @@
 #lang racket
 (require net/url net/uri-codec)
 (require racket/set)
+(require "page.scm")
 
 (define visited-hrefs (set))
 
@@ -103,8 +104,9 @@
               (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
                         (find-all-hrefs current-url))
               )
-            ;всички hrefs без първия
+
             (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
+                         ;всички hrefs без първия
                         (cdr (find-all-hrefs current-url)))
             )
         )
