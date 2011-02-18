@@ -3,7 +3,6 @@
 (require racket/set)
 (require "page.scm")
 (require file/md5)
-(require unstable/path)
 
 (define visited-hrefs (set))
 
@@ -69,10 +68,7 @@
 ;dos save-location exist?
 (define (save! current-url save-location save-sublocation)
   (define in (get-html current-url))
-  (define output-file (string->path (calculate-local-location current-url save-location save-sublocation)))
-  (and (not (directory-exists? (directory-part output-file)))
-      (make-directory* (directory-part output-file)))
-  (define out (open-output-file output-file))
+  (define out (open-output-file (string->path (calculate-local-location current-url save-location save-sublocation))))
   (read-and-write in out)
   (close-output-port out))
 
@@ -86,11 +82,9 @@
             (start-page (make-page start-url hrefs src null))
             )
         (begin
-          (save! start-url save-location null)
-          (and (not (null? hrefs))
-               (save-resources! hrefs save-location "hrefs\\"))
-          (and (not(null? src))
-               (save-resources! src save-location "src\\"))
+          (save! start-url save-location "")
+          (save-resources! hrefs save-location "hrefs\\")
+          (save-resources! src save-location "src\\")
           (set! visited-hrefs(set-add visited-hrefs start-url))
           (for-each (lambda (x) (crawl-all (- depth 1) save-location (make-page x (find-all-hrefs x) (find-all-src x) start-page)))
                     hrefs)
@@ -117,32 +111,22 @@
            (for-each (lambda (x) (crawl-all (- depth 1) save-location)(make-page x (find-all-hrefs x) (find-all-src x) current-page))
                      hrefs))))))
 
-
 (define (calculate-local-location res save-location save-sublocation)
-  (let ([file-location (if ( equal? (url-host (string->url res))
-                                    (string-append 
-                                     (url-host (string->url res))
-                                     (string-join (map (lambda(x) (path/param-path x)) (url-path (string->url res))) "/"))
-                            )
-                             (build-path
-                                     (url-host (string->url res)) "index.html")
-                            (build-path 
-                                     (url-host (string->url res))
-                                     (string-join (map (lambda(x) (path/param-path x)) (url-path (string->url res))) "/")))]
+  (let ([file-location ((if ( equal? ""
+                            (string-join (map (lambda(x) (path/param-path x)) (url-path (string->url res))) "/"))
+                             (list "index.html")
+                            (string-join (map (lambda(x) (path/param-path x)) (url-path (string->url res))) "/")))]
        )
     (if (not(null? save-sublocation))
-        (begin
-          (display (string-append save-location "\n"))
         (path->string (build-path save-location save-sublocation 
                                   file-location))
-        )
         (path->string(build-path save-location 
                                  file-location)))))
 
 (define (save-resources! resources save-location save-sublocation)
   (let ((res (car resources)))
     (begin
-      (save! res save-location save-sublocation)
+      (save! res (calculate-local-location res save-location save-sublocation) save-sublocation)
       (save-resources! (cdr resources) save-location save-sublocation))))
 
 (define (validate start-url depth save-location)
@@ -152,7 +136,7 @@
 
 (define (main start-url depth save-location)
   (let ((valid (validate start-url depth save-location)))
-    (and
+    (or
      (car valid)
         (crawl start-url depth save-location)
         )))
