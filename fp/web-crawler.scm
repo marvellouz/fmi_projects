@@ -95,7 +95,7 @@
       (let (
             (hrefs (hrefs current-page))
             (src (src current-page))
-            (current-url (url current-page))
+            (current-url (link current-page))
             (parent-page (parent current-page))
             )
         ;ако страницата не е посетена вече, ще се изпълни втората част на and.

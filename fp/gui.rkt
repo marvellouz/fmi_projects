@@ -1,6 +1,8 @@
 #lang racket
 (require racket/gui/base)
 
+(define e (new control-event% [event-type 'text-field-enter]))
+
 ; Make a frame by instantiating the frame% class
 (define frame (new frame% [min-width 400] [min-height 200] [label "Уеб паяк"]))
 
@@ -8,7 +10,9 @@
 
 (define depth-text-field (new text-field% [parent frame] [min-width 100] [label "Дълбочина: "]))
 
-(define save-path-text-field (new text-field% [parent frame] [min-width 100] [label "Запази в директория: "]))
+(define save-path-text-field (new text-field% [parent frame] [min-width 100] [label "Запази в директория: "]
+                                  [callback (lambda (t e)
+                           (send save-path-text-field set-value (path->string (get-directory))))]))
 
 ; Make a button in the frame
 (new button% [parent frame]

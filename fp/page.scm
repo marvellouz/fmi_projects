@@ -1,12 +1,12 @@
 #lang racket
 
 (provide make-page)
-(provide url)
+(provide link)
 (provide hrefs)
 (provide src)
 (provide parent)
 
-(define (url page)
+(define (link page)
   (car page))
 
 (define (hrefs page)
@@ -18,5 +18,5 @@
 (define (parent page)
   (cadddr page))
 
-(define (make-page url hrefs src parent)
-  (list url hrefs src parent))
+(define (make-page link hrefs src parent)
+  (list link hrefs src parent))

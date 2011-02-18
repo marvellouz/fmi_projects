@@ -2,6 +2,7 @@
 (require net/url net/uri-codec)
 (require racket/set)
 (require "page.scm")
+(require file/md5)
 
 (define visited-hrefs (set))
 
@@ -95,7 +96,7 @@
             (hrefs (find-all-hrefs current-url))
             (src (find-all-src current-url))
             )
-        (if (!(set-member? visited-hrefs current-url))
+        (if (not (set-member? visited-hrefs current-url))
             (begin
               (save! current-url save-location "hrefs\\")
               (save-resources! hrefs save-location "hrefs\\")
@@ -104,10 +105,10 @@
               (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
                         (find-all-hrefs current-url))
               )
-
+            
             (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
-                         ;всички hrefs без първия
-                        (cdr (find-all-hrefs current-url)))
+                      ;всички hrefs без първия
+                      (cdr (find-all-hrefs current-url)))
             )
         )
       )
@@ -117,10 +118,10 @@
   (string-append save-location save-sublocation (bytes->string/utf-8 (md5 res))))
 
 (define (save-resources! resources save-location save-sublocation)
-  (let (res (car resources)))
-  (begin
-    (save! res (calculate-local-location res save-location))
-    (save-resources! (cdr resources) save-location)))
+  (let ((res (car resources)))
+    (begin
+      (save! res (calculate-local-location res save-location save-sublocation)save-sublocation)
+      (save-resources! (cdr resources) save-location))))
 
 (define (validate start-url depth save-location)
   (if (or (null? start-url) (null? depth) (null? save-location)) (list #f "Моля попълнете всички полета")
@@ -128,7 +129,7 @@
           (list #f "Невалиден път"))))
 
 (define (main start-url depth save-location)
-  (let (valid (validate start-url depth save-location file-name)))
+  (let ((valid (validate start-url depth save-location)))
   (if (car valid)
       (crawl start-url depth save-location)
-      (error (cdr valid))))
+      (error (cdr valid)))))
