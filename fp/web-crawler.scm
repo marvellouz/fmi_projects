@@ -1,5 +1,8 @@
 #lang racket
 (require net/url net/uri-codec)
+(require racket/set)
+
+(define visited-hrefs (set))
 
 ; Simple web scraper
 ;(define (let-me-google-that-for-you str)
@@ -70,17 +73,20 @@
 ;=========================================================================================
 
 (define (crawl start-url depth save-location)
-    (if (= 0 depth) #f
+  (if (= 0 depth) #f
       (let (
-            (hrefs (find-all-hrefs current-url))
-            (src (find-all-src current-url))
+            (hrefs (find-all-hrefs start-url))
+            (src (find-all-src start-url))
             )
         (begin
           (save! start-url save-location "")
           (save-resources! hrefs save-location "hrefs\\")
           (save-resources! src save-location "src\\")
-          (crawl-all (car hrefs) (-depth 1) save-location)
-          )))
+          (set! visited-hrefs(set-add visited-hrefs start-url))
+          (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
+                    hrefs)
+          ;(crawl-all (car hrefs) (-depth 1) save-location)
+          ))))
 
 (define (crawl-all current-url depth save-location)
   (if (= 0 depth) #f
@@ -88,30 +94,39 @@
             (hrefs (find-all-hrefs current-url))
             (src (find-all-src current-url))
             )
-        (begin
-          (save! current-url save-location "hrefs\\")
-          (save-resources! hrefs save-location "hrefs\\")
-          (save-resources! src save-location "src\\")
-          (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
-                    (find-all-hrefs current-url)
-                    ))))
-  
-  (define (calculate-local-location res save-location save-sublocation) 
-    (string-append save-location save-sublocation (bytes->string/utf-8 (md5 res))))
-  
-  (define (save-resources! resources save-location save-sublocation)
-    (let (res (car resources)))
-    (begin
-      (save! res (calculate-local-location res save-location))
-      (save-resources! (cdr resources) save-location)))
-  
-  (define (validate start-url depth save-location)
-    (if (or (null? start-url) (null? depth) (null? save-location)) (list #f "Моля попълнете всички полета")
-        (if (directory-exists? (string->path save-location))(list #t)
-            (list #f "Невалиден път"))))
-  
-  (define (main start-url depth save-location)
-    (let (valid (validate start-url depth save-location file-name)))
-    (if (car valid)
-        (crawl start-url depth save-location)
-        (error (cdr valid))))
+        (if (!(set-member? visited-hrefs current-url))
+            (begin
+              (save! current-url save-location "hrefs\\")
+              (save-resources! hrefs save-location "hrefs\\")
+              (save-resources! src save-location "src\\")
+              (set! visited-hrefs(set-add visited-hrefs current-url))
+              (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
+                        (find-all-hrefs current-url))
+              )
+            ;всички hrefs без първия
+            (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
+                        (cdr (find-all-hrefs current-url)))
+            )
+        )
+      )
+  )
+
+(define (calculate-local-location res save-location save-sublocation) 
+  (string-append save-location save-sublocation (bytes->string/utf-8 (md5 res))))
+
+(define (save-resources! resources save-location save-sublocation)
+  (let (res (car resources)))
+  (begin
+    (save! res (calculate-local-location res save-location))
+    (save-resources! (cdr resources) save-location)))
+
+(define (validate start-url depth save-location)
+  (if (or (null? start-url) (null? depth) (null? save-location)) (list #f "Моля попълнете всички полета")
+      (if (directory-exists? (string->path save-location))(list #t)
+          (list #f "Невалиден път"))))
+
+(define (main start-url depth save-location)
+  (let (valid (validate start-url depth save-location file-name)))
+  (if (car valid)
+      (crawl start-url depth save-location)
+      (error (cdr valid))))
