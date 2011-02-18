@@ -1,7 +1,7 @@
 #lang racket
 (require net/url net/uri-codec)
 (require racket/set)
-(require "page.rkt")
+(require "page.scm")
 
 (define visited-hrefs (set))
 
@@ -78,37 +78,40 @@
       (let (
             (hrefs (find-all-hrefs start-url))
             (src (find-all-src start-url))
-            (start-page (make-page start-url hrefs src null))
             )
         (begin
           (save! start-url save-location "")
           (save-resources! hrefs save-location "hrefs\\")
           (save-resources! src save-location "src\\")
           (set! visited-hrefs(set-add visited-hrefs start-url))
-          (for-each (lambda (x) (crawl-all (- depth 1) save-location (make-page x (find-all-hrefs x) (find-all-src x) start-page)))
+          (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
                     hrefs)
           ;(crawl-all (car hrefs) (-depth 1) save-location)
           ))))
 
-(define (crawl-all depth save-location current-page)
+(define (crawl-all current-url depth save-location)
   (if (= 0 depth) #f
       (let (
-            (hrefs (hrefs current-page))
-            (src (src current-page))
-            (current-url (url current-page))
-            (parent-page (parent current-page))
+            (hrefs (find-all-hrefs current-url))
+            (src (find-all-src current-url))
             )
-        ;ако страницата не е посетена вече, ще се изпълни втората част на and.
-        ;Иначе ще върне #f и няма да продължи с изпълнението на втората част.
-        (and 
-         (!(set-member? visited-hrefs current-url))
-         (begin
-           (save! current-url save-location "hrefs\\")
-           (save-resources! hrefs save-location "hrefs\\")
-           (save-resources! src save-location "src\\")
-           (set! visited-hrefs(set-add visited-hrefs current-url))
-           (for-each (lambda (x) (crawl-all (- depth 1) save-location)(make-page x (find-all-hrefs x) (find-all-src x) current-page))
-                     hrefs))))))
+        (if (!(set-member? visited-hrefs current-url))
+            (begin
+              (save! current-url save-location "hrefs\\")
+              (save-resources! hrefs save-location "hrefs\\")
+              (save-resources! src save-location "src\\")
+              (set! visited-hrefs(set-add visited-hrefs current-url))
+              (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
+                        (find-all-hrefs current-url))
+              )
+
+            (for-each (lambda (x) (crawl-all x (- depth 1) save-location))
+                         ;всички hrefs без първия
+                        (cdr (find-all-hrefs current-url)))
+            )
+        )
+      )
+  )
 
 (define (calculate-local-location res save-location save-sublocation) 
   (string-append save-location save-sublocation (bytes->string/utf-8 (md5 res))))
