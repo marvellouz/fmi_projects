@@ -1,5 +1,6 @@
 #lang racket
 (require racket/gui/base)
+(require "web-crawler.rkt")
 
 (define e (new control-event% [event-type 'text-field-enter]))
 
@@ -16,7 +17,9 @@
 
 ; Make a button in the frame
 (new button% [parent frame]
-     [label "Старт"])
+     [label "Старт"]
+     [callback (lambda (t e)
+                           (main (send url-text-field get-value)(string->number(send depth-text-field get-value))(send save-path-text-field get-value)))])
 
 ; Show the frame by calling its show method
 (send frame show #t)

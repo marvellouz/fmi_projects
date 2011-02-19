@@ -4,6 +4,7 @@
 (require "page.scm")
 (require file/md5)
 (require unstable/path)
+(provide main)
 
 (define visited-hrefs (set))
 
@@ -55,9 +56,7 @@
 ;========================================================================================
 
 (define (get-html u)
-  ;tuk pri get pure port
   (begin
-    ;e tva kvo e
     (displayln u)
     (get-pure-port (string->url u))))
 
