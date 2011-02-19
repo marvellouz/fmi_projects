@@ -19,7 +19,7 @@
   )
 
 (define (normalize-resources current-url resource)
-  (string->url (regexp-replace "#.*"
+  (string->url (regexp-replace "(#.*|\\?.*$)"
                                (url->string (combine-url/relative current-url resource))
                                "" )))
 
@@ -40,10 +40,7 @@
 
 (define (download-error-handler u)
     (define (handler e)
-        (display "warning: coudl not retrieve url: ")
-        (display u)
-        (display "Error was ")
-        (displayln e)
+        (displayln (string-append "warning: could not retrieve url: " u ". Error was " (exn-message e)))
     )
     handler
 )
@@ -66,17 +63,18 @@
 (define (save! current-url save-location)
   (define in (get-html current-url))
   (define output-file (calculate-local-location current-url save-location))
-  (displayln (string-append "Downloading url " current-url " to " (path->string output-file)))
+  (displayln (string-append "Downloading stripped url " current-url " to " (path->string output-file)))
   (and (not (directory-exists? (directory-part output-file)))
        (make-directory* (directory-part output-file)))
-  (if (not (file-exists? output-file))
-    (begin
-      (let ((out (open-output-file output-file)))
-      (with-handlers ([(lambda (e) #t) (download-error-handler current-url)])
-        (read-and-write in out))
-      (close-output-port out)))
-    #f
-    ))
+  (begin
+    (and (file-exists? output-file) (delete-directory/files output-file))
+
+    (with-handlers ([(lambda (e) #t) (download-error-handler current-url)])
+                   (let ((out (open-output-file output-file)))
+                     (read-and-write in out)
+                   (close-output-port out))))
+  #f
+  )
 
 ;=========================================================================================
 
@@ -90,29 +88,31 @@
           )
       ;ако страницата не е посетена вече, ще се изпълни втората част на and.
       ;Иначе ще върне #f и няма да продължи с изпълнението на втората част.
-      (and 
+      (if 
         (not (set-member? visited-hrefs current-url))
         (begin
+          (displayln (string-append (number->string depth) " levels left."))
           (save! current-url save-location)
           (save-resources! hrefs save-location)
           (save-resources! src save-location)
 
           (set! visited-hrefs(set-add visited-hrefs current-url))
           (display (set-count visited-hrefs))
-          (for-each (thread (lambda (x)
-                              (crawl-all
-                                (- depth 1)
-                                save-location
-                                (make-page x 
-                                           (find-all-hrefs x)
-                                           (find-all-src x)
-                                           current-page))))
-                            hrefs))))))
+          (for-each (lambda (x)
+                      (thread (lambda ()
+                                (crawl-all
+                                  (- depth 1)
+                                  save-location
+                                  (make-page x 
+                                             (find-all-hrefs x)
+                                             (find-all-src x)
+                                             current-page)))))
+                    hrefs))
+        (displayln (string-append "Skipping already downloaded " current-url))))))
 
 (define (url-path-from-url url)
   (string-join (map (lambda(x) (path/param-path x))
-                    (url-path (string->url url)))
-               "\\"))
+                    (url-path (string->url url))) "\\"))
 
 (define (path-from-url url)
   (if(equal? "" (url-path-from-url url))
