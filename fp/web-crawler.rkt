@@ -4,6 +4,7 @@
 (require "page.rkt")
 (require file/md5)
 (require unstable/path)
+(provide main)
 
 (define visited-hrefs (set))
 (define (visited! url)
