@@ -32,6 +32,7 @@
 
 ;(url->string (combine-url/relative (string->url "http://asd.ds/x/y/z") "../a/b/c"))
 ;"http://asd.ds/x/a/b/c"
+
 (define (normalize-resources current-url resource)
   (string->url (regexp-replace "#.*" (url->string (combine-url/relative current-url resource)) "" )))
 
@@ -54,7 +55,11 @@
 ;========================================================================================
 
 (define (get-html u)
-  (get-pure-port (string->url u)))
+  ;tuk pri get pure port
+  (begin
+    ;e tva kvo e
+    (displayln u)
+    (get-pure-port (string->url u))))
 
 (define (read-and-write in out)
   (let ((res (read-bytes 512 in)))
@@ -83,9 +88,10 @@
             (start-page (make-page start-url hrefs src null))
             )
         (begin
+          (display (length hrefs))
           (set! visited-hrefs (set-add visited-hrefs start-url))
           (save! start-url save-location)
-          (display (length src))
+          
           (and (not (null? hrefs))
                (save-resources! hrefs save-location))
           
