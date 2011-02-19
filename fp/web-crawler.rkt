@@ -151,8 +151,8 @@
                             null))
      )))
 
-<<<<<<< HEAD
+
 (main 5 "http://google.com/" "D:\\web\\")
-=======
+
 (main 3 "http://www.google.bg/" "/tmp/foo/")
->>>>>>> 123a3e3ef3ff2e026ceb995120f5d37ae044d05b
+
