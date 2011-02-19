@@ -38,11 +38,22 @@
 (define (find-all-src url)
   (find-all-in-url url (regexp "src=\"([^>\"]+)\"")))
 
+(define (download-error-handler u)
+    (define (handler e)
+        (display "warning: coudl not retrieve url: ")
+        (display u)
+        (display "Error was ")
+        (displayln e)
+    )
+    handler
+)
+
 ;========================================================================================
 
 (define (get-html u)
   (begin
-    (get-pure-port (string->url u))))
+  (with-handlers ([(lambda (e) #t) (download-error-handler u)])
+    (get-pure-port (string->url u)))))
 
 (define (read-and-write in out)
   (let ((res (read-bytes 512 in)))
@@ -57,9 +68,13 @@
   (define output-file (calculate-local-location current-url save-location))
   (and (not (directory-exists? (directory-part output-file)))
        (make-directory* (directory-part output-file)))
-  (define out (open-output-file output-file))
-  (read-and-write in out)
-  (close-output-port out))
+  (if (not (file-exists? output-file))
+    (begin
+      (let ((out (open-output-file output-file)))
+      (read-and-write in out)
+      (close-output-port out)))
+    #f
+    ))
 
 ;=========================================================================================
 
@@ -85,11 +100,11 @@
            (for-each (lambda (x)
                        (crawl-all
                          (- depth 1)
-                         save-location)
+                         save-location
                        (make-page x 
                                   (find-all-hrefs x)
                                   (find-all-src x)
-                                  current-page))
+                                  current-page)))
                      hrefs))))))
 
 (define (url-path-from-url url)
@@ -136,4 +151,4 @@
                             null))
      )))
 
-(main 3 "http://google.com/" "/tmp/foo/")
+(main 3 "http://www.google.bg/" "/tmp/foo/")
