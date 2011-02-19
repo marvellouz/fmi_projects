@@ -66,12 +66,14 @@
 (define (save! current-url save-location)
   (define in (get-html current-url))
   (define output-file (calculate-local-location current-url save-location))
+  (displayln (string-append "Downloading url " current-url " to " (path->string output-file)))
   (and (not (directory-exists? (directory-part output-file)))
        (make-directory* (directory-part output-file)))
   (if (not (file-exists? output-file))
     (begin
       (let ((out (open-output-file output-file)))
-      (read-and-write in out)
+      (with-handlers ([(lambda (e) #t) (download-error-handler current-url)])
+        (read-and-write in out))
       (close-output-port out)))
     #f
     ))
@@ -80,32 +82,32 @@
 
 (define (crawl-all depth save-location current-page)
   (if (= 0 depth) #f
-      (let (
-            (hrefs (page-hrefs current-page))
-            (src (page-src current-page))
-            (current-url (page-url current-page))
-            (parent-page (page-parent current-page))
-            )
-        ;ако страницата не е посетена вече, ще се изпълни втората част на and.
-        ;Иначе ще върне #f и няма да продължи с изпълнението на втората част.
-        (and 
-         (not (set-member? visited-hrefs current-url))
-         (begin
-           (save! current-url save-location)
-           (save-resources! hrefs save-location)
-           (save-resources! src save-location)
+    (let (
+          (hrefs (page-hrefs current-page))
+          (src (page-src current-page))
+          (current-url (page-url current-page))
+          (parent-page (page-parent current-page))
+          )
+      ;ако страницата не е посетена вече, ще се изпълни втората част на and.
+      ;Иначе ще върне #f и няма да продължи с изпълнението на втората част.
+      (and 
+        (not (set-member? visited-hrefs current-url))
+        (begin
+          (save! current-url save-location)
+          (save-resources! hrefs save-location)
+          (save-resources! src save-location)
 
-           (set! visited-hrefs(set-add visited-hrefs current-url))
-           (display (set-count visited-hrefs))
-           (for-each (lambda (x)
-                       (crawl-all
-                         (- depth 1)
-                         save-location
-                       (make-page x 
-                                  (find-all-hrefs x)
-                                  (find-all-src x)
-                                  current-page)))
-                     hrefs))))))
+          (set! visited-hrefs(set-add visited-hrefs current-url))
+          (display (set-count visited-hrefs))
+          (for-each (thread (lambda (x)
+                              (crawl-all
+                                (- depth 1)
+                                save-location
+                                (make-page x 
+                                           (find-all-hrefs x)
+                                           (find-all-src x)
+                                           current-page))))
+                            hrefs))))))
 
 (define (url-path-from-url url)
   (string-join (map (lambda(x) (path/param-path x))
