@@ -12,11 +12,13 @@ namespace WebCrowler.ViewModel
     {
         PageViewModel _rootPage;
         ObservableCollection<PageViewModel> _firstLevel;
+        ObservableCollection<PageViewModel> _visited;
         string _currentUrl;
 
         public PageTreeViewModel()
         {
             _firstLevel = new ObservableCollection<PageViewModel>();
+            _visited = new ObservableCollection<PageViewModel>();
         }
 
         RelayCommand _crawlCommand;
@@ -26,8 +28,19 @@ namespace WebCrowler.ViewModel
             {
                 if (_crawlCommand == null)
                 {
+
+
+                    //BackgroundWorker worker = new BackgroundWorker();
+
+                    //worker.DoWork += delegate(object s, DoWorkEventArgs args)
+                    //{
                     _crawlCommand = new RelayCommand(param => this.CrawlRootPage(),
                         param => this.CanSave);
+                    //};
+                    //worker.RunWorkerCompleted += delegate(object s, RunWorkerCompletedEventArgs args)
+                    //{
+                    //    object result = args.Result;
+                    //};
                 }
                 return _crawlCommand;
             }
@@ -37,8 +50,10 @@ namespace WebCrowler.ViewModel
         {
              _rootPage = new PageViewModel(new Page(CurrentUrl));
              _firstLevel.Clear();
+            //async
              _rootPage.LoadChildren();
              _rootPage.Children.ToList().ForEach(x => _firstLevel.Add(x));
+             _visited.Add(_rootPage);
         }
 
         public bool CanSave { get { return CurrentUrl != null; } }

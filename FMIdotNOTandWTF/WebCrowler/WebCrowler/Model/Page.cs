@@ -13,10 +13,12 @@ namespace WebCrowler.Model
         #region Private Fields
 
         private string _url;
+        private string _title;
         private string _content;
         private List<string> _css_hrefs;
         private List<string> _js_hrefs;
         private List<string> _hrefs;
+
         
         #endregion
 
@@ -43,6 +45,7 @@ namespace WebCrowler.Model
             this._hrefs = f(parser.GoodUrls, this._url);
             this._css_hrefs = f(parser.cssUrls, this._url);
             this._js_hrefs = f(parser.jsUrls, this._url);
+            this._title = parser.Title;
         }
 
         #endregion
@@ -111,6 +114,11 @@ namespace WebCrowler.Model
             return page_content;
         }
 
+        public static void SavePage(Page page)
+        {
+
+        }
+
         public string Content
         {
             get { return _content; }
@@ -121,6 +129,12 @@ namespace WebCrowler.Model
         {
             get { return _url; }
             set { _url = value; }
+        }
+
+        public string Title
+        {
+            get { return _title; }
+            set { _title = value; }
         }
 
         public List<string> CssHrefs

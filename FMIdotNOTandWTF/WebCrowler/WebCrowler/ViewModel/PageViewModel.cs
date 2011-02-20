@@ -43,6 +43,11 @@ namespace WebCrowler.ViewModel
             get { return this._page.Url; }
         }
 
+        public string Title
+        {
+            get { return this._page.Title; }
+        }
+
         public void LoadChildren()
         {
             _children.Clear();
@@ -50,19 +55,18 @@ namespace WebCrowler.ViewModel
             foreach(Page p in _page.Children) 
             {
                
-                    BackgroundWorker worker = new BackgroundWorker();
+                    //BackgroundWorker worker = new BackgroundWorker();
 
-                    worker.DoWork += delegate(object s, DoWorkEventArgs args)
-                    {
-                            //да го парализирам!! :D
+                    //worker.DoWork += delegate(object s, DoWorkEventArgs args)
+                    //{
                             PageViewModel pvm = new PageViewModel(p);
                             _children.Add(pvm);
-                    };
+                    //};
                     //worker.RunWorkerCompleted += delegate(object s, RunWorkerCompletedEventArgs args)
                     //{
                     //    object result = args.Result;
                     //};
-                    worker.RunWorkerAsync();
+                    //worker.RunWorkerAsync();
 
             }
         }
@@ -113,6 +117,7 @@ namespace WebCrowler.ViewModel
                 if (_isExpanded && _parent != null)
                     _parent.IsExpanded = true;
             }
+
         }
 
         public bool IsSelected

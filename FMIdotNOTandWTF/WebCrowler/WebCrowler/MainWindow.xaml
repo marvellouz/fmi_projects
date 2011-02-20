@@ -33,7 +33,13 @@
 
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate ItemsSource="{Binding Children}">
-                    <TextBlock Text="{Binding Url}" />
+                    <TextBlock>
+                        <TextBlock Text="{Binding Title}" />
+                        <LineBreak/>
+                        <Hyperlink NavigateUri="{Binding Url}" RequestNavigate="Hyperlink_RequestNavigate">
+                            <TextBlock Text="{Binding Url}" />
+                        </Hyperlink>
+                    </TextBlock>
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
         </TreeView>

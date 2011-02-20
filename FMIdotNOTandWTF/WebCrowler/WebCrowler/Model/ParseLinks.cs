@@ -13,6 +13,7 @@ namespace WebCrowler.Model
         private const string _LINK_REGEX = "href\\s*=\\s*(?:\"(?<1>[^\"]*)\"|(?<1>\\S+))";// "href=\"([^>]+)\"";
         //Regex string for finding all page images in the content of a page
         private const string _IMG_REGEX = "src=\"([^>]+)\"";
+        string _TITLE_REGEX = @"(?<=<title.*>)([\s\S]*)(?=</title>)";
 
         #region Private Fields
         private List<string> _goodUrls = new List<string>();
@@ -20,6 +21,7 @@ namespace WebCrowler.Model
         private List<string> _cssUrls = new List<string>();
         private List<string> _jsUrls = new List<string>();
         private List<string> _imgUrls = new List<string>();
+        private string _title;
         #endregion
 
         #region Public Properties
@@ -28,6 +30,12 @@ namespace WebCrowler.Model
         {
             get { return _goodUrls; }
             set { _goodUrls = value; }
+        }
+
+        public string Title
+        {
+            get { return _title; }
+            set { _title = value; }
         }
 
         public List<string> BadUrls
@@ -64,6 +72,9 @@ namespace WebCrowler.Model
                 MatchCollection HrefMatches = Regex.Matches(page.Content, _LINK_REGEX);
                 MatchCollection ImgMatches = Regex.Matches(page.Content, _LINK_REGEX);
                 
+                Regex ex = new Regex(_TITLE_REGEX, RegexOptions.IgnoreCase);
+                Title = ex.Match(page.Content).Value.Trim();
+
                 for (int i = 5; i <= Math.Min(HrefMatches.Count - 1, 10); i++)
                 {
                     if (HrefMatches[i].Value == String.Empty)
@@ -125,8 +136,9 @@ namespace WebCrowler.Model
 
         public static bool IsJS(string href)
         {
+            bool javascript = href.Contains("javascript:");
             string extension = href.Substring(href.LastIndexOf(".") + 1, href.Length - href.LastIndexOf(".") - 1);
-            return (extension == ".js");
+            return (extension == ".js" || javascript);
         }
     }
 }

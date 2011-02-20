@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WebCrowler.ViewModel;
+using System.Diagnostics;
 
 namespace WebCrowler
 {
@@ -25,5 +26,11 @@ namespace WebCrowler
             InitializeComponent();
             this.tb.Text = "http://fmi.uni-sofia.bg";
         }
+            
+            private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+            {
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+            e.Handled = true;
+            }
     }
 }
