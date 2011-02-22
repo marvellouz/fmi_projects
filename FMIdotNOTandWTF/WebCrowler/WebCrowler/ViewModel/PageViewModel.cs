@@ -74,14 +74,7 @@ namespace WebCrowler.ViewModel
         #region Properties
         public ObservableCollection<PageViewModel> Children
         {
-            get
-            {
-                if (HasDummyChild)
-                {
-                    LoadChildren();
-                }
-                return _children;
-            }
+            get { return _children; }
         }
 
         public string Content { get { return _page.Content; } }
@@ -116,6 +109,14 @@ namespace WebCrowler.ViewModel
                 // Expand all the way up to the root.
                 if (_isExpanded && _parent != null)
                     _parent.IsExpanded = true;
+
+                // Lazy load the child items, if necessary.
+                if (this.HasDummyChild)
+                {
+                    this.Children.Remove(DummyChild);
+                    this.LoadChildren();
+                }
+
             }
 
         }

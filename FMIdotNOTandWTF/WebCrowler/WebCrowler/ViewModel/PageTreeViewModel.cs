@@ -29,7 +29,6 @@ namespace WebCrowler.ViewModel
                 if (_crawlCommand == null)
                 {
 
-
                     //BackgroundWorker worker = new BackgroundWorker();
 
                     //worker.DoWork += delegate(object s, DoWorkEventArgs args)
@@ -63,6 +62,7 @@ namespace WebCrowler.ViewModel
             get { return _currentUrl; }
             set { _currentUrl = value; }
         }
+        
         public ObservableCollection<PageViewModel> FirstLevel { get { return _firstLevel; } }
 
     }

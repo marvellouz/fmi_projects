@@ -75,7 +75,7 @@ namespace WebCrowler.Model
                 Regex ex = new Regex(_TITLE_REGEX, RegexOptions.IgnoreCase);
                 Title = ex.Match(page.Content).Value.Trim();
 
-                for (int i = 5; i <= Math.Min(HrefMatches.Count - 1, 10); i++)
+                for (int i = 5; i <= HrefMatches.Count - 1; i++)
                 {
                     if (HrefMatches[i].Value == String.Empty)
                     {
