@@ -1,9 +1,0 @@
-def fizzbuzz (n):
-	a=list(range(1,n+1))
-	for i in a:
-		if i%3==0:
-			a[i]='three'
-		else: continue
-	print(a)
-	return a
-print(fiizzbuzz(15.0))

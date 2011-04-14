@@ -154,7 +154,7 @@
      )))
 
 
-(main 5 "http://google.com/" "D:\\web\\")
+;(main 5 "http://google.com/" "D:\\web\\")
 
-(main 3 "http://www.google.bg/" "/tmp/foo/")
+;(main 3 "http://www.google.bg/" "/tmp/foo/")
 
